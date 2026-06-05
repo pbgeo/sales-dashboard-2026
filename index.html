@@ -52,8 +52,8 @@ tr:hover td{background:rgba(255,255,255,.025)}
 .ib-ylw{background:rgba(245,158,11,.07);border-color:var(--ylw)}.ib-ac{background:rgba(99,102,241,.07);border-color:var(--ac)}
 .ib .it{font-weight:700;font-size:13px;margin-bottom:4px}
 .ib p{font-size:13px;color:var(--mu);line-height:1.7}.ib p strong{color:var(--tx)}
-.pb-bar{background:rgba(245,158,11,.75);border-radius:2px 0 0 2px}
-.ext-bar{background:rgba(99,102,241,.45);border-radius:0 2px 2px 0}
+.pb-bar{background:rgba(245,158,11,.75);border-radius:2px 0 0 2px;max-width:90px}
+.ext-bar{background:rgba(99,102,241,.45);border-radius:0 2px 2px 0;max-width:220px}
 hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 @media(max-width:900px){.g2,.g3,.g4{grid-template-columns:1fr}.page{padding:16px 14px 60px}}
 </style>
@@ -78,6 +78,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <button onclick="sw('p5',this)">💊 약사별 분석</button>
   <button onclick="sw('p6',this)">📈 회복 시나리오</button>
   <button onclick="sw('p7',this)">✅ 액션 플랜</button>
+  <button onclick="sw('p8',this)">⚖️ 리스크 &amp; Plan B/C</button>
+  <button onclick="sw('p9',this)" style="color:#ef4444;border-color:transparent">📋 공동구매팀 하반기 과제</button>
 </nav><div id="p1" class="page active">
 <div class="kpis">
   <div class="kpi red"><div class="lbl">자사 브랜드 2→3월</div><div class="num" style="color:var(--red)">-52.8%</div><div class="note">15.4억→7.3억 급락</div></div>
@@ -320,8 +322,9 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
       <div style="color:var(--mu);margin-top:5px;line-height:1.75">유트리션 95%가 드림약사 1인 의존. 드림약사 이탈 시 유트리션 브랜드 자체가 소멸. 파이토알엑스도 고+릴리 93% 의존. <strong style="color:var(--red)">이 약사들이 이탈 조짐을 보이고 있어 자사 브랜드 위기는 현재진행형.</strong></div>
     </div>
     <div style="border-left:3px solid var(--ylw);padding-left:12px">
-      <strong style="color:var(--tx)">② 강제성 없는 약사 의존 구조</strong>
-      <div style="color:var(--mu);margin-top:5px;line-height:1.75">약사는 공구 참여를 거절할 수 있고, 파마브로스는 요청만 가능. 약사 인기가 높을수록 협상력도 높아짐. <strong style="color:var(--ylw)">인센티브·독점 제품 제공으로 이탈 지연은 가능하나, 구조적 해결책이 아님.</strong></div>
+      <strong style="color:var(--tx)">② 대형약사 독립화는 구조적 필연 — 막을 수 없다</strong>
+      <div style="color:var(--mu);margin-top:5px;line-height:1.75">대형 약사일수록 플랫폼 수수료를 피해 자체 브랜드를 만들거나 독립한다. 드림·위키·유이 이탈 조짐도 이 흐름의 일부. <strong style="color:var(--ylw)">파트너십 강화로 이탈 지연은 가능하나 근본 해결 불가. "이탈을 전제한 포트폴리오 재편"이 올바른 전략.</strong></div>
+    </div>
     </div>
     <div style="border-left:3px solid var(--red);padding-left:12px">
       <strong style="color:var(--tx)">③ 카테고리 진화 실패 — 시장이 이동했는데 자사는 그대로</strong>
@@ -333,7 +336,33 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
     </div>
   </div>
 </div>
-</div><div id="p4" class="page">
+</div>
+<div class="card g1" style="border-color:rgba(245,158,11,.4);margin-top:12px">
+  <div style="font-size:14px;font-weight:700;color:var(--ylw);margin-bottom:12px">⚖️ 오메가3 전략적 딜레마 — 신제품 개발이 올바른 방향인가?</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:13px">
+    <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--red);margin-bottom:6px">시장 현실</div>
+      <div style="color:var(--mu);line-height:1.75">오메가3는 가장 인기 있는 카테고리이나, 시장에 제품이 너무 많음. 담백하루·트루엔·뉴트리션스탠다드·아워뉴트리·저스트글로우·유트리션·파이토알엑스 — <strong style="color:var(--tx)">자사 외부 파트너들도 이미 오메가3로 경쟁 중.</strong> 신제품을 내면 자사 파트너와 경쟁하는 역설 발생.</div>
+    </div>
+    <div style="background:rgba(245,158,11,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ylw);margin-bottom:6px">핵심 질문</div>
+      <div style="color:var(--mu);line-height:1.75">
+        • 오메가3 추가 개발이 자사에 실질적 경쟁우위를 주는가?<br>
+        • 셀링파워 있는 약사들이 "파마브로스 오메가3"를 굳이 선택할 이유가 있는가?<br>
+        • 오메가3에 R&D 비용을 투자하는 것이 베르베린·NMN 신카테고리보다 ROI가 높은가?<br><br>
+        <strong style="color:var(--ylw)">→ "오메가3 신제품 개발 중단 또는 축소"도 전략적 선택지.</strong>
+      </div>
+    </div>
+    <div style="background:rgba(16,185,129,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--grn);margin-bottom:6px">방향성 제안</div>
+      <div style="color:var(--mu);line-height:1.75">
+        <strong style="color:var(--tx)">기존 오메가3 유지</strong>: 현재 운영 중인 유트리션·파이토알엑스 오메가3 제품은 유지. 드림약사 전용 공구 구조에서 벗어나 다수 약사로 분산만 시도.<br><br>
+        <strong style="color:var(--tx)">신제품은 비오메가3 카테고리로</strong>: 마이랩스(자사 해외 유통사)를 통해 베르베린·NMN 등 성장 카테고리 신제품 개발. 오메가3 시장 포화를 피하고 공백 카테고리 선점.
+      </div>
+    </div>
+  </div>
+</div>
+<div id="p4" class="page">
 <div class="sec"><div class="sec-h">🤝 외부 파트너 의존도 분석</div>
 <div class="sec-sub">파마브로스 매출 85.4%를 외부 파트너가 담당 — 의존 구조와 리스크 + 성장 기회 진단</div></div>
 <div class="sec"><div class="sec-h">주목할 TOP4 파트너 성장 추이</div><div class="sec-sub">성장 파트너 집중 육성 기회 확인</div></div>
@@ -384,7 +413,19 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div class="ib ib-grn"><div class="it">✅ 성장 집중 대상: 트루엔(+59%), 저스트글로우(+60%), 스타팜(+116%), 한독헬스케어(+151%)</div><p>이 4개 파트너가 6개월 동안 지속 성장 중. <strong>상위 약사 독점 라인업 확보 + 신규 약사 추가 편성</strong>이 외부 포트폴리오 다변화 핵심 전략.</p></div>
   <div class="ib ib-red"><div class="it">⚠️ 담백하루 -17.7% 하락 중 — TOP1 파트너 약세 주시 필요</div><p>담백하루(56.6억)는 최대 외부 파트너이나 Dec→May -17.7% 감소세. 5월 7.34억은 1월(11.39억) 대비 -35.5%. <strong>두 번째 파트너(트루엔)와의 격차 좁혀지는 중.</strong></p></div>
 </div>
-</div><div id="p5" class="page">
+
+<div class="sec"><div class="sec-h">외부 파트너 성장 협력 — 에이전시 차원 솔루션 탐색</div>
+<div class="sec-sub">위기 파악 이후 — 파트너사와 함께 성장할 수 있는 구조 제안</div></div>
+<div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.3);border-radius:10px;padding:16px;margin-top:12px">
+  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:12px">🤝 파트너사 협력 구조 — 검토 과제</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
+    <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">📦 공동 기획 행사</div><div style="color:var(--mu);line-height:1.75">시즌별 공동 프로모션(설·추석·건강의 날). 파트너사 신제품을 파마브로스 약사 그룹에 우선 론칭하는 "신제품 론칭 패키지" 제안. 파마브로스 채널을 경유할 인센티브 구조 설계.</div></div>
+    <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">📊 데이터 기반 파트너 지원</div><div style="color:var(--mu);line-height:1.75">약사별 팔로워 특성·구매 데이터를 파트너사에 제공. "이 제품은 이런 약사 팔로워층에 맞는다"는 매칭 분석으로 파트너사가 더 효과적인 공구 기획 가능. 데이터를 플랫폼 경쟁력으로 활용.</div></div>
+    <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">💰 성과 연동 수수료 구조</div><div style="color:var(--mu);line-height:1.75">파트너사 매출 성장 시 수수료 인하 제안. 파트너사가 파마브로스 채널에 우선 배포할 이유를 만들어야 함. 장기 파트너에게 더 좋은 조건을 제공하는 계층화된 수수료 구조.</div></div>
+    <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🎓 약사 교육 콘텐츠 공동 제작</div><div style="color:var(--mu);line-height:1.75">파트너사 제품 성분·효능 교육 콘텐츠를 파마브로스가 제작 지원. 약사 추천 자신감 향상 → 공구 전환율 증가. 파트너사는 콘텐츠 비용 절감, 파마브로스는 약사 플랫폼 가치 상승.</div></div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--mu);background:rgba(245,158,11,.07);border-radius:6px;padding:10px;border-left:3px solid var(--ylw)">⚠️ <strong style="color:var(--ylw)">탐색 과제</strong>: 위 방안들은 파트너사 계약 구조·수익 배분에 따라 실행 가능성이 달라짐. 담백하루·트루엔·저스트글로우 TOP3 파트너사부터 파일럿 협의 권장.</div>
+</div></div><div id="p5" class="page">
 <div class="sec"><div class="sec-h">💊 약사별 분석</div>
 <div class="sec-sub">48명 전체 | 이탈 위기 × 릴리 집중케어 × 자사친화 파트너십 재편</div></div>
 <div class="g2">
@@ -552,39 +593,52 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
 </div>
 
-<div class="sec"><div class="sec-h">전략 1 — 자사 친화 약사 7명 공식 파트너십 계약화</div>
-<div class="sec-sub">이탈 위기 Top3 의존에서 벗어나 안정적 기반 구축</div></div>
+<div class="sec"><div class="sec-h">전략 1 — 자사 친화 약사들이 자발적으로 머물게 하는 구조 설계</div>
+<div class="sec-sub">강제 배정이 아닌, 자사와 함께하는 것이 유리하다는 환경 조성</div></div>
 
 <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
   <div class="card" style="border-left:4px solid #10b981">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">삐약(임나현)·유니(정혜윤)·샤인(김혜란) — 자사 고친화 성장 약사</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
-      <div><strong style="color:var(--tx)">현황</strong><br>각각 자사 비중 18.8%/17.9%/16.2%. 모두 성장세(↑). 합산 매출 19억 — 집중 지원 시 30억+ 가능.</div>
-      <div><strong style="color:var(--tx)">배정 계획</strong><br>• 삐약: 파이토알엑스 전담 + YDY 교차<br>• 유니: 유트리션 신규 배정 (드림의존 분산)<br>• 샤인: YDY 베르베린 + 한독 교차<br>• 3명 모두: 친스 채널 공구 우선 배정</div>
-      <div><strong style="color:var(--tx)">기대 효과</strong><br>드림약사 이탈 시 유트리션 공백의 30~40% 흡수. 각 약사 매출 2억↑ → 합산 +6억/월. 연간 +72억.</div>
+    <div style="font-size:14px;font-weight:700;margin-bottom:10px">📌 핵심 전제 — 배정보다 환경 조성</div>
+    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+      삐약·유니·샤인 등 자사 친화 약사들은 이미 자발적으로 자사 브랜드를 진행 중. 이들에게 "유트리션을 팔아라, 파이토알엑스를 맡아라"는 강제 배정은 역효과. 대신 <strong style="color:var(--tx)">"자사와 함께하면 더 유리하다"는 구조</strong>를 만들어야 함.
     </div>
   </div>
 
   <div class="card" style="border-left:4px solid #22d3ee">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">다식(박소윤)·도비(정인지) — 자사 브랜드 전문 약사</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
-      <div><strong style="color:var(--tx)">현황</strong><br>다식약사: 박약다식 전담(16.92억, 자사 15.7%). 도비약사: 아워뉴트리 친화(9.46억, 자사 14%). 두 약사 모두 성장세.</div>
-      <div><strong style="color:var(--tx)">배정 계획</strong><br>• 다식: 박약다식 4개월 정기화 계약 + YDY 추가 배정<br>• 도비: 유트리션 신규 배정 (드림의존 분산) + 파이토알엑스 교차<br>• 두 약사 합산: 자사 브랜드 월 4억 목표</div>
-      <div><strong style="color:var(--tx)">기대 효과</strong><br>다식 박약다식 월 3억 안정화 (현재 분기 1회 불규칙). 도비 유트리션 월 1.5억 추가. 합산 연 +30억.</div>
+    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🔒 약사 리텐션 방안 1 — 독점 선공개 권한</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+      <div><strong style="color:var(--tx)">내용</strong><br>신제품 출시 전 자사 친화 약사 그룹(삐약·유니·샤인·다식·도비 등)에게 독점 선공개 기회 제공. 이들이 "파마브로스 파트너라서 남들보다 먼저 좋은 제품을 알게 된다"는 가치 경험.</div>
+      <div><strong style="color:var(--tx)">기대 효과</strong><br>• 자사 플랫폼 이탈 시 이 혜택을 잃는다는 구조<br>• 신제품 초기 흥행 = 약사 팔로워 만족도 상승<br>• 자사 친화 약사들의 자발적 충성도 유지</div>
+    </div>
+  </div>
+
+  <div class="card" style="border-left:4px solid #6366f1">
+    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🔒 약사 리텐션 방안 2 — 약사 어드바이저리 그룹 구성</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+      <div><strong style="color:var(--tx)">내용</strong><br>자사 친화 약사 7명을 "제품 개발 어드바이저"로 공식화. 신제품 기획 단계부터 약사의 의견 반영. 약사 입장에서 "내가 이 제품 개발에 참여했다"는 오너십 부여.</div>
+      <div><strong style="color:var(--tx)">기대 효과</strong><br>• 약사가 자신이 기여한 제품을 자발적으로 홍보<br>• 팔로워에게 "내가 추천하는 이유"가 생김<br>• 독립 브랜드보다 협업 구조를 선택할 인센티브</div>
     </div>
   </div>
 
   <div class="card" style="border-left:4px solid #f59e0b">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">약사피셜(최명훈)·자신약사(허자신) — 소규모 고비중 자사 파트너</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
-      <div><strong style="color:var(--tx)">현황</strong><br>약사피셜: 3.17억이지만 자사비중 28.4%(최고). 자신약사: 4.39억, 자사 19.1%. 두 약사 모두 성장 잠재력 높음.</div>
-      <div><strong style="color:var(--tx)">배정 계획</strong><br>• 약사피셜: YDY 전담 심화 + 파이토알엑스 추가<br>• 자신약사: 파이토알엑스 정기화 + YDY 교차<br>• 두 약사: 친스 채널 신규 공구 우선 배정</div>
-      <div><strong style="color:var(--tx)">기대 효과</strong><br>두 약사 각 현재의 1.5~2배 성장. 약사피셜 5억, 자신약사 7억 목표. 합산 연 +15억.</div>
+    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🔒 약사 리텐션 방안 3 — 성과 연동 수수료/혜택 구조</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+      <div><strong style="color:var(--tx)">내용</strong><br>자사 브랜드 매출 누적 기여도에 따라 수수료 인하 or 마진 상향. 파마브로스에서 오래, 많이 팔수록 실질적으로 이익이 되는 구조 설계.</div>
+      <div><strong style="color:var(--tx)">기대 효과</strong><br>• 이탈 시 기존 혜택 소실 → 이탈 비용 발생<br>• 장기 파트너일수록 더 좋은 조건<br>• 독립 브랜드 대비 파마브로스의 경쟁력 확보</div>
     </div>
   </div>
 </div>
 
-<div class="sec"><div class="sec-h">전략 2 — 카테고리 다각화 (4개 성장 카테고리 진입)</div></div>
+<div class="sec"><div class="sec-h">전략 2 — 마이랩스(자사 해외 유통사)를 통한 신카테고리 진입</div>
+<div class="sec-sub">마이랩스 = 해외 제품 개발 → 국내 유통 파이프라인 | 오메가3 포화 시장 탈피 + 성장 카테고리 자체 브랜드화</div></div>
+
+<div style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.3);border-radius:8px;padding:14px;margin-top:12px">
+  <div style="font-size:13px;font-weight:700;color:var(--grn);margin-bottom:8px">마이랩스 = 파마브로스의 해외 제품 개발·국내 유통 파이프라인</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:12px;color:var(--mu)">
+    <div><strong style="color:var(--tx)">기존 인식 (틀림)</strong>: 마이랩스 = 외부 파트너사. +1741% 성장 = 외부 파트너 성장.<br><br><strong style="color:var(--tx)">실제 구조</strong>: 파마브로스가 마이랩스를 인수. YDY해외+마이랩스 = 동일 유통 채널. +1741% 성장은 사실상 <strong style="color:var(--grn)">자사 해외 브랜드 라인의 성장.</strong></div>
+    <div><strong style="color:var(--tx)">전략적 의미</strong>: 마이랩스를 통해 해외에서 제품을 개발하면, 국내 약사 채널로 독점 유통 가능. 오메가3 포화 시장을 피해 베르베린·NMN 등 신카테고리를 <strong style="color:var(--grn)">자사 브랜드로 선점</strong>할 수 있는 구조.<br><br>단, 어떤 카테고리의 제품을 개발할지 <strong style="color:var(--ylw)">제품 기획이 선행되어야 함.</strong></div>
+  </div>
+</div>
 
 <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
   <div class="card" style="border-color:rgba(239,68,68,.3)">
@@ -868,6 +922,36 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
       <div class="detail-box"><strong style="color:var(--tx)">운영 방식</strong><br>• 분기별 약사-브랜드 매칭표 사전 작성<br>• 담당자별 자사 브랜드 월간 진행 현황 트래킹<br>• 공구 미진행 월 발생 시 즉시 대체 약사 편성<br>• KPI: 자사 점유율 현 10.8% → 20%</div>
     </div>
   </div>
+<div class="acc-item">
+  <div class="acc-hdr" onclick="tAcc(this)">
+    <span class="grn fw7">🟢 전략</span>
+    <span style="font-size:14px;font-weight:600">마이랩스(자사 해외 유통사)를 통한 신카테고리 제품 기획</span>
+    <span><span style="background:rgba(34,211,238,.15);color:var(--ac2)" class="tag">카테고리</span></span>
+    <span class="mu">전체</span>
+    <span class="grn fw7">자사 브랜드 다각화</span>
+    <span class="acc-arrow">▼</span>
+  </div>
+  <div class="acc-body">
+    <strong style="color:var(--grn)">마이랩스 역할</strong>: 해외에서 제품 개발·생산 → 국내 약사 채널 독점 유통. 오메가3 포화 시장을 피해 성장 카테고리에서 자사 브랜드를 선점할 수 있는 파이프라인.
+    <div class="detail-grid">
+      <div class="detail-box">
+        <strong style="color:var(--tx)">우선 검토 카테고리</strong><br>
+        • 베르베린 고용량(500mg+) — 국내 경쟁 제품 없는 사양<br>
+        • NMN 500mg — 저스트글로우 성공 공식 자사 내재화<br>
+        • 글루타치온 리포좀 — 항산화 고단가 카테고리<br>
+        • 마그테인(L-트레오네이트 마그네슘) — 뇌건강 프리미엄<br>
+        단, 어떤 제품을 개발할지 <strong style="color:var(--ylw)">제품 기획 선행 필수</strong>
+      </div>
+      <div class="detail-box">
+        <strong style="color:var(--tx)">오메가3 전략적 판단</strong><br>
+        오메가3는 인기 카테고리이나 시장 포화. 자사 오메가3 신제품 추가 개발은 외부 파트너와의 경쟁 심화 우려.<br><br>
+        <strong style="color:var(--grn)">방향</strong>: 기존 오메가3 제품 유지(유트리션·파이토알엑스) + 신규 R&D는 비오메가3 카테고리 집중.<br>
+        마이랩스는 베르베린·NMN 등 성장 카테고리 중심으로 기획.
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
 
 <div class="g4" style="margin-top:16px">
@@ -970,4 +1054,435 @@ function sw(id,btn){
   btn.classList.add('active');
   window.scrollTo(0,0);
 }
-</script></body></html>
+</script><div id="p8" class="page">
+<div class="sec"><div class="sec-h">⚖️ 리스크 점검 & Plan B/C — 전략별 실패 시나리오</div>
+<div class="sec-sub">각 전략의 가정이 틀렸을 때 무엇이 일어나는가 | 대안 계획</div></div>
+
+<div style="background:rgba(99,102,241,.07);border:1px solid var(--ac);border-radius:10px;padding:14px;margin-top:12px">
+  <div style="font-size:13px;color:var(--mu)">이 탭은 제시된 전략들이 <strong style="color:var(--tx)">"틀렸거나 실행 불가능할 때"</strong>를 전제로 작성됨. 전략 자체가 틀렸다는 의미가 아니라, <strong style="color:var(--tx)">가정이 무너질 경우의 대비</strong>임.</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:14px;margin-top:14px">
+
+<!-- 전략 1: 자사 친화 약사 리텐션 -->
+<div class="card" style="border-top:3px solid #10b981">
+  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 1 — 자사 친화 약사(삐약·유니·샤인 등) 리텐션</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+    <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
+      <div style="color:var(--mu);line-height:1.8">
+        • 자사 친화 약사들도 성장하면 독립 → 드림약사와 같은 경로 반복 가능<br>
+        • 독점 선공개·어드바이저리 그룹이 실질적 인센티브가 될지 불확실<br>
+        • 자사 브랜드 자체의 매력이 없으면 리텐션 수단도 무력화<br>
+        • <strong style="color:var(--red)">핵심 가정의 문제: "자사 친화 약사들이 계속 자사를 원할 것"</strong>
+      </div>
+    </div>
+    <div style="background:rgba(245,158,11,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ylw);margin-bottom:6px">🔄 Plan B — 리텐션 포기, 저변 확대</div>
+      <div style="color:var(--mu);line-height:1.8">
+        특정 약사 묶어두기보다 <strong style="color:var(--tx)">신규 약사 지속 온보딩</strong>으로 전략 전환. 개별 약사 의존도 낮추고 약사 pool 자체를 확대. 이탈해도 대체 가능한 구조 → "약사 1명당 비중 5% 이하" 구조 목표.
+      </div>
+    </div>
+    <div style="background:rgba(34,211,238,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🔄 Plan C — 약사 채널 의존도 축소</div>
+      <div style="color:var(--mu);line-height:1.8">
+        장기적으로 약사 채널 자체의 구조적 한계(약사 독립화 트렌드)를 인정하고, <strong style="color:var(--tx)">D2C(자사몰 직접 판매) 채널 강화</strong> 검토. 단, 약사 추천 신뢰도 없이 D2C가 작동할 수 있는지 별도 검증 필요.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 전략 2: 마이랩스 신카테고리 개발 -->
+<div class="card" style="border-top:3px solid #22d3ee">
+  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 2 — 마이랩스를 통한 해외 신카테고리 제품 개발</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+    <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
+      <div style="color:var(--mu);line-height:1.8">
+        • 제품 개발 리드타임 최소 12~18개월 → 단기 매출 기여 불가<br>
+        • 어떤 제품을 만들지 기획이 아직 구체화 안 됨<br>
+        • 해외 생산 후 식약처 건기식 인증 필요 → 규제 리스크<br>
+        • 성공해도 경쟁사가 빠르게 모방 가능 (직구 제품은 진입장벽 낮음)<br>
+        • <strong style="color:var(--red)">핵심 가정의 문제: "마이랩스로 충분히 좋은 제품을 만들 수 있는가"</strong>
+      </div>
+    </div>
+    <div style="background:rgba(245,158,11,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ylw);margin-bottom:6px">🔄 Plan B — OEM/ODM으로 빠른 진입</div>
+      <div style="color:var(--mu);line-height:1.8">
+        자체 개발 대신 <strong style="color:var(--tx)">기존 검증된 해외 공장에서 OEM</strong>. 저스트글로우·마이랩스 성분과 동일하되 파마브로스 브랜드로 출시. 개발 기간 6개월 이내로 단축 가능. 단, 브랜드 차별화 약함.
+      </div>
+    </div>
+    <div style="background:rgba(34,211,238,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🔄 Plan C — 신제품 포기, MD 역할 강화</div>
+      <div style="color:var(--mu);line-height:1.8">
+        자체 제품 개발을 포기하고 <strong style="color:var(--tx)">외부 파트너의 MD(상품기획자)</strong> 역할 강화. 어떤 파트너의 어떤 제품을 어떤 약사에게 매칭할지를 잘하는 것이 파마브로스의 핵심 역량이 됨. 제조 대신 유통·기획 전문화.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 전략 3: 오메가3 신제품 개발 중단 -->
+<div class="card" style="border-top:3px solid #f59e0b">
+  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 3 — 오메가3 신제품 개발 중단 + 비오메가3 집중</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+    <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
+      <div style="color:var(--mu);line-height:1.8">
+        • 오메가3는 여전히 가장 검증된 카테고리 — 포기 시 매출 기반 손실<br>
+        • 약사들이 베르베린·NMN을 설명할 전문성이 아직 부족할 수 있음<br>
+        • 신카테고리는 고객 인지도가 낮아 공구 성사율이 오메가3보다 낮을 수 있음<br>
+        • <strong style="color:var(--red)">핵심 가정의 문제: "신카테고리로 오메가3 매출을 대체할 수 있는가"</strong>
+      </div>
+    </div>
+    <div style="background:rgba(245,158,11,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ylw);margin-bottom:6px">🔄 Plan B — 오메가3 유지하되 차별화</div>
+      <div style="color:var(--mu);line-height:1.8">
+        신제품 개발은 중단하되, 기존 오메가3 제품을 <strong style="color:var(--tx)">"프리미엄 포지셔닝"으로 리브랜딩</strong>. 일반 오메가3와 차별화된 성분(초임계·식물성·알래스카 등) + 마이랩스 해외 직구 프리미엄 스토리텔링. 완전 포기가 아닌 업그레이드.
+      </div>
+    </div>
+    <div style="background:rgba(34,211,238,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🔄 Plan C — 오메가3·신카테고리 병행</div>
+      <div style="color:var(--mu);line-height:1.8">
+        단기(1년): 오메가3 매출 유지로 현금 흐름 확보. 중기(2년): 베르베린·NMN 파일럿 성과에 따라 오메가3 비중 점진적 축소. <strong style="color:var(--tx)">급격한 전환 대신 데이터 기반 단계적 이동.</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 전략 4: 외부 파트너 협력 구조 -->
+<div class="card" style="border-top:3px solid #6366f1">
+  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 4 — 외부 파트너 에이전시 협력 구조 (데이터 공유·공동 기획)</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+    <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
+      <div style="color:var(--mu);line-height:1.8">
+        • 파트너사가 데이터 공유를 거부하거나 독자 채널을 더 선호할 수 있음<br>
+        • 수수료 인하 제안이 수익성 악화로 이어질 수 있음<br>
+        • 공동 기획 행사가 실제로 파트너사의 관심을 받을지 검증 안 됨<br>
+        • <strong style="color:var(--red)">핵심 가정의 문제: "파트너사가 파마브로스와의 협력을 원하는가"</strong>
+      </div>
+    </div>
+    <div style="background:rgba(245,158,11,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ylw);margin-bottom:6px">🔄 Plan B — 협력 대신 자사 콘텐츠 강화</div>
+      <div style="color:var(--mu);line-height:1.8">
+        파트너사와의 협력보다 <strong style="color:var(--tx)">파마브로스 자체 약사 교육 플랫폼</strong> 강화. 어떤 파트너 제품이 들어와도 파마브로스가 교육·콘텐츠로 약사에게 가치를 제공하면 플랫폼 이탈 비용이 높아짐. 협력보다 플랫폼 의존성 구축.
+      </div>
+    </div>
+    <div style="background:rgba(34,211,238,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🔄 Plan C — 파트너 다양화로 의존도 분산</div>
+      <div style="color:var(--mu);line-height:1.8">
+        협력 구조 구축 포기하고 <strong style="color:var(--tx)">파트너사 수를 늘려 집중도를 낮춤</strong>. 담백하루 31.9% 의존에서 TOP5가 각 10% 미만이 되도록 신규 파트너 발굴. 협력보다 분산이 리스크 대응에 더 효과적일 수 있음.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 전략 5: 릴리약사 즉시 개입 -->
+<div class="card" style="border-top:3px solid #ef4444">
+  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 5 — 릴리약사 즉시 신규 파트너 개입</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+    <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
+      <div style="color:var(--mu);line-height:1.8">
+        • 릴리약사가 새 브랜드에 관심 없거나 이미 이탈 결정 상태일 수 있음<br>
+        • 팔로워 특성과 제안 제품이 맞지 않으면 공구 실패<br>
+        • 하락 원인이 팔로워 피로가 아닌 다른 요인(릴리약사 개인 상황)일 수 있음<br>
+        • <strong style="color:var(--red)">핵심 가정의 문제: "릴리약사가 새 브랜드로 반전될 수 있는가"</strong>
+      </div>
+    </div>
+    <div style="background:rgba(245,158,11,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ylw);margin-bottom:6px">🔄 Plan B — 릴리약사 포기, 매출 재배분</div>
+      <div style="color:var(--mu);line-height:1.8">
+        릴리약사 개입 시도 후 2개월 내 반전 없으면 <strong style="color:var(--tx)">매출 이탈을 인정하고 삐약·샤인약사로 해당 브랜드 재배분</strong>. 릴리약사에 쏟는 에너지를 성장세 약사에 집중하는 것이 더 효과적일 수 있음.
+      </div>
+    </div>
+    <div style="background:rgba(34,211,238,.07);border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🔄 Plan C — 관계 재정의</div>
+      <div style="color:var(--mu);line-height:1.8">
+        릴리약사를 "집중 케어 대상"이 아닌 <strong style="color:var(--tx)">"독립 파트너"로 관계 재정의</strong>. 파마브로스 의존도를 낮추고 릴리약사가 원하는 조건에서만 협력. 매출 기대치를 현실화하고 이탈 충격을 최소화.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="card g1" style="border-color:rgba(99,102,241,.3)">
+  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:12px">🧭 리스크 점검 종합 — 가장 불확실한 가정들</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
+    <div>
+      <div style="font-weight:700;color:var(--red);margin-bottom:8px">반드시 검증해야 할 가정들</div>
+      <div style="color:var(--mu);line-height:1.9">
+        1. <strong style="color:var(--tx)">자사 친화 약사들이 실제로 자사 브랜드를 "원하는가"</strong> — 자발성 확인 필요<br>
+        2. <strong style="color:var(--tx)">마이랩스가 경쟁력 있는 제품을 개발할 수 있는가</strong> — 제품 기획 역량 검증<br>
+        3. <strong style="color:var(--tx)">베르베린·NMN 공구가 오메가3만큼 약사가 설명하기 쉬운가</strong> — 약사 인터뷰 필요<br>
+        4. <strong style="color:var(--tx)">파트너사가 협력 구조에 동의할 의사가 있는가</strong> — TOP3 파트너 파일럿 먼저
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:700;color:var(--grn);margin-bottom:8px">공통 Plan D — 가장 보수적인 선택</div>
+      <div style="color:var(--mu);line-height:1.75">
+        모든 전략이 실패하거나 실행 불가능할 때의 최후 방어선:<br><br>
+        <strong style="color:var(--tx)">① 현상 유지</strong>: 기존 외부 파트너 관계 유지, 자사 브랜드 현재 제품 유지<br>
+        <strong style="color:var(--tx)">② 비용 최소화</strong>: 신제품 개발·마케팅 투자 최소화, 수익성 방어<br>
+        <strong style="color:var(--tx)">③ 데이터 수집</strong>: 6개월간 약사·파트너사 인터뷰로 실제 니즈 파악 후 전략 재수립<br><br>
+        <strong style="color:var(--ylw)">→ "지금 당장 틀린 결정을 하는 것보다 더 많이 알고 나서 결정하는 것"</strong>
+      </div>
+    </div>
+  </div>
+</div>
+</div><div id="p9" class="page">
+<div style="background:linear-gradient(135deg,#1e0a0a,#1a0f0f);border:1px solid rgba(239,68,68,.4);border-radius:12px;padding:20px 24px;margin-bottom:20px">
+  <div style="font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px">공동구매팀 내부 문서 — 기밀</div>
+  <div style="font-size:20px;font-weight:800;margin-bottom:6px">공동구매팀 하반기 과제 및 논리 구조</div>
+  <div style="font-size:13px;color:var(--mu)">본부장 보고 대응 | 조직 변경 반박 근거 | H2 실행계획 | 팀원 책임의식 공유</div>
+</div>
+
+<!-- PART 1: 논리 구조 -->
+<div class="sec"><div class="sec-h" style="border-color:var(--red)">PART 1 — 논리 구조: 왜 조직 변경은 해답이 아닌가</div></div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px">
+  <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3);border-radius:10px;padding:16px">
+    <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:10px">본부장의 판단 (우리가 반박해야 할 논리)</div>
+    <div style="font-size:13px;color:var(--mu);line-height:1.9">
+      <span style="color:var(--red)">①</span> 팀원들의 수동적 태도<br>
+      <span style="color:var(--mu);padding-left:12px;font-size:18px">↓</span><br>
+      <span style="color:var(--red)">②</span> 자사 브랜드 매출 급락<br>
+      <span style="color:var(--mu);padding-left:12px;font-size:18px">↓</span><br>
+      <span style="color:var(--red)">③</span> 해결책: 업무 이관 + 담당자 재배치
+    </div>
+    <div style="margin-top:10px;font-size:12px;background:rgba(239,68,68,.1);border-radius:6px;padding:8px;color:var(--mu)">
+      이 논리의 핵심 가정: <strong style="color:var(--red)">"담당자를 바꾸면 자사 매출이 오른다"</strong>
+    </div>
+  </div>
+  <div style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.3);border-radius:10px;padding:16px">
+    <div style="font-size:13px;font-weight:700;color:var(--grn);margin-bottom:10px">데이터가 말하는 실제 논리 (우리의 반박)</div>
+    <div style="font-size:13px;color:var(--mu);line-height:1.9">
+      <span style="color:var(--grn)">①</span> 약사 의존 구조 + 대형약사 독립화 트렌드<br>
+      <span style="color:var(--mu);padding-left:12px;font-size:18px">↓</span><br>
+      <span style="color:var(--grn)">②</span> 드림약사 유트리션 공구 중단 → 자사 매출 -52.8%<br>
+      <span style="color:var(--mu);padding-left:12px;font-size:18px">↓</span><br>
+      <span style="color:var(--grn)">③</span> 담당자가 아닌 <strong style="color:var(--tx)">회사 구조의 문제</strong>
+    </div>
+    <div style="margin-top:10px;font-size:12px;background:rgba(16,185,129,.1);border-radius:6px;padding:8px;color:var(--mu)">
+      담당자를 바꿔도 구조가 바뀌지 않으면 <strong style="color:var(--grn)">같은 결과 반복</strong>
+    </div>
+  </div>
+</div>
+
+<!-- 핵심 반박 근거 -->
+<div style="display:flex;flex-direction:column;gap:10px;margin-top:14px">
+  <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px">
+    <div style="font-size:13px;font-weight:700;color:var(--ac2);margin-bottom:10px">📊 반박 근거 1 — 외부 파트너 매출은 유지됐다: 담당자가 무능한 게 아니다</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+      <div>자사 브랜드 Feb→Mar <strong style="color:var(--red)">-52.8%</strong> 하락하는 동안,<br>
+      같은 팀이 관리하는 외부 파트너 매출은 <strong style="color:var(--grn)">Feb 53.2억 → Mar 58.9억 (+10.7%)</strong> 성장.<br><br>
+      <strong style="color:var(--tx)">만약 담당자의 역량 부족이 원인이라면, 외부 파트너도 함께 하락했어야 한다.</strong><br>
+      외부 파트너가 성장했다는 것은 담당자들이 업무를 수행하고 있다는 증거.</div>
+      <div style="background:rgba(16,185,129,.07);border-radius:8px;padding:10px">
+        <strong style="color:var(--grn)">결론: 자사 하락은 담당자 역량 문제가 아니라</strong><br>
+        <span style="line-height:1.8">"자사 브랜드 공구를 담당하던 특정 약사(드림약사)가 행동을 바꾼 것"이 직접 원인.<br>
+        이는 <strong style="color:var(--tx)">담당자가 통제할 수 없는 외부 변수</strong>이며,<br>
+        회사 구조(약사 의존도 86.7%)에서 비롯된 필연적 결과.</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px">
+    <div style="font-size:13px;font-weight:700;color:var(--ac2);margin-bottom:10px">📊 반박 근거 2 — 대형약사 독립화는 업계 트렌드: 담당자 교체로 막을 수 없다</div>
+    <div style="font-size:13px;color:var(--mu);line-height:1.8">
+      드림·위키·유이약사의 이탈 조짐은 <strong style="color:var(--tx)">업계 전반에서 진행 중인 구조적 트렌드</strong>.<br>
+      대형 약사일수록 플랫폼 수수료를 피해 자체 브랜드를 만들거나 독립한다 — 이는 국내 공동구매 플랫폼 전체에서 관찰되는 현상.<br><br>
+      <strong style="color:var(--red)">새 담당자를 배치해도, 드림약사는 새 담당자에게도 같은 행동을 할 것이다.</strong><br>
+      약사 이탈을 막으려면 담당자가 아니라 <strong style="color:var(--tx)">약사가 이탈하지 않을 이유(독점 제품, 수수료 구조, 어드바이저리 포지션 등)</strong>를 회사가 만들어야 한다.
+    </div>
+  </div>
+
+  <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px">
+    <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:10px">🚨 반박 근거 3 — 조직 변경은 오히려 더 큰 혼란을 야기한다</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+      <div>
+        <strong style="color:var(--red)">업무 이관·재배치 시 예상 시나리오</strong>
+        <div style="margin-top:8px;line-height:1.9">
+          • 인수인계 기간(최소 1~3개월) 동안 <strong style="color:var(--red)">약사 관리 공백 발생</strong><br>
+          • 이미 이탈 조짐을 보이는 드림·위키·유이약사와의 관계 리셋 → <strong style="color:var(--red)">이탈 가속화</strong><br>
+          • 기존 파트너사와의 신뢰 관계 단절 → 경쟁 플랫폼으로 이동 위험<br>
+          • 새 담당자의 학습 기간 동안 <strong style="color:var(--red)">H2 성수기 기회 소실</strong><br>
+          • 팀원들의 사기 저하 → 잔류 팀원 성과 추가 하락
+        </div>
+      </div>
+      <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
+        <strong style="color:var(--red)">조직 변경으로 해결되는 것</strong>
+        <div style="margin-top:6px;color:var(--mu);line-height:1.8">
+          ✅ "조치를 취했다"는 가시적 신호<br><br>
+          <strong style="color:var(--red)">조직 변경으로 해결되지 않는 것</strong>
+        </div>
+        <div style="color:var(--mu);line-height:1.8;margin-top:4px">
+          ❌ 약사 의존 구조 (새 담당자도 동일 구조)<br>
+          ❌ 대형약사 독립화 트렌드<br>
+          ❌ 자사 브랜드 오메가3 카테고리 포화<br>
+          ❌ 마이랩스 신제품 기획 필요<br>
+          ❌ 약사 리텐션 구조 부재
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PART 2: 담당자 역량과 매출 하락 -->
+<div class="sec" style="margin-top:24px"><div class="sec-h" style="border-color:var(--ylw)">PART 2 — 담당자 역량 문제와 매출 하락은 별개다 (그러나 역량 개선은 필요하다)</div></div>
+
+<div style="background:var(--sf2);border-radius:10px;padding:16px;margin-top:12px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
+    <div>
+      <div style="font-weight:700;color:var(--ylw);margin-bottom:8px">⚠️ 인정해야 할 부분</div>
+      <div style="color:var(--mu);line-height:1.9">
+        • 자사 브랜드 공구 공백에 대한 선제적 대응이 부족했던 것은 사실<br>
+        • 약사 이탈 신호를 일찍 파악하고 대응하지 못한 점<br>
+        • 자사 브랜드 다변화 제안을 능동적으로 하지 못한 점<br>
+        • 파트너 다양화 전략을 적극적으로 추진하지 않은 점<br><br>
+        <strong style="color:var(--ylw)">→ 이 부분은 팀의 개선 과제로 인정하고 H2 계획에 반영</strong>
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:700;color:var(--grn);margin-bottom:8px">✅ 그러나 이것은 구조의 문제다</div>
+      <div style="color:var(--mu);line-height:1.9">
+        • 담당자가 약사를 설득해도 약사가 공구를 거절하면 막을 수 없다<br>
+        • 자사 브랜드 신제품이 없으면 배정할 새 제품 자체가 없다<br>
+        • 약사가 원하는 제품이 아니면 아무리 능동적이어도 공구 성사 불가<br>
+        • 오메가3 포화 시장에서 새 약사를 설득하는 것 자체의 한계<br><br>
+        <strong style="color:var(--grn)">→ 구조 개선 없이는 담당자 교체도 같은 결과</strong>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:12px;border-top:1px solid var(--bd);padding-top:12px;font-size:13px;color:var(--mu)">
+    <strong style="color:var(--tx)">핵심 명제</strong>: 담당자의 수동적 태도를 개선하는 것은 필요하고 중요하다. 그러나 그것이 자사 매출 하락의 원인이 아니기 때문에, 담당자 교체가 자사 매출을 회복시키지는 않는다. <strong style="color:var(--ac2)">담당자 역량 강화 + 구조적 개선을 동시에 추진하는 것이 올바른 접근이다.</strong>
+  </div>
+</div>
+
+<!-- PART 3: 하반기 실행계획 -->
+<div class="sec" style="margin-top:24px"><div class="sec-h" style="border-color:var(--grn)">PART 3 — 공동구매팀 하반기(H2) 실행계획</div>
+<div class="sec-sub">팀이 문제를 인식하고 있으며, 구체적 계획이 있다는 것을 증명</div></div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+  <div class="card" style="border-top:3px solid var(--red)">
+    <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:10px">🔴 즉시 (7월 — 2주 내)</div>
+    <div style="font-size:12px;color:var(--mu);line-height:1.9">
+      <strong style="color:var(--tx)">Rua/Summer/Joy 담당</strong><br>
+      • 릴리약사 직접 컨택 — 저스트글로우 신규 배정 제안<br>
+      • 드림약사 유트리션 재공구 합의 시도<br>
+      • 유트리션 배정 약사 다변화 (유니·샤인약사 추가)<br><br>
+      <strong style="color:var(--tx)">팀장</strong><br>
+      • 자사 친화 약사 7명 공식 파트너 계약화 준비<br>
+      • 마이랩스 신카테고리 제품 기획 논의 착수
+    </div>
+  </div>
+  <div class="card" style="border-top:3px solid var(--ylw)">
+    <div style="font-size:13px;font-weight:700;color:var(--ylw);margin-bottom:10px">🟡 단기 (7~8월 — 1개월)</div>
+    <div style="font-size:12px;color:var(--mu);line-height:1.9">
+      <strong style="color:var(--tx)">전체 팀</strong><br>
+      • 베르베린 카테고리 전담 약사 그룹 5명 구성<br>
+      • 파이토알엑스 고약사·삐약약사 4개월 교차 편성<br>
+      • 담백하루 하락(-17.7%) 원인 파악 + TOP3 파트너 협의 착수<br><br>
+      <strong style="color:var(--tx)">팀장</strong><br>
+      • 자사 친화 약사 어드바이저리 그룹 1차 미팅<br>
+      • 약사 독점 선공개 제도 설계
+    </div>
+  </div>
+  <div class="card" style="border-top:3px solid var(--grn)">
+    <div style="font-size:13px;font-weight:700;color:var(--grn);margin-bottom:10px">🟢 중기 (9~10월 — 분기)</div>
+    <div style="font-size:12px;color:var(--mu);line-height:1.9">
+      <strong style="color:var(--tx)">전체 팀</strong><br>
+      • 자사 브랜드 공구 캘린더 수립 (4개월 주기, 약사별 사전 배정)<br>
+      • NMN 파일럿 — 3명 약사 테스트 공구<br>
+      • 마이랩스 신제품 기획 확정 + 개발 착수<br><br>
+      <strong style="color:var(--tx)">팀장</strong><br>
+      • 자사 브랜드 점유율 현 10.8% → 15% 달성 점검<br>
+      • 외부 파트너 협력 구조 파일럿 (TOP3 파트너 미팅)
+    </div>
+  </div>
+  <div class="card" style="border-top:3px solid var(--ac2)">
+    <div style="font-size:13px;font-weight:700;color:var(--ac2);margin-bottom:10px">🔵 목표 (연말 — H2 KPI)</div>
+    <div style="font-size:12px;color:var(--mu);line-height:1.9">
+      <strong style="color:var(--tx)">매출 목표</strong><br>
+      • 자사 브랜드 월 매출: 7.3억(현재) → 12억 (수익 회복)<br>
+      • 자사 점유율: 10.8% → 15%<br>
+      • 전체 월 매출: 70억대 유지<br><br>
+      <strong style="color:var(--tx)">구조 목표</strong><br>
+      • 이탈위기 3명 의존도: 29.7% → 20% 이하<br>
+      • 자사 친화 약사 7명 공식 파트너 계약 완료<br>
+      • 신카테고리(베르베린·NMN) 월 5억 파일럿 달성
+    </div>
+  </div>
+</div>
+
+<!-- PART 4: 팀원 공감대 -->
+<div class="sec" style="margin-top:24px"><div class="sec-h" style="border-color:var(--ac)">PART 4 — 팀원 공감대 형성: 이 상황이 얼마나 심각한가</div>
+<div class="sec-sub">숫자가 말하는 위기의 규모 — 팀원들이 반드시 인식해야 할 현실</div></div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px">
+  <div style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.4);border-radius:10px;padding:14px;text-align:center">
+    <div style="font-size:28px;font-weight:800;color:var(--red)">-123억</div>
+    <div style="font-size:12px;color:var(--mu);margin-top:6px">드림·위키·유이 3명 동시 이탈 시<br>전체 매출의 29.7% 즉시 손실<br><strong style="color:var(--red)">413억 → 290억</strong></div>
+  </div>
+  <div style="background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.4);border-radius:10px;padding:14px;text-align:center">
+    <div style="font-size:28px;font-weight:800;color:var(--ylw)">47M→18M</div>
+    <div style="font-size:12px;color:var(--mu);margin-top:6px">공구 1건당 평균 매출 급락<br>대형 공구가 소멸하고<br><strong style="color:var(--ylw)">소형 공구만 남은 상태</strong></div>
+  </div>
+  <div style="background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.4);border-radius:10px;padding:14px;text-align:center">
+    <div style="font-size:28px;font-weight:800;color:var(--ac2)">10.8%</div>
+    <div style="font-size:12px;color:var(--mu);margin-top:6px">자사 브랜드 점유율 (Feb 22.4%에서 급감)<br>외부 파트너 85.4% 의존<br><strong style="color:var(--ac2)">구조적 취약성 최고조</strong></div>
+  </div>
+</div>
+
+<div style="background:rgba(99,102,241,.07);border:1px solid var(--ac);border-radius:10px;padding:16px;margin-top:14px">
+  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:12px">📌 팀원 각자가 이 상황에서 해야 할 것</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;font-size:12px">
+    <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
+      <div style="font-weight:700;color:var(--rua);margin-bottom:5px">Rua (윤효정)</div>
+      <div style="color:var(--mu);line-height:1.7">YDY·한독·닥터제안 공구 안정화. 자사친화약사(샤인·약사피셜) 배정 강화. 베르베린 카테고리 리드.</div>
+    </div>
+    <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
+      <div style="font-weight:700;color:var(--joy);margin-bottom:5px">Joy (최선화)</div>
+      <div style="color:var(--mu);line-height:1.7">릴리약사 즉시 개입. 저스트글로우 커버리지 확대. 트루엔 성장세 유지. 담백하루 하락 원인 파악.</div>
+    </div>
+    <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
+      <div style="font-weight:700;color:var(--bom);margin-bottom:5px">Bom (김보미)</div>
+      <div style="color:var(--mu);line-height:1.7">마이랩스 약사 확대(현재 소수→10명). 스타팜·탑헬스 안정화. 자사친화약사(삐약·도비) 파트너십.</div>
+    </div>
+    <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
+      <div style="font-weight:700;color:var(--summer);margin-bottom:5px">Summer (이도경)</div>
+      <div style="color:var(--mu);line-height:1.7">유트리션·파이토알엑스 공구 재편성. 드림약사 재합의. 자사 브랜드 4개월 캘린더 수립 주도.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PART 5: 최종 논리 요약 -->
+<div class="sec" style="margin-top:24px"><div class="sec-h" style="border-color:var(--ac2)">PART 5 — 본부장 보고 최종 논리 요약</div></div>
+
+<div style="background:var(--sf2);border-radius:10px;padding:18px;margin-top:12px">
+  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:14px">"자사 매출 급락의 원인과 해결책에 대하여"</div>
+  <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:var(--mu)">
+    <div style="display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;flex-shrink:0;margin-top:2px">1</div>
+      <div><strong style="color:var(--tx)">자사 브랜드 하락의 직접 원인</strong>은 드림약사 유트리션 전용 공구 중단 + 파이토알엑스 고약사 단발 공구 이후 재공구 없음. 이는 <strong style="color:var(--tx)">담당자가 통제할 수 없는 약사의 행동 변화</strong>다.</div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;background:var(--ylw);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#000;flex-shrink:0;margin-top:2px">2</div>
+      <div><strong style="color:var(--tx)">근본 원인</strong>은 자사 브랜드의 특정 약사 의존 구조(유트리션 86.7%), 오메가3 카테고리 포화, 대형약사의 구조적 독립화 트렌드. <strong style="color:var(--tx)">이는 회사 전략 차원의 문제</strong>이며 담당자 교체로 해결되지 않는다.</div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;flex-shrink:0;margin-top:2px">3</div>
+      <div><strong style="color:var(--tx)">업무 이관·재배치의 리스크</strong>: 인수인계 공백 기간에 이탈 조짐을 보이는 약사들과의 관계가 끊기고, H2 성수기 기회를 잃으며, 새 담당자도 같은 구조적 문제에 직면한다. <strong style="color:var(--red)">심각함을 빙자한 더 큰 혼란</strong>이 될 수 있다.</div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;background:var(--grn);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;flex-shrink:0;margin-top:2px">4</div>
+      <div><strong style="color:var(--tx)">올바른 접근</strong>: 팀이 문제를 명확히 인식하고, 구체적 하반기 계획을 수립하여 실행하는 것. 담당자 역량 강화 + 구조적 개선(약사 리텐션·마이랩스 신카테고리·베르베린 집중)을 동시에 추진. <strong style="color:var(--grn)">팀이 이미 준비된 상태임을 이 대시보드가 증명한다.</strong></div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;background:var(--ac);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;flex-shrink:0;margin-top:2px">5</div>
+      <div><strong style="color:var(--tx)">요청사항</strong>: 조직 변경 대신, 팀의 H2 실행계획에 대한 승인과 지원을 요청. 마이랩스 신제품 기획 의사결정, 약사 리텐션 인센티브 구조 설계 등 <strong style="color:var(--tx)">팀 단독으로 결정할 수 없는 사항</strong>에 대한 회사 차원의 방향성 결정이 필요하다.</div>
+    </div>
+  </div>
+</div>
+</div></body></html>
