@@ -9,11 +9,11 @@
 <style>
 :root{--bg:#0f1117;--sf:#1a1d27;--sf2:#22263a;--bd:#2e3248;--ac:#6366f1;--ac2:#22d3ee;--red:#ef4444;--grn:#10b981;--ylw:#f59e0b;--tx:#e2e8f0;--mu:#8892a4;--rua:#22d3ee;--joy:#6366f1;--bom:#10b981;--summer:#f59e0b}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',-apple-system,sans-serif;font-size:14px;line-height:1.65}
+body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',-apple-system,sans-serif;font-size:15px;line-height:1.7}
 .topnav{display:flex;flex-wrap:wrap;background:rgba(15,17,23,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}
-.topnav button{padding:11px 15px;background:none;border:none;border-bottom:2px solid transparent;color:var(--mu);cursor:pointer;font-size:12px;font-weight:600;white-space:nowrap;transition:all .15s}
+.topnav button{padding:11px 15px;background:none;border:none;border-bottom:2px solid transparent;color:var(--mu);cursor:pointer;font-size:13px;font-weight:600;white-space:nowrap;transition:all .15s}
 .topnav button.active,.topnav button:hover{color:var(--ac2);border-color:var(--ac2)}
-.page{display:none;padding:22px 30px 70px}.page.active{display:block}
+.page{display:none;padding:24px 32px 70px}.page.active{display:block}
 .hdr{background:linear-gradient(135deg,#1e1b4b,#0f172a 60%,#0c1a2e);padding:26px 30px 20px;border-bottom:1px solid var(--bd)}
 .hdr .badge{display:inline-block;background:var(--ac);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;margin-bottom:10px}
 .hdr h1{font-size:22px;font-weight:800;margin-bottom:3px}
@@ -21,49 +21,49 @@ body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',-apple-system,s
 .meta{display:flex;gap:18px;flex-wrap:wrap}
 .mi .lbl{font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.06em}
 .mi .val{font-size:13px;font-weight:600;color:var(--ac2)}
-.sec{margin-top:22px}.sec-h{font-size:15px;font-weight:700;border-left:3px solid var(--ac);padding-left:10px;margin-bottom:3px}
-.sec-sub{color:var(--mu);font-size:12px;margin-bottom:9px;padding-left:13px}
+.sec{margin-top:22px}.sec-h{font-size:16px;font-weight:700;border-left:3px solid var(--ac);padding-left:10px;margin-bottom:3px}
+.sec-sub{color:var(--mu);font-size:13px;margin-bottom:9px;padding-left:13px}
 .kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:9px;margin-top:9px}
 .kpi{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:13px}
 .kpi.ac{border-color:var(--ac);background:linear-gradient(135deg,#1e1b4b,var(--sf))}
-.kpi .lbl{font-size:10px;color:var(--mu);text-transform:uppercase;margin-bottom:4px}
-.kpi .num{font-size:18px;font-weight:800;line-height:1}
-.kpi .note{font-size:10px;color:var(--mu);margin-top:3px}
+.kpi .lbl{font-size:11px;color:var(--mu);text-transform:uppercase;margin-bottom:4px}
+.kpi .num{font-size:20px;font-weight:800;line-height:1}
+.kpi .note{font-size:11px;color:var(--mu);margin-top:3px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:11px}
 .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:11px;margin-top:11px}
 .g4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:11px;margin-top:11px}
 .g1{margin-top:11px}
 .card{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:14px}
-.card h3{font-size:12px;font-weight:600;margin-bottom:2px}
-.card .cs{font-size:10px;color:var(--mu);margin-bottom:9px}
+.card h3{font-size:13px;font-weight:600;margin-bottom:2px}
+.card .cs{font-size:11px;color:var(--mu);margin-bottom:9px}
 .tw{overflow-x:auto;margin-top:9px}
 table{width:100%;border-collapse:collapse;font-size:12px}
-th{background:var(--sf2);color:var(--mu);font-size:10px;text-transform:uppercase;padding:7px 9px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
-td{padding:7px 9px;border-bottom:1px solid var(--bd);font-size:12px}
+th{background:var(--sf2);color:var(--mu);font-size:11px;text-transform:uppercase;padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
+td{padding:8px 10px;border-bottom:1px solid var(--bd);font-size:13px}
 tr:last-child td{border-bottom:none}
 tr:hover td{background:rgba(255,255,255,.025)}
 .r{text-align:right;font-variant-numeric:tabular-nums}
 .c{text-align:center}
 .hl{color:var(--ac2);font-weight:600}
 .red{color:var(--red);font-weight:600}.grn{color:var(--grn);font-weight:600}.ylw{color:var(--ylw);font-weight:600}.mu{color:var(--mu)}.fw7{font-weight:700}
-.tag{display:inline-flex;font-size:10px;font-weight:700;padding:2px 6px;border-radius:999px}
+.tag{display:inline-flex;font-size:11px;font-weight:700;padding:2px 6px;border-radius:999px}
 .tag-up{background:rgba(16,185,129,.15);color:var(--grn)}.tag-dn{background:rgba(239,68,68,.15);color:var(--red)}.tag-fl{background:rgba(148,163,184,.1);color:var(--mu)}
 .tag-rua{background:rgba(34,211,238,.15);color:var(--rua)}.tag-joy{background:rgba(99,102,241,.15);color:var(--joy)}.tag-bom{background:rgba(16,185,129,.15);color:var(--bom)}.tag-summer{background:rgba(245,158,11,.15);color:var(--summer)}
 .ins{display:flex;flex-direction:column;gap:8px;margin-top:11px}
 .ib{border-radius:8px;padding:12px 17px;border-left:4px solid;width:100%}
 .ib-red{background:rgba(239,68,68,.07);border-color:var(--red)}.ib-grn{background:rgba(16,185,129,.07);border-color:var(--grn)}.ib-ylw{background:rgba(245,158,11,.07);border-color:var(--ylw)}.ib-ac{background:rgba(99,102,241,.07);border-color:var(--ac)}
-.ib .it{font-weight:700;font-size:12px;margin-bottom:4px}
-.ib p{font-size:12px;color:var(--mu);line-height:1.65}.ib p strong{color:var(--tx)}
+.ib .it{font-weight:700;font-size:13px;margin-bottom:4px}
+.ib p{font-size:13px;color:var(--mu);line-height:1.65}.ib p strong{color:var(--tx)}
 .mgr-card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:16px;position:relative;overflow:hidden}
 .mgr-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%}
 .mgr-rua::before{background:var(--rua)}.mgr-joy::before{background:var(--joy)}.mgr-bom::before{background:var(--bom)}.mgr-summer::before{background:var(--summer)}
-.mgr-name{font-size:15px;font-weight:800;margin-bottom:2px}
-.mgr-total{font-size:24px;font-weight:800;margin:5px 0}
+.mgr-name{font-size:17px;font-weight:800;margin-bottom:2px}
+.mgr-total{font-size:26px;font-weight:800;margin:5px 0}
 .mgr-brands{display:flex;flex-wrap:wrap;gap:5px}
-.brand-chip{font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(255,255,255,.07);color:var(--mu)}
+.brand-chip{font-size:11px;padding:2px 7px;border-radius:999px;background:rgba(255,255,255,.07);color:var(--mu)}
 .hm-table{border-collapse:collapse;font-size:11px;width:100%}
-.hm-table th{background:var(--sf2);color:var(--mu);padding:6px 8px;text-align:left;border:1px solid var(--bd)}
-.hm-table td{padding:5px 7px;border:1px solid var(--bd);text-align:center;font-size:11px}
+.hm-table th{background:var(--sf2);color:var(--mu);padding:7px 9px;text-align:left;border:1px solid var(--bd)}
+.hm-table td{padding:6px 8px;border:1px solid var(--bd);text-align:center;font-size:12px}
 .spark{display:inline-flex;align-items:flex-end;gap:1px;height:22px;width:65px}
 .spark-bar{width:8px;background:var(--ac);border-radius:1px 1px 0 0;min-height:2px}
 .alert-box{background:rgba(239,68,68,.1);border:1px solid var(--red);border-radius:8px;padding:14px;margin-top:9px}
@@ -93,6 +93,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <nav class="topnav">
   <button class="active" onclick="sw('p1',this)">📊 전체 개요</button>
   <button onclick="sw('p2',this)">📈 월별 추이</button>
+  <button onclick="sw('p10',this)">📊 시작일 기준 매출분석</button>
   <button onclick="sw('p3',this)">👥 담당자별</button>
   <button onclick="sw('p4',this)">💊 약사별 분석</button>
   <button onclick="sw('p5',this)">📦 브랜드별</button>
@@ -100,7 +101,6 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <button onclick="sw('p7',this)">🔍 하락 원인 분석</button>
   <button onclick="sw('p8',this)">🚨 긴급 이슈</button>
   <button onclick="sw('p9',this)">✅ 액션 플랜</button>
-  <button onclick="sw('p10',this)">📅 행사시작일 기준</button>
 </nav><div id="p1" class="page active">
 <div class="kpis"><div class="kpi"><div class="lbl">25/12</div><div class="num" style="color:var(--ac2)">62.3억</div><div class="note mu">시작</div></div><div class="kpi"><div class="lbl">26/01</div><div class="num" style="color:var(--ac2)">74.0억</div><div class="note grn">MoM 18.9%</div></div><div class="kpi"><div class="lbl">26/02</div><div class="num" style="color:var(--ac2)">68.6억</div><div class="note red">MoM -7.3%</div></div><div class="kpi"><div class="lbl">26/03</div><div class="num" style="color:var(--ac2)">66.1억</div><div class="note red">MoM -3.7%</div></div><div class="kpi"><div class="lbl">26/04</div><div class="num" style="color:var(--ac2)">71.9억</div><div class="note grn">MoM 8.7%</div></div><div class="kpi"><div class="lbl">26/05</div><div class="num" style="color:var(--ac2)">70.9억</div><div class="note red">MoM -1.4%</div></div></div>
 <div class="g2" style="margin-top:14px">
@@ -544,10 +544,20 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="card g1"><h3>친스 vs 타사 월별 분해</h3><div class="cs">행사 시작일 기준 | 쌓은 막대</div><canvas id="cGpStack" height="130"></canvas></div>
 
 <div class="sec"><div class="sec-h">약사별 행사 시작일 기준 변동성</div><div class="sec-sub">최고점-최저점 차이로 변동성 측정 — 단일 대형 공구 의존도 파악</div></div>
-<div class="card g1"><h3>약사별 행사 시작일 기준 월별 추이 (Top 12)</h3><div class="cs">고약사 Feb 9.4억→Mar 0.7억 등 극단 변동 포착</div><canvas id="cGpPharm" height="160"></canvas></div>
-<div class="card g1" style="margin-top:11px">
-<table><thead><tr><th>#</th><th>약사명</th><th>월별 추이 (12~5월, 억)</th><th class="c">최고월</th><th class="c">최저월</th><th class="r">변동폭</th></tr></thead>
-<tbody><tr><td>1</td><td class="hl">드림약사</td><td class="mu" style="font-size:10px">9.0 8.47 11.2 11.12 6.56 6.01</td><td class="c grn">11.2억</td><td class="c red">6.01억</td><td class="r">5.19억</td></tr><tr><td>2</td><td class="hl">위키약사</td><td class="mu" style="font-size:10px">8.76 8.97 7.35 8.49 8.53 6.68</td><td class="c grn">8.97억</td><td class="c red">6.68억</td><td class="r">2.29억</td></tr><tr><td>3</td><td class="hl">릴리약사</td><td class="mu" style="font-size:10px">5.66 8.25 4.69 6.35 7.67 2.89</td><td class="c grn">8.25억</td><td class="c red">2.89억</td><td class="r">5.36억</td></tr><tr><td>4</td><td class="hl">고약사</td><td class="mu" style="font-size:10px">3.63 5.53 9.43 0.69 5.26 7.43</td><td class="c grn">9.43억</td><td class="c red">0.69억</td><td class="r">8.74억</td></tr><tr><td>5</td><td class="hl">약사비책</td><td class="mu" style="font-size:10px">3.65 4.81 3.14 5.32 3.84 4.98</td><td class="c grn">5.32억</td><td class="c red">3.14억</td><td class="r">2.18억</td></tr><tr><td>6</td><td>유이약사</td><td class="mu" style="font-size:10px">2.57 4.31 2.49 4.42 2.71 3.04</td><td class="c grn">4.42억</td><td class="c red">2.49억</td><td class="r">1.93억</td></tr><tr><td>7</td><td>다식약사</td><td class="mu" style="font-size:10px">1.77 3.63 2.85 2.38 4.08 2.2</td><td class="c grn">4.08억</td><td class="c red">1.77억</td><td class="r">2.31억</td></tr><tr><td>8</td><td>뵤리약사</td><td class="mu" style="font-size:10px">2.53 2.29 2.98 1.0 2.22 1.89</td><td class="c grn">2.98억</td><td class="c red">1.0억</td><td class="r">1.98억</td></tr><tr><td>9</td><td>약사임당</td><td class="mu" style="font-size:10px">1.99 2.54 1.79 2.02 2.49 1.12</td><td class="c grn">2.54억</td><td class="c red">1.12억</td><td class="r">1.42억</td></tr><tr><td>10</td><td>김미성약사</td><td class="mu" style="font-size:10px">2.55 1.78 1.33 1.87 1.88 1.84</td><td class="c grn">2.55억</td><td class="c red">1.33억</td><td class="r">1.22억</td></tr><tr><td>11</td><td>바른약약사</td><td class="mu" style="font-size:10px">0.86 1.88 1.18 1.63 2.67 2.44</td><td class="c grn">2.67억</td><td class="c red">0.86억</td><td class="r">1.81억</td></tr><tr><td>12</td><td>쏘핏약사</td><td class="mu" style="font-size:10px">1.6 1.73 1.94 1.53 1.73 1.74</td><td class="c grn">1.94억</td><td class="c red">1.53억</td><td class="r">0.41억</td></tr></tbody></table></div>
+<div class="sec" style="margin-top:14px"><div class="sec-h">약사별 행사 시작일 기준 월별 매출</div><div class="sec-sub">색 진할수록 매출 높음 | 🟢 테두리=최고점 | 🔴 테두리=최저점</div></div>
+<div style="overflow-x:auto;margin-top:11px">
+<table style="width:100%;border-collapse:collapse">
+<thead><tr>
+  <th style="font-size:12px">#</th>
+  <th style="font-size:12px">약사명</th>
+  <th class="r" style="font-size:12px">합계</th>
+  <th class="c" style="font-size:12px;min-width:60px">25/12</th><th class="c" style="font-size:12px;min-width:60px">26/01</th><th class="c" style="font-size:12px;min-width:60px">26/02</th><th class="c" style="font-size:12px;min-width:60px">26/03</th><th class="c" style="font-size:12px;min-width:60px">26/04</th><th class="c" style="font-size:12px;min-width:60px">26/05</th>
+  <th class="c" style="font-size:12px">추세</th>
+</tr></thead>
+<tbody><tr><td style="font-size:13px;white-space:nowrap">1</td><td style="color:var(--ac2);font-weight:600" style="font-size:13px;white-space:nowrap">드림약사</td><td class="r" style="font-size:13px;font-weight:700">52.36억</td><td style="background:rgba(99,102,241,0.70);color:#fff;text-align:center;font-size:12px">9.0억</td><td style="background:rgba(99,102,241,0.67);color:#fff;text-align:center;font-size:12px">8.47억</td><td style="background:rgba(99,102,241,0.85);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">11.2억</td><td style="background:rgba(99,102,241,0.84);color:#fff;text-align:center;font-size:12px">11.12억</td><td style="background:rgba(99,102,241,0.54);color:#fff;text-align:center;font-size:12px">6.56억</td><td style="background:rgba(99,102,241,0.50);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">6.01억</td><td class="c red" style="font-size:15px;font-weight:700">↓</td></tr><tr><td style="font-size:13px;white-space:nowrap">2</td><td style="color:var(--ac2);font-weight:600" style="font-size:13px;white-space:nowrap">위키약사</td><td class="r" style="font-size:13px;font-weight:700">48.78억</td><td style="background:rgba(99,102,241,0.69);color:#fff;text-align:center;font-size:12px">8.76억</td><td style="background:rgba(99,102,241,0.70);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">8.97억</td><td style="background:rgba(99,102,241,0.59);color:#fff;text-align:center;font-size:12px">7.35억</td><td style="background:rgba(99,102,241,0.67);color:#fff;text-align:center;font-size:12px">8.49억</td><td style="background:rgba(99,102,241,0.67);color:#fff;text-align:center;font-size:12px">8.53억</td><td style="background:rgba(99,102,241,0.55);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">6.68억</td><td class="c mu" style="font-size:15px;font-weight:700">→</td></tr><tr><td style="font-size:13px;white-space:nowrap">3</td><td style="color:var(--ac2);font-weight:600" style="font-size:13px;white-space:nowrap">릴리약사</td><td class="r" style="font-size:13px;font-weight:700">35.51억</td><td style="background:rgba(99,102,241,0.48);color:#fff;text-align:center;font-size:12px">5.66억</td><td style="background:rgba(99,102,241,0.65);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">8.25억</td><td style="background:rgba(99,102,241,0.41);color:#fff;text-align:center;font-size:12px">4.69억</td><td style="background:rgba(99,102,241,0.53);color:#fff;text-align:center;font-size:12px">6.35억</td><td style="background:rgba(99,102,241,0.61);color:#fff;text-align:center;font-size:12px">7.67억</td><td style="background:rgba(99,102,241,0.29);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">2.89억</td><td class="c mu" style="font-size:15px;font-weight:700">→</td></tr><tr><td style="font-size:13px;white-space:nowrap">4</td><td style="color:var(--ac2);font-weight:600" style="font-size:13px;white-space:nowrap">고약사</td><td class="r" style="font-size:13px;font-weight:700">31.97억</td><td style="background:rgba(99,102,241,0.34);color:#fff;text-align:center;font-size:12px">3.63억</td><td style="background:rgba(99,102,241,0.47);color:#fff;text-align:center;font-size:12px">5.53억</td><td style="background:rgba(99,102,241,0.73);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">9.43억</td><td style="background:rgba(99,102,241,0.15);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">0.69억</td><td style="background:rgba(99,102,241,0.45);color:#fff;text-align:center;font-size:12px">5.26억</td><td style="background:rgba(99,102,241,0.60);color:#fff;text-align:center;font-size:12px">7.43억</td><td class="c red" style="font-size:15px;font-weight:700">↓</td></tr><tr><td style="font-size:13px;white-space:nowrap">5</td><td style="color:var(--ac2);font-weight:600" style="font-size:13px;white-space:nowrap">약사비책</td><td class="r" style="font-size:13px;font-weight:700">25.74억</td><td style="background:rgba(99,102,241,0.34);color:#fff;text-align:center;font-size:12px">3.65억</td><td style="background:rgba(99,102,241,0.42);color:#fff;text-align:center;font-size:12px">4.81억</td><td style="background:rgba(99,102,241,0.31);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">3.14억</td><td style="background:rgba(99,102,241,0.46);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">5.32억</td><td style="background:rgba(99,102,241,0.36);color:#fff;text-align:center;font-size:12px">3.84억</td><td style="background:rgba(99,102,241,0.43);color:#fff;text-align:center;font-size:12px">4.98억</td><td class="c grn" style="font-size:15px;font-weight:700">↑</td></tr><tr><td style="font-size:13px;white-space:nowrap">6</td><td style="font-size:13px;white-space:nowrap">유이약사</td><td class="r" style="font-size:13px;font-weight:700">19.54억</td><td style="background:rgba(99,102,241,0.27);color:#fff;text-align:center;font-size:12px">2.57억</td><td style="background:rgba(99,102,241,0.39);color:#fff;text-align:center;font-size:12px">4.31억</td><td style="background:rgba(99,102,241,0.27);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">2.49억</td><td style="background:rgba(99,102,241,0.40);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">4.42억</td><td style="background:rgba(99,102,241,0.28);color:#fff;text-align:center;font-size:12px">2.71억</td><td style="background:rgba(99,102,241,0.30);color:#fff;text-align:center;font-size:12px">3.04억</td><td class="c mu" style="font-size:15px;font-weight:700">→</td></tr><tr><td style="font-size:13px;white-space:nowrap">7</td><td style="font-size:13px;white-space:nowrap">다식약사</td><td class="r" style="font-size:13px;font-weight:700">16.91억</td><td style="background:rgba(99,102,241,0.22);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">1.77억</td><td style="background:rgba(99,102,241,0.34);color:#fff;text-align:center;font-size:12px">3.63억</td><td style="background:rgba(99,102,241,0.29);color:#fff;text-align:center;font-size:12px">2.85억</td><td style="background:rgba(99,102,241,0.26);color:#fff;text-align:center;font-size:12px">2.38억</td><td style="background:rgba(99,102,241,0.37);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">4.08억</td><td style="background:rgba(99,102,241,0.25);color:#fff;text-align:center;font-size:12px">2.2억</td><td class="c mu" style="font-size:15px;font-weight:700">→</td></tr><tr><td style="font-size:13px;white-space:nowrap">8</td><td style="font-size:13px;white-space:nowrap">뵤리약사</td><td class="r" style="font-size:13px;font-weight:700">12.91억</td><td style="background:rgba(99,102,241,0.27);color:#fff;text-align:center;font-size:12px">2.53억</td><td style="background:rgba(99,102,241,0.25);color:#fff;text-align:center;font-size:12px">2.29억</td><td style="background:rgba(99,102,241,0.30);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">2.98억</td><td style="background:rgba(99,102,241,0.17);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">1.0억</td><td style="background:rgba(99,102,241,0.25);color:#fff;text-align:center;font-size:12px">2.22억</td><td style="background:rgba(99,102,241,0.23);color:#fff;text-align:center;font-size:12px">1.89억</td><td class="c red" style="font-size:15px;font-weight:700">↓</td></tr><tr><td style="font-size:13px;white-space:nowrap">9</td><td style="font-size:13px;white-space:nowrap">약사임당</td><td class="r" style="font-size:13px;font-weight:700">11.95억</td><td style="background:rgba(99,102,241,0.23);color:#fff;text-align:center;font-size:12px">1.99억</td><td style="background:rgba(99,102,241,0.27);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">2.54억</td><td style="background:rgba(99,102,241,0.22);color:#fff;text-align:center;font-size:12px">1.79억</td><td style="background:rgba(99,102,241,0.24);color:#fff;text-align:center;font-size:12px">2.02억</td><td style="background:rgba(99,102,241,0.27);color:#fff;text-align:center;font-size:12px">2.49억</td><td style="background:rgba(99,102,241,0.18);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">1.12억</td><td class="c red" style="font-size:15px;font-weight:700">↓</td></tr><tr><td style="font-size:13px;white-space:nowrap">10</td><td style="font-size:13px;white-space:nowrap">김미성약사</td><td class="r" style="font-size:13px;font-weight:700">11.25억</td><td style="background:rgba(99,102,241,0.27);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">2.55억</td><td style="background:rgba(99,102,241,0.22);color:#fff;text-align:center;font-size:12px">1.78억</td><td style="background:rgba(99,102,241,0.19);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">1.33억</td><td style="background:rgba(99,102,241,0.23);color:#fff;text-align:center;font-size:12px">1.87억</td><td style="background:rgba(99,102,241,0.23);color:#fff;text-align:center;font-size:12px">1.88억</td><td style="background:rgba(99,102,241,0.22);color:#fff;text-align:center;font-size:12px">1.84억</td><td class="c mu" style="font-size:15px;font-weight:700">→</td></tr><tr><td style="font-size:13px;white-space:nowrap">11</td><td style="font-size:13px;white-space:nowrap">바른약약사</td><td class="r" style="font-size:13px;font-weight:700">10.66억</td><td style="background:rgba(99,102,241,0.16);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">0.86억</td><td style="background:rgba(99,102,241,0.23);color:#fff;text-align:center;font-size:12px">1.88억</td><td style="background:rgba(99,102,241,0.18);color:#fff;text-align:center;font-size:12px">1.18억</td><td style="background:rgba(99,102,241,0.21);color:#fff;text-align:center;font-size:12px">1.63억</td><td style="background:rgba(99,102,241,0.28);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">2.67억</td><td style="background:rgba(99,102,241,0.26);color:#fff;text-align:center;font-size:12px">2.44억</td><td class="c grn" style="font-size:15px;font-weight:700">↑</td></tr><tr><td style="font-size:13px;white-space:nowrap">12</td><td style="font-size:13px;white-space:nowrap">쏘핏약사</td><td class="r" style="font-size:13px;font-weight:700">10.27억</td><td style="background:rgba(99,102,241,0.21);color:#fff;text-align:center;font-size:12px">1.6억</td><td style="background:rgba(99,102,241,0.22);color:#fff;text-align:center;font-size:12px">1.73억</td><td style="background:rgba(99,102,241,0.23);border:2px solid var(--grn);font-weight:700;color:#fff;text-align:center;font-size:12px">1.94억</td><td style="background:rgba(99,102,241,0.20);border:2px solid var(--red);font-weight:700;color:#fff;text-align:center;font-size:12px">1.53억</td><td style="background:rgba(99,102,241,0.22);color:#fff;text-align:center;font-size:12px">1.73억</td><td style="background:rgba(99,102,241,0.22);color:#fff;text-align:center;font-size:12px">1.74억</td><td class="c mu" style="font-size:15px;font-weight:700">→</td></tr></tbody>
+</table>
+<div style="font-size:11px;color:var(--mu);margin-top:6px">🟢 테두리=최고점 | 🔴 테두리=최저점 | 색 진할수록 매출 높음</div>
+</div>
 
 <div class="ins">
   <div class="ib ib-ylw"><div class="it">⚠️ 전체 총합은 안정적이지만 친스 채널은 3월 -46.8% 실제 급락</div><p>전체 합산은 62~74억으로 안정적이지만, 파마브로스 자체몰(친스) 채널만 보면 <strong>Jan 8.08억→Feb 10.0억→Mar 5.32억</strong>으로 3월에 확실한 급락. <strong>자사 플랫폼 공구 편성이 줄어든 것이 핵심.</strong></p></div>
@@ -629,10 +639,12 @@ new Chart(document.getElementById('cBrandLine'),{type:'line',
   const el1=document.getElementById('cGpCompare');
   if(el1) new Chart(el1,{type:'bar',
     data:{labels:MONTHS,datasets:[
-      {label:'행사시작일 기준',data:GP_TOT,backgroundColor:'rgba(99,102,241,.6)',borderRadius:3,yAxisID:'y',datalabels:{display:false}},
-      {label:'주문일 기준',data:ORD,type:'line',borderColor:'#f59e0b',backgroundColor:'transparent',borderWidth:2,pointRadius:4,yAxisID:'y',tension:.3,datalabels:{display:false}}
+      {label:'행사시작일 기준',data:GP_TOT,backgroundColor:'rgba(99,102,241,.65)',borderRadius:3,yAxisID:'y',
+        datalabels:{display:true,color:'#e2e8f0',font:{size:12,weight:'bold'},anchor:'end',align:'top',formatter:v=>v+'억'}},
+      {label:'주문일 기준',data:ORD,type:'line',borderColor:'#f59e0b',backgroundColor:'transparent',borderWidth:2.5,pointRadius:5,yAxisID:'y',tension:.3,
+        datalabels:{display:true,color:'#f59e0b',font:{size:10,weight:'bold'},anchor:'start',align:'bottom',offset:6,formatter:v=>v+'억'}}
     ]},
-    options:{...CD,scales:{y:{...CD.scales.y,max:85},x:{...CD.scales.x}},plugins:{...CD.plugins,legend:{labels:{color:'#8892a4',boxWidth:9,font:{size:11}}}}}
+    options:{...CD,scales:{y:{...CD.scales.y,max:90},x:{...CD.scales.x}},plugins:{...CD.plugins,legend:{labels:{color:'#8892a4',boxWidth:9,font:{size:12}}}}}
   });
 
   // 친스 channel bar+line
@@ -657,12 +669,7 @@ new Chart(document.getElementById('cBrandLine'),{type:'line',
     options:{...CD,scales:{y:{...CD.scales.y,max:90,stacked:true},x:{...CD.scales.x,stacked:true}},plugins:{...CD.plugins,legend:{labels:{color:'#8892a4',boxWidth:9,font:{size:11}}}}}
   });
 
-  // Pharmacist lines
-  const el4=document.getElementById('cGpPharm');
-  if(el4) new Chart(el4,{type:'line',
-    data:{labels:MONTHS,datasets:[{"label": "\ub4dc\ub9bc\uc57d\uc0ac", "data": [9.0, 8.47, 11.2, 11.12, 6.56, 6.01], "borderColor": "#6366f1", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uc704\ud0a4\uc57d\uc0ac", "data": [8.76, 8.97, 7.35, 8.49, 8.53, 6.68], "borderColor": "#22d3ee", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\ub9b4\ub9ac\uc57d\uc0ac", "data": [5.66, 8.25, 4.69, 6.35, 7.67, 2.89], "borderColor": "#f59e0b", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uace0\uc57d\uc0ac", "data": [3.63, 5.53, 9.43, 0.69, 5.26, 7.43], "borderColor": "#ef4444", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uc57d\uc0ac\ube44\ucc45", "data": [3.65, 4.81, 3.14, 5.32, 3.84, 4.98], "borderColor": "#10b981", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uc720\uc774\uc57d\uc0ac", "data": [2.57, 4.31, 2.49, 4.42, 2.71, 3.04], "borderColor": "#fb923c", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\ub2e4\uc2dd\uc57d\uc0ac", "data": [1.77, 3.63, 2.85, 2.38, 4.08, 2.2], "borderColor": "#a78bfa", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\ubd64\ub9ac\uc57d\uc0ac", "data": [2.53, 2.29, 2.98, 1.0, 2.22, 1.89], "borderColor": "#34d399", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uc57d\uc0ac\uc784\ub2f9", "data": [1.99, 2.54, 1.79, 2.02, 2.49, 1.12], "borderColor": "#fbbf24", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uae40\ubbf8\uc131\uc57d\uc0ac", "data": [2.55, 1.78, 1.33, 1.87, 1.88, 1.84], "borderColor": "#94a3b8", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\ubc14\ub978\uc57d\uc57d\uc0ac", "data": [0.86, 1.88, 1.18, 1.63, 2.67, 2.44], "borderColor": "#818cf8", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uc3d8\ud54f\uc57d\uc0ac", "data": [1.6, 1.73, 1.94, 1.53, 1.73, 1.74], "borderColor": "#4ade80", "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}]},
-    options:{...CD,plugins:{...CD.plugins,legend:{labels:{color:'#8892a4',boxWidth:9,font:{size:10}}},datalabels:{display:false}}}
-  });
+
 })();
 
 function sw(id,btn){
