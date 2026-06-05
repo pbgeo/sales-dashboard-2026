@@ -105,7 +105,110 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="kpis"><div class="kpi"><div class="lbl">25/12</div><div class="num" style="color:var(--ac2)">62.3억</div><div class="note mu">시작</div></div><div class="kpi"><div class="lbl">26/01</div><div class="num" style="color:var(--ac2)">74.0억</div><div class="note grn">MoM 18.9%</div></div><div class="kpi"><div class="lbl">26/02</div><div class="num" style="color:var(--ac2)">68.6억</div><div class="note red">MoM -7.3%</div></div><div class="kpi"><div class="lbl">26/03</div><div class="num" style="color:var(--ac2)">66.1억</div><div class="note red">MoM -3.7%</div></div><div class="kpi"><div class="lbl">26/04</div><div class="num" style="color:var(--ac2)">71.9억</div><div class="note grn">MoM 8.7%</div></div><div class="kpi"><div class="lbl">26/05</div><div class="num" style="color:var(--ac2)">70.9억</div><div class="note red">MoM -1.4%</div></div></div>
 <div class="g2" style="margin-top:14px">
   <div class="card"><h3>월별 매출 추이 (주문일 기준)</h3><div class="cs">막대=총매출(억) | 선=MoM%</div><canvas id="cMonthly" height="160"></canvas></div>
-  <div class="card"><h3>담당자별 매출 비중</h3><div class="cs">QuickSight KPI 기준 (12~6월)</div><canvas id="cMgrPie" height="160"></canvas></div>
+  <div class="card"><div style="background:var(--sf2);border-radius:10px;padding:16px;margin-top:0">
+  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:12px;text-align:center">집계 기준에 따른 월별 매출 차이 — 왜 "3월 급락"처럼 보였나?</div>
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;margin-bottom:8px">
+    <div style="text-align:right;font-size:12px;font-weight:700;color:#ef4444">공구 시작일 기준 (이전 분석)</div>
+    <div></div>
+    <div style="font-size:12px;font-weight:700;color:#22d3ee">주문일 기준 (실제 현금흐름)</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;padding:7px 0;border-bottom:1px solid var(--bd)">
+  <!-- 왼쪽 (이전 분석) -->
+  <div style="display:flex;align-items:center;gap:8px;justify-content:flex-end">
+    <span style="font-size:13px;font-weight:700;color:#ef4444;min-width:38px;text-align:right">40억</span>
+    
+    <div style="width:50px;max-width:140px;height:20px;background:rgba(239,68,68,.6);border-radius:0 3px 3px 0;min-width:4px"></div>
+  </div>
+  <!-- 월 라벨 -->
+  <div style="text-align:center;font-size:13px;font-weight:700;color:var(--mu)">25/12</div>
+  <!-- 오른쪽 (실제) -->
+  <div style="display:flex;align-items:center;gap:8px">
+    <div style="width:100px;max-width:140px;height:20px;background:#22d3ee;border-radius:3px 0 0 3px;min-width:4px"></div>
+    <span style="font-size:13px;font-weight:700;color:#22d3ee;min-width:38px">62.3억</span>
+    
+  </div>
+</div><div style="display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;padding:7px 0;border-bottom:1px solid var(--bd)">
+  <!-- 왼쪽 (이전 분석) -->
+  <div style="display:flex;align-items:center;gap:8px;justify-content:flex-end">
+    <span style="font-size:13px;font-weight:700;color:#ef4444;min-width:38px;text-align:right">83억</span>
+    
+    <div style="width:104px;max-width:140px;height:20px;background:rgba(239,68,68,.6);border-radius:0 3px 3px 0;min-width:4px"></div>
+  </div>
+  <!-- 월 라벨 -->
+  <div style="text-align:center;font-size:13px;font-weight:700;color:var(--mu)">26/01</div>
+  <!-- 오른쪽 (실제) -->
+  <div style="display:flex;align-items:center;gap:8px">
+    <div style="width:120px;max-width:140px;height:20px;background:#22d3ee;border-radius:3px 0 0 3px;min-width:4px"></div>
+    <span style="font-size:13px;font-weight:700;color:#22d3ee;min-width:38px">74.1억</span>
+    
+  </div>
+</div><div style="display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;padding:7px 0;border-bottom:1px solid var(--bd)">
+  <!-- 왼쪽 (이전 분석) -->
+  <div style="display:flex;align-items:center;gap:8px;justify-content:flex-end">
+    <span style="font-size:13px;font-weight:700;color:#ef4444;min-width:38px;text-align:right">95억</span>
+     <span style="color:#ef4444;font-size:12px;font-weight:700">← 피크</span>
+    <div style="width:120px;max-width:140px;height:20px;background:#f59e0b;border-radius:0 3px 3px 0;min-width:4px"></div>
+  </div>
+  <!-- 월 라벨 -->
+  <div style="text-align:center;font-size:13px;font-weight:700;color:var(--mu)">26/02</div>
+  <!-- 오른쪽 (실제) -->
+  <div style="display:flex;align-items:center;gap:8px">
+    <div style="width:111px;max-width:140px;height:20px;background:#22d3ee;border-radius:3px 0 0 3px;min-width:4px"></div>
+    <span style="font-size:13px;font-weight:700;color:#22d3ee;min-width:38px">68.6억</span>
+    
+  </div>
+</div><div style="background:rgba(239,68,68,.05);display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;padding:7px 0;border-bottom:1px solid var(--bd)">
+  <!-- 왼쪽 (이전 분석) -->
+  <div style="display:flex;align-items:center;gap:8px;justify-content:flex-end">
+    <span style="font-size:13px;font-weight:700;color:#ef4444;min-width:38px;text-align:right">43억</span>
+     <span style="color:#ef4444;font-size:12px;font-weight:700">← 급락!</span>
+    <div style="width:54px;max-width:140px;height:20px;background:#ef4444;border-radius:0 3px 3px 0;min-width:4px"></div>
+  </div>
+  <!-- 월 라벨 -->
+  <div style="text-align:center;font-size:13px;font-weight:700;color:var(--mu)">26/03</div>
+  <!-- 오른쪽 (실제) -->
+  <div style="display:flex;align-items:center;gap:8px">
+    <div style="width:107px;max-width:140px;height:20px;background:#10b981;border-radius:3px 0 0 3px;min-width:4px"></div>
+    <span style="font-size:13px;font-weight:700;color:#22d3ee;min-width:38px">66.1억</span>
+     <span style="color:#10b981;font-size:12px;font-weight:700">← 정상!</span>
+  </div>
+</div><div style="display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;padding:7px 0;border-bottom:1px solid var(--bd)">
+  <!-- 왼쪽 (이전 분석) -->
+  <div style="display:flex;align-items:center;gap:8px;justify-content:flex-end">
+    <span style="font-size:13px;font-weight:700;color:#ef4444;min-width:38px;text-align:right">44억</span>
+    
+    <div style="width:55px;max-width:140px;height:20px;background:rgba(239,68,68,.6);border-radius:0 3px 3px 0;min-width:4px"></div>
+  </div>
+  <!-- 월 라벨 -->
+  <div style="text-align:center;font-size:13px;font-weight:700;color:var(--mu)">26/04</div>
+  <!-- 오른쪽 (실제) -->
+  <div style="display:flex;align-items:center;gap:8px">
+    <div style="width:116px;max-width:140px;height:20px;background:#22d3ee;border-radius:3px 0 0 3px;min-width:4px"></div>
+    <span style="font-size:13px;font-weight:700;color:#22d3ee;min-width:38px">71.9억</span>
+    
+  </div>
+</div><div style="display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;padding:7px 0;border-bottom:1px solid var(--bd)">
+  <!-- 왼쪽 (이전 분석) -->
+  <div style="display:flex;align-items:center;gap:8px;justify-content:flex-end">
+    <span style="font-size:13px;font-weight:700;color:#ef4444;min-width:38px;text-align:right">57억</span>
+    
+    <div style="width:72px;max-width:140px;height:20px;background:rgba(239,68,68,.6);border-radius:0 3px 3px 0;min-width:4px"></div>
+  </div>
+  <!-- 월 라벨 -->
+  <div style="text-align:center;font-size:13px;font-weight:700;color:var(--mu)">26/05</div>
+  <!-- 오른쪽 (실제) -->
+  <div style="display:flex;align-items:center;gap:8px">
+    <div style="width:114px;max-width:140px;height:20px;background:#22d3ee;border-radius:3px 0 0 3px;min-width:4px"></div>
+    <span style="font-size:13px;font-weight:700;color:#22d3ee;min-width:38px">70.9억</span>
+    
+  </div>
+</div>
+  <div style="margin-top:10px;display:grid;grid-template-columns:1fr 60px 1fr;gap:8px">
+    <div style="font-size:11px;color:var(--mu);text-align:right">설 연휴 공구가 1~2월에 집중 시작되어, 해당 공구의 <strong style="color:var(--tx)">전체 매출이 시작월에 일괄 귀속됨</strong>. 3~4월에 새 공구 시작이 적어 수치가 급감한 것처럼 보임.</div>
+    <div></div>
+    <div style="font-size:11px;color:var(--mu)">고객이 <strong style="color:var(--tx)">실제 결제한 날짜</strong>를 기준으로 집계. 어떤 공구의 주문이든 결제가 발생한 달에 귀속. 62~74억 사이로 <strong style="color:var(--tx)">매우 안정적인 패턴</strong>을 보임.</div>
+  </div>
+</div></div>
 </div>
 <div class="compare-box">
   <div class="compare-title">📊 집계 기준에 따른 월별 매출 차이 — 왜 "3월 급락"처럼 보였나?</div>
@@ -585,10 +688,7 @@ function barLine(id){
 }
 barLine('cMonthly'); barLine('cM2');
 
-new Chart(document.getElementById('cMgrPie'),{type:'doughnut',
-  data:{labels:["Rua(\uc724\ud6a8\uc815)", "Joy(\ucd5c\uc120\ud654)", "Bom(\uae40\ubcf4\ubbf8)", "Summer(\uc774\ub3c4\uacbd)"],datasets:[{data:[130.77, 115.34, 96.82, 80.6],backgroundColor:['rgba(34,211,238,.85)','rgba(99,102,241,.85)','rgba(16,185,129,.85)','rgba(245,158,11,.85)'],borderColor:'#1a1d27',borderWidth:2}]},
-  options:{plugins:{legend:{position:'bottom',labels:{color:'#8892a4',boxWidth:9,font:{size:11}}},datalabels:{display:true,formatter:(v,ctx)=>ctx.chart.data.labels[ctx.dataIndex].split('(')[0]+'\n'+v+'억',color:'#e2e8f0',font:{size:10,weight:'bold'},textAlign:'center'}}}
-});
+
 
 new Chart(document.getElementById('cPhM'),{type:'line',data:{labels:MONTHS,datasets:[{"label": "\ub4dc\ub9bc\uc57d\uc0ac", "data": [8.37, 10.38, 9.9, 12.32, 5.56, 7.54], "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uc704\ud0a4\uc57d\uc0ac", "data": [8.34, 9.22, 7.45, 8.46, 8.58, 7.16], "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\ub9b4\ub9ac\uc57d\uc0ac", "data": [6.51, 6.93, 6.22, 5.59, 7.97, 3.58], "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uace0\uc57d\uc0ac", "data": [4.36, 4.46, 10.15, 1.01, 3.92, 8.88], "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}, {"label": "\uc57d\uc0ac\ube44\ucc45", "data": [3.63, 4.74, 3.06, 5.39, 4.07, 5.1], "tension": 0.3, "fill": false, "borderWidth": 2, "pointRadius": 3}]},
   options:{...CD,plugins:{...CD.plugins,legend:{labels:{color:'#8892a4',boxWidth:9,font:{size:11}}},datalabels:{display:false}}}
