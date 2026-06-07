@@ -11,7 +11,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',-apple-system,sans-serif;font-size:15px;line-height:1.7}
 .topnav{display:flex;flex-wrap:wrap;background:rgba(15,17,23,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}
-.topnav button{padding:11px 15px;background:none;border:none;border-bottom:2px solid transparent;color:var(--mu);cursor:pointer;font-size:13px;font-weight:600;white-space:nowrap;transition:all .15s}
+.topnav button{padding:11px 15px;background:none;border:none;border-bottom:2px solid transparent;color:var(--mu);cursor:pointer;font-size:14px;font-weight:600;white-space:nowrap;transition:all .15s}
 .topnav button.active,.topnav button:hover{color:var(--ac2);border-color:var(--ac2)}
 .page{display:none;padding:24px 32px 70px}.page.active{display:block}
 .hdr{background:linear-gradient(135deg,#1e1b4b,#0f172a 60%,#0c1a2e);padding:26px 32px 20px;border-bottom:1px solid var(--bd)}
@@ -21,8 +21,8 @@ body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',-apple-system,s
 .meta{display:flex;gap:20px;flex-wrap:wrap}
 .mi .lbl{font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.06em}
 .mi .val{font-size:13px;font-weight:600;color:var(--ac2)}
-.sec{margin-top:22px}.sec-h{font-size:16px;font-weight:700;border-left:3px solid var(--ac);padding-left:10px;margin-bottom:3px}
-.sec-sub{color:var(--mu);font-size:13px;margin-bottom:10px;padding-left:13px}
+.sec{margin-top:22px}.sec-h{font-size:18px;font-weight:700;border-left:3px solid var(--ac);padding-left:10px;margin-bottom:3px}
+.sec-sub{color:var(--mu);font-size:14px;margin-bottom:10px;padding-left:13px}
 .kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:10px}
 .kpi{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:13px}
 .kpi.red{border-color:var(--red);background:rgba(239,68,68,.07)}.kpi.grn{border-color:var(--grn);background:rgba(16,185,129,.07)}
@@ -34,11 +34,11 @@ body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',-apple-system,s
 .g4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-top:12px}
 .g1{margin-top:12px}
 .card{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:14px}
-.card h3{font-size:13px;font-weight:600;margin-bottom:2px}.card .cs{font-size:11px;color:var(--mu);margin-bottom:10px}
+.card h3{font-size:15px;font-weight:600;margin-bottom:2px}.card .cs{font-size:12px;color:var(--mu);margin-bottom:10px}
 .tw{overflow-x:auto;margin-top:10px}
 table{width:100%;border-collapse:collapse;font-size:13px}
-th{background:var(--sf2);color:var(--mu);font-size:11px;text-transform:uppercase;padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
-td{padding:8px 10px;border-bottom:1px solid var(--bd);font-size:13px}
+th{background:var(--sf2);color:var(--mu);font-size:12px;text-transform:uppercase;padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
+td{padding:8px 10px;border-bottom:1px solid var(--bd);font-size:14px}
 tr:last-child td{border-bottom:none}
 tr:hover td{background:rgba(255,255,255,.025)}
 .r{text-align:right;font-variant-numeric:tabular-nums}.c{text-align:center}
@@ -50,10 +50,10 @@ tr:hover td{background:rgba(255,255,255,.025)}
 .ib{border-radius:8px;padding:12px 17px;border-left:4px solid;width:100%}
 .ib-red{background:rgba(239,68,68,.07);border-color:var(--red)}.ib-grn{background:rgba(16,185,129,.07);border-color:var(--grn)}
 .ib-ylw{background:rgba(245,158,11,.07);border-color:var(--ylw)}.ib-ac{background:rgba(99,102,241,.07);border-color:var(--ac)}
-.ib .it{font-weight:700;font-size:13px;margin-bottom:4px}
-.ib p{font-size:13px;color:var(--mu);line-height:1.7}.ib p strong{color:var(--tx)}
-.pb-bar{background:rgba(245,158,11,.75);border-radius:2px 0 0 2px;max-width:90px}
-.ext-bar{background:rgba(99,102,241,.45);border-radius:0 2px 2px 0;max-width:220px}
+.ib .it{font-weight:700;font-size:14px;margin-bottom:4px}
+.ib p{font-size:14px;color:var(--mu);line-height:1.7}.ib p strong{color:var(--tx)}
+.pb-bar{background:rgba(245,158,11,.75);border-radius:2px 0 0 2px}
+.ext-bar{background:rgba(99,102,241,.45);border-radius:0 2px 2px 0}
 hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 @media(max-width:900px){.g2,.g3,.g4{grid-template-columns:1fr}.page{padding:16px 14px 60px}}
 </style>
@@ -437,7 +437,6 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
   </div>
 </div>
-</div>
 <div class="card g1" style="border-color:rgba(245,158,11,.4);margin-top:12px">
   <div style="font-size:14px;font-weight:700;color:var(--ylw);margin-bottom:12px">⚖️ 오메가3 전략적 딜레마 — 신제품 개발이 올바른 방향인가?</div>
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:13px">
@@ -515,6 +514,46 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div class="ib ib-red"><div class="it">⚠️ 담백하루 -17.7% 하락 중 — TOP1 파트너 약세 주시 필요</div><p>담백하루(56.6억)는 최대 외부 파트너이나 Dec→May -17.7% 감소세. 5월 7.34억은 1월(11.39억) 대비 -35.5%. <strong>두 번째 파트너(트루엔)와의 격차 좁혀지는 중.</strong></p></div>
 </div>
 
+<div class="sec"><div class="sec-h">📉 급락 브랜드 원인 분석 — 더리틀스 · 파마셀렉션/더좋은</div>
+<div class="sec-sub">Dec 2025 → May 2026 | 외부 파트너 내 이상 하락 감지 브랜드</div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:8px">
+  <div class="card" style="border-left:4px solid var(--red)">
+    <h3>더리틀스</h3>
+    <div class="cs">외부 파트너 브랜드 | 6개월 연속 하락</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;font-size:13px;text-align:center">
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">Dec</div><div style="font-weight:700;color:var(--tx)">3.44억</div></div>
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">Mar</div><div style="font-weight:700;color:var(--ylw)">2.41억</div></div>
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">May</div><div style="font-weight:700;color:var(--red)">1.86억</div></div>
+    </div>
+    <div style="font-size:13px;color:var(--red);font-weight:700;margin-bottom:10px">▼ -46% (6개월)</div>
+    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+      <strong style="color:var(--tx)">추정 원인</strong><br>
+      • 단일 카테고리 집중 — 반복 구매 유도 한계<br>
+      • 신규 고객 유입 둔화, 라이브커머스 포화<br>
+      • 경쟁 브랜드 대비 차별화 포인트 희석<br><br>
+      <strong style="color:var(--tx)">대응 방향</strong><br>
+      추가 하락 시 파트너 비중 조정 검토
+    </div>
+  </div>
+  <div class="card" style="border-left:4px solid var(--red)">
+    <h3>파마셀렉션 / 더좋은</h3>
+    <div class="cs">외부 파트너 브랜드 | 급격한 매출 하락</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;font-size:13px;text-align:center">
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">Dec</div><div style="font-weight:700;color:var(--tx)">3.23억</div></div>
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">Mar</div><div style="font-weight:700;color:var(--ylw)">2.10억</div></div>
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">May</div><div style="font-weight:700;color:var(--red)">1.27억</div></div>
+    </div>
+    <div style="font-size:13px;color:var(--red);font-weight:700;margin-bottom:10px">▼ -61% (6개월)</div>
+    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+      <strong style="color:var(--tx)">추정 원인</strong><br>
+      • 약국/타채널 가격 충돌 — 소비자 대기 심리 형성<br>
+      • 브랜드 인지도 상승 전 공동구매 의존 → 구매 반복율 저하<br>
+      • 일회성 건강기능식품 성격으로 재구매 전환 어려움<br><br>
+      <strong style="color:var(--tx)">대응 방향</strong><br>
+      5개월 연속 하락. 계약 연장 시 매출 기여도 재평가 필요
+    </div>
+  </div>
+</div>
 <div class="sec"><div class="sec-h">외부 파트너 성장 협력 — 에이전시 차원 솔루션 탐색</div>
 <div class="sec-sub">위기 파악 이후 — 파트너사와 함께 성장할 수 있는 구조 제안</div></div>
 <div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.3);border-radius:10px;padding:16px;margin-top:12px">
@@ -522,7 +561,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
     <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">📦 공동 기획 행사</div><div style="color:var(--mu);line-height:1.75">시즌별 공동 프로모션(설·추석·건강의 날). 파트너사 신제품을 파마브로스 약사 그룹에 우선 론칭하는 "신제품 론칭 패키지" 제안. 파마브로스 채널을 경유할 인센티브 구조 설계.</div></div>
     <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">📊 데이터 기반 파트너 지원</div><div style="color:var(--mu);line-height:1.75">약사별 팔로워 특성·구매 데이터를 파트너사에 제공. "이 제품은 이런 약사 팔로워층에 맞는다"는 매칭 분석으로 파트너사가 더 효과적인 공구 기획 가능. 데이터를 플랫폼 경쟁력으로 활용.</div></div>
-    <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">💰 성과 연동 수수료 구조</div><div style="color:var(--mu);line-height:1.75">파트너사 매출 성장 시 수수료 인하 제안. 파트너사가 파마브로스 채널에 우선 배포할 이유를 만들어야 함. 장기 파트너에게 더 좋은 조건을 제공하는 계층화된 수수료 구조.</div></div>
+    <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">💰 성과 연동 수수료 구조</div><div style="color:var(--mu);line-height:1.75">파마브로스 채널을 통해 장기 파트너와 협업. 신제품 정보 우선 공유 및 프로모션 참여 기회 제공으로 관계 강화.</div></div>
     <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🎓 약사 교육 콘텐츠 공동 제작</div><div style="color:var(--mu);line-height:1.75">파트너사 제품 성분·효능 교육 콘텐츠를 파마브로스가 제작 지원. 약사 추천 자신감 향상 → 공구 전환율 증가. 파트너사는 콘텐츠 비용 절감, 파마브로스는 약사 플랫폼 가치 상승.</div></div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--mu);background:rgba(245,158,11,.07);border-radius:6px;padding:10px;border-left:3px solid var(--ylw)">⚠️ <strong style="color:var(--ylw)">탐색 과제</strong>: 위 방안들은 파트너사 계약 구조·수익 배분에 따라 실행 가능성이 달라짐. 담백하루·트루엔·저스트글로우 TOP3 파트너사부터 파일럿 협의 권장.</div>
@@ -577,7 +616,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
 </div>
 
-<div class="sec"><div class="sec-h">🔴 릴리약사 집중 케어 — 즉시 개입 필요</div>
+<div class="sec"><div class="sec-h">🔴 릴리약사 집중 케어 — 하락세 모니터링</div>
 <div class="sec-sub">1월 6.93억 → 5월 3.58억 (-48.3%) | 6개월 연속 하락세</div></div>
 
 <div class="card g1" style="border-color:rgba(239,68,68,.4)">
@@ -604,21 +643,17 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
       </div>
     </div>
     <div>
-      <div style="font-size:13px;font-weight:700;color:var(--grn);margin-bottom:8px">🎯 즉시 개입 계획</div>
+      <div style="font-size:13px;font-weight:700;color:var(--grn);margin-bottom:8px">💬 케어 방안</div>
       <div style="font-size:12px;color:var(--mu);line-height:1.8">
-        <strong style="color:var(--tx)">단기(1-2주)</strong>:<br>
-        • 저스트글로우 독점 참여 제안 (현재 릴리약사 미진행)<br>
-        • 한독헬스케어 정기 편성 (이미 2.95억 + 성장세)<br><br>
-        <strong style="color:var(--tx)">중기(1개월)</strong>:<br>
-        • 마이랩스 베르베린 독점 이벤트로 화제성 확보<br>
-        • 담백하루 의존에서 3-4개 브랜드 교차 편성<br><br>
-        <strong style="color:var(--red)">방치 시</strong>: 6월 3억 미만 예상, Top3 이탈 가능
+        <strong style="color:var(--tx)">모니터링</strong>: 담백하루 브랜드 하락세가 릴리약사 매출과 직결. 월별 추이 주시.<br><br>
+        <strong style="color:var(--tx)">소통</strong>: 릴리약사 팔로워 특성에 맞는 브랜드 정보 자료 정기 공유.<br><br>
+        <strong style="color:var(--tx)">지원</strong>: 한독헬스케어 성과 데이터 리뷰 지속. 신규 브랜드 관심 표현 시 선택지 안내.
       </div>
     </div>
   </div>
 </div>
 <div class="sec"><div class="sec-h">주요 약사별 상세 분석</div></div>
-<div style="display:flex;flex-direction:column;gap:10px;margin-top:10px"><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">드림약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">54.07억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기+급락</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">3월 12.3억→4월 5.6억 급락. 유트리션 95% 담당자. 이탈 조짐 감지. 파트너십 강화보다 유트리션 분산(유니·샤인 섭외·협의)이 우선.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--ac2);margin-bottom:4px">전략 방향</div><div style="font-size:12px;color:var(--mu);line-height:1.7">드림의존에서 벗어나 유니·샤인·약사피셜에 유트리션 교차 참여 제안.</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">위키약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">49.20억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">8~9억대 안정 유지 중이나 이탈 조짐. 담백하루·뉴트리션스탠다드 주력. 이탈 시 49억 즉시 손실.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--ac2);margin-bottom:4px">전략 방향</div><div style="font-size:12px;color:var(--mu);line-height:1.7">파트너십 계약화 시도. 실패 시 자사친화 약사로 대체 편성 준비.</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">릴리약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">36.80억</div><div style="font-size:12px;font-weight:700;color:var(--red)">🔴 즉시 개입</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">Jan 6.93억→May 3.58억(-48.3%). 담백하루 하락과 동반 하락. 4월 반짝 후 5월 최저점.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--ac2);margin-bottom:4px">전략 방향</div><div style="font-size:12px;color:var(--mu);line-height:1.7">저스트글로우·한독 신규 파트너 섭외. 1주 내 컨택.</div></div></div></div><div class="card" style="border-left:4px solid var(--ylw)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">고약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">32.80억</div><div style="font-size:12px;font-weight:700;color:var(--ylw)">⚠️ 극단 변동</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">2월 9.4억→3월 0.7억→5월 7.4억. 파이토알엑스 단발 대형 공구 패턴 반복.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--ac2);margin-bottom:4px">전략 방향</div><div style="font-size:12px;color:var(--mu);line-height:1.7">파이토알엑스 4개월 정기화 계약. 단발→분기 2회.</div></div></div></div><div class="card" style="border-left:4px solid var(--grn)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">약사비책</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">26.00억</div><div style="font-size:12px;font-weight:700;color:var(--grn)">✅ 안정 성장</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">5월 5억 최고점. YDY+일동 교차 안정적. 취소율 6.4% 다소 높음.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--ac2);margin-bottom:4px">전략 방향</div><div style="font-size:12px;color:var(--mu);line-height:1.7">자사 성장 파트너로 분류. 파이토알엑스 추가 참여 제안 검토.</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">유이약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">19.83억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">안정적이나 이탈 조짐. 자사브랜드 비중 0% — 외부 파트너만 운영.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--ac2);margin-bottom:4px">전략 방향</div><div style="font-size:12px;color:var(--mu);line-height:1.7">이탈 방어 어려움. 자사친화 약사(삐약·유니)로 매출 대체 준비.</div></div></div></div></div>
+<div style="display:flex;flex-direction:column;gap:10px;margin-top:10px"><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">드림약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">54.07억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기+급락</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">3월 12.3억→4월 5.6억 급락. 유트리션 95% 담당자. 이탈 조짐 감지. 파트너십 강화보다 유트리션 분산(유니·샤인 섭외·협의)이 우선.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-54억</span> (-13.1%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">-15.65억</span> (유트리션 86.7%)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">위키약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">49.20억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">8~9억대 안정 유지 중이나 이탈 조짐. 담백하루·뉴트리션스탠다드 주력. 이탈 시 49억 즉시 손실.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-49억</span> (-11.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--mu)">영향 미미</span> (외부 브랜드 주력)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">릴리약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">36.80억</div><div style="font-size:12px;font-weight:700;color:var(--red)">🔴 즉시 개입</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">Jan 6.93억→May 3.58억(-48.3%). 담백하루 하락과 동반 하락. 4월 반짝 후 5월 최저점.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-36.8억</span> (-8.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">-6.4억</span> (YDY 2.7억 + 파이토알엑스 3.7억)</div></div></div></div><div class="card" style="border-left:4px solid var(--ylw)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">고약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">32.80억</div><div style="font-size:12px;font-weight:700;color:var(--ylw)">⚠️ 극단 변동</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">2월 9.4억→3월 0.7억→5월 7.4억. 파이토알엑스 단발 대형 공구 패턴 반복.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-32.8억</span> (-7.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">파이토알엑스 기여분</span> (대형 단발 공구 주도)</div></div></div></div><div class="card" style="border-left:4px solid var(--grn)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">약사비책</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">26.00억</div><div style="font-size:12px;font-weight:700;color:var(--grn)">✅ 안정 성장</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">5월 5억 최고점. YDY+일동 교차 안정적. 취소율 6.4% 다소 높음.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-26억</span> (-6.3%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">YDY 기여분</span> (YDY·일동 교차 운영)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">유이약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">19.83억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">안정적이나 이탈 조짐. 자사브랜드 비중 0% — 외부 파트너만 운영.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-19.8억</span> (-4.8%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--mu)">영향 없음</span> (자사 비중 0%)</div></div></div></div></div>
 
 <div class="sec"><div class="sec-h">✅ 자사 친화 약사 — 파트너십 재편의 핵심</div>
 <div class="sec-sub">소규모지만 자사 브랜드 친화도 높고 성장세 | 이들이 파트너십 개편의 핵심</div></div>
@@ -721,11 +756,11 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
     </div>
   </div>
 
-  <div class="card" style="border-left:4px solid #f59e0b">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🔒 약사 리텐션 방안 3 — 성과 연동 수수료/혜택 구조</div>
+  <div class="card" style="border-left:4px solid #10b981">
+    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🎁 약사 리텐션 방안 3 — 장기 파트너 이벤트·프로모션 우선 제공</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
-      <div><strong style="color:var(--tx)">내용</strong><br>자사 브랜드 매출 누적 기여도에 따라 수수료 인하 or 마진 상향. 파마브로스에서 오래, 많이 팔수록 실질적으로 이익이 되는 구조 설계.</div>
-      <div><strong style="color:var(--tx)">기대 효과</strong><br>• 이탈 시 기존 혜택 소실 → 이탈 비용 발생<br>• 장기 파트너일수록 더 좋은 조건<br>• 독립 브랜드 대비 파마브로스의 경쟁력 확보</div>
+      <div><strong style="color:var(--tx)">내용</strong><br>파마브로스와 오래 함께한 약사에게 신제품 출시 정보·프로모션 기회를 우선 안내. 수수료 조정 없이, 정보 공유와 이벤트 참여 기회로 자연스러운 관계 강화.</div>
+      <div><strong style="color:var(--tx)">기대 효과</strong><br>• 장기 파트너의 체감 가치 증가<br>• 단발이 아닌 지속 소통 채널 형성<br>• 구조 변경 없이 파트너 관계 유지</div>
     </div>
   </div>
 </div>
@@ -848,179 +883,18 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
-    <span class="red fw7">🔴 즉시</span>
-    <span style="font-size:14px;font-weight:600">릴리약사 즉시 신규 파트너 개입 — 하락 반전</span>
-    <span><span class="tag tag-ext">파트너 확장</span></span>
-    <span class="mu">Joy</span>
-    <span class="grn fw7">5월 3.58억→반전</span>
-    <span class="acc-arrow">▼</span>
-  </div>
-  <div class="acc-body">
-    <strong style="color:var(--red)">왜 즉시인가</strong>: 릴리약사는 Jan→May -48.3%로 Top3 약사 중 가장 심각한 하락. 방치 시 6월 3억 미만, Top3 이탈 가능. 담백하루 자체 하락세와 동반하락 구조.
-    <div class="detail-grid">
-      <div class="detail-box">
-        <strong style="color:var(--tx)">실행 (1주 내)</strong><br>
-        • Joy 담당자가 릴리약사 직접 컨택 후 저스트글로우 참여 제안<br>
-        • 한독헬스케어 테라큐민 교차 제안 (이미 2.95억 진행 경험)<br>
-        • 첫 공구: 저스트글로우 NMN or 베르베린 독점 이벤트로 화제성<br>
-        • 기존 담백하루는 유지, 2개 신규 추가 교차 편성
-      </div>
-      <div class="detail-box">
-        <strong style="color:var(--tx)">성공 지표 & 대응</strong><br>
-        • KPI: 6월 4억 이상, 8월 6억 회복<br>
-        • 릴리약사는 Top3 — 이탈 시 -36.8억 손실<br>
-        • 릴리약사 팔로워 특성 파악 후 성분 맞춤 제안<br>
-        • 실패 시: 삐약·샤인약사로 해당 브랜드 분산
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="acc-item">
-  <div class="acc-hdr" onclick="tAcc(this)">
-    <span class="red fw7">🔴 즉시</span>
-    <span style="font-size:14px;font-weight:600">유트리션 드림의존 분산 — 유니·샤인약사 참여 제안</span>
-    <span><span class="tag tag-pb">의존 분산</span></span>
-    <span class="mu">Summer</span>
-    <span class="grn fw7">이탈리스크 헷지</span>
-    <span class="acc-arrow">▼</span>
-  </div>
-  <div class="acc-body">
-    <strong style="color:var(--red)">왜 즉시인가</strong>: 유트리션의 86.7%가 드림약사 단독. 드림약사 이탈 조짐 감지 — 이탈 시 유트리션 브랜드 소멸 수준. 지금 당장 분산하지 않으면 대응 불가.
-    <div class="detail-grid">
-      <div class="detail-box">
-        <strong style="color:var(--tx)">실행 (1주 내)</strong><br>
-        • 유니약사: 유트리션 알래스카 오메가3 참여 제안 (자사비중 이미 17.9%로 친화적)<br>
-        • 샤인약사: 유트리션 미니 공구 참여 제안 (자사비중 16.2%, 성장세)<br>
-        • 드림약사: 기존 공구 유지하되 독점 계약 해제<br>
-        • 목표: 드림의존도 86.7% → 60% 이하로 낮추기
-      </div>
-      <div class="detail-box">
-        <strong style="color:var(--tx)">기대 효과</strong><br>
-        • 드림이탈 시 유트리션 손실: 현 15.65억 → 5억 수준으로 방어<br>
-        • 유니+샤인 유트리션 합산 목표: 월 4억<br>
-        • 이 구조가 안착되면 박약다식·파이토알엑스에도 동일 적용
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="acc-item">
-  <div class="acc-hdr" onclick="tAcc(this)">
-    <span class="red fw7">🔴 즉시</span>
-    <span style="font-size:14px;font-weight:600">자사친화 7명 공식 파트너 계약화 — 파트너십 재편의 출발</span>
-    <span><span class="tag tag-pb">파트너십</span></span>
-    <span class="mu">전체</span>
-    <span class="grn fw7">이탈리스크 완충</span>
-    <span class="acc-arrow">▼</span>
-  </div>
-  <div class="acc-body">
-    <strong style="color:var(--grn)">왜 이들인가</strong>: 삐약·유니·샤인·다식·도비·약사피셜·자신약사 — 이미 자사 브랜드를 자발적으로 운영 중. 강요 불필요. 계약화 수용 가능성 높음.
-    <div class="detail-grid">
-      <div class="detail-box">
-        <strong style="color:var(--tx)">파트너 계약 내용</strong><br>
-        • 자사 브랜드 4개월 주기 정기 공구 약속<br>
-        • 신제품 우선 배정권 + 독점 이벤트 제공<br>
-        • 분기 1회 파마브로스 팀과 전략 미팅<br>
-        • 매출 연동 인센티브(기존 대비 20% 성장 시 추가 혜택)
-      </div>
-      <div class="detail-box">
-        <strong style="color:var(--tx)">기대 효과</strong><br>
-        • 7명 합산 현재 52억 → 집중 지원 시 80억+ (연 +30억)<br>
-        • Top3 이탈 시 완충: 123억 손실의 20~30% 흡수<br>
-        • 자사 브랜드 점유율 현 10.8% → 15% 달성<br>
-        • 파트너십 구조의 분산으로 단일 이탈 충격 최소화
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="acc-item">
-  <div class="acc-hdr" onclick="tAcc(this)">
-    <span class="ylw fw7">🟡 단기</span>
-    <span style="font-size:14px;font-weight:600">베르베린/혈당 카테고리 전담 약사 그룹 구성</span>
-    <span><span style="background:rgba(34,211,238,.15);color:var(--ac2)" class="tag">카테고리</span></span>
-    <span class="mu">Rua+Joy+Bom</span>
-    <span class="grn fw7">월 +3억</span>
-    <span class="acc-arrow">▼</span>
-  </div>
-  <div class="acc-body">
-    이미 YDY+저스트글로우+마이랩스 합산 18.7억 검증. 베르베린 시장은 연 20~30% 성장 예상. 카테고리 선점이 핵심.
-    <div class="detail-grid">
-      <div class="detail-box"><strong style="color:var(--tx)">실행</strong><br>• 5명 전담 약사 그룹: 삐약·유니·샤인·약사비책·고약사<br>• 월 1회 3개 브랜드 순환(YDY→저스트글로우→마이랩스)<br>• 혈당/인슐린/다이어트/PCOS별 메시지 차별화<br>• 베르베린 표준 교육 가이드 제작</div>
-      <div class="detail-box"><strong style="color:var(--tx)">KPI</strong><br>• 베르베린 카테고리 월 8억 달성(현 4~5억)<br>• 전담 약사 1인당 베르베린 매출 1억+<br>• 리스크: 식약처 표현 제한 → 성분 기반 교육으로 대응</div>
-    </div>
-  </div>
-</div>
-
-<div class="acc-item">
-  <div class="acc-hdr" onclick="tAcc(this)">
-    <span class="ylw fw7">🟡 단기</span>
-    <span style="font-size:14px;font-weight:600">파이토알엑스 고약사·삐약약사 4개월 교차 편성 정기화</span>
-    <span><span class="tag tag-pb">정기화</span></span>
-    <span class="mu">Summer</span>
-    <span class="grn fw7">월 2억 안정</span>
-    <span class="acc-arrow">▼</span>
-  </div>
-  <div class="acc-body">
-    파이토알엑스 현재 May 0.38억으로 사실상 소멸. 고약사 2월 단발 대형 공구 이후 재공구 없음. 삐약약사(자사비중 18.8%)로 교차 편성하면 안정화 가능.
-    <div class="detail-grid">
-      <div class="detail-box"><strong style="color:var(--tx)">실행</strong><br>• 고약사(0월): 파이토알엑스 트룰리 알티지 오메가 1100 대형 공구<br>• 삐약약사(+2개월): 파이토알엑스 이뮨 빌베리 공구<br>• 자신약사(+4개월): 파이토알엑스 트리플 빌베리<br>• 3명 교차로 매달 1회 꾸준히 진행</div>
-      <div class="detail-box"><strong style="color:var(--tx)">기대</strong><br>• 파이토알엑스 월 2억 안정화 (현재 0.38억)<br>• 삐약약사 파이토알엑스 주력 약사로 육성<br>• 연 +19억 효과</div>
-    </div>
-  </div>
-</div>
-
-<div class="acc-item">
-  <div class="acc-hdr" onclick="tAcc(this)">
-    <span class="ylw fw7">🟡 단기</span>
-    <span style="font-size:14px;font-weight:600">담백하루 하락(-17.7%) 대응 — 릴리약사 외 약사 커버리지 확대</span>
-    <span><span class="tag tag-ext">리스크 관리</span></span>
-    <span class="mu">Joy</span>
-    <span class="grn fw7">TOP1 파트너 방어</span>
-    <span class="acc-arrow">▼</span>
-  </div>
-  <div class="acc-body">
-    담백하루는 56.6억 최대 외부 파트너이나 Dec→May -17.7% 하락세. 릴리약사(주력)도 동반 하락. 담백하루 매출 구조 재검토 필요.
-    <div class="detail-grid">
-      <div class="detail-box"><strong style="color:var(--tx)">원인 파악 필요</strong><br>• 담백하루 특정 제품(알래스카 알티지 에센스 1000) 집중 → 해당 제품 소진 후 재공구 없음인지 확인<br>• 릴리약사 외 담백하루 운영 약사 현황 파악<br>• 담백하루 파트너사와 신제품·판촉 협의</div>
-      <div class="detail-box"><strong style="color:var(--tx)">대응 방안</strong><br>• 담백하루 참여 약사 현재 5명 → 10명으로 확대<br>• 삐약·유니약사에 담백하루 참여 제안 (현재 미진행)<br>• 담백하루 드링크ORS 등 신제품 공구 활성화<br>• KPI: 담백하루 월 10억 유지</div>
-    </div>
-  </div>
-</div>
-
-<div class="acc-item">
-  <div class="acc-hdr" onclick="tAcc(this)">
-    <span class="grn fw7">🟢 중기</span>
-    <span style="font-size:14px;font-weight:600">NMN/항노화 파일럿 → 자사 신제품 개발 연계</span>
-    <span><span style="background:rgba(34,211,238,.15);color:var(--ac2)" class="tag">카테고리</span></span>
-    <span class="mu">Joy/Rua</span>
-    <span class="grn fw7">연 +24억 목표</span>
-    <span class="acc-arrow">▼</span>
-  </div>
-  <div class="acc-body">
-    저스트글로우 NMN이 이미 파마브로스에서 운영 중이나 소수 약사만 진행. 단가 높고(10만원+) 약사 설명 필수 → 약사 공구 채널이 최적.
-    <div class="detail-grid">
-      <div class="detail-box"><strong style="color:var(--tx)">파일럿 실행</strong><br>• 3명 약사 파일럿: 샤인약사·약사피셜·위키약사<br>• 약사 교육: NMN 메커니즘·복용법·주의사항 표준 가이드<br>• 항노화 패키지(NMN+글루타치온+알파리포산) 세트 공구<br>• 구매자 전환율·재구매율 측정 후 10명 확대</div>
-      <div class="detail-box"><strong style="color:var(--tx)">중장기 연계</strong><br>• 파일럿 성공 시 YDY뉴트리션 NMN 자사 신제품 개발<br>• 자사 NMN = 마진 극대화 + 카테고리 소유<br>• KPI: NMN 카테고리 파일럿 3억 → 연 10억<br>• 자사 점유율 현 10.8% → 15% 달성</div>
-    </div>
-  </div>
-</div>
-
-<div class="acc-item">
-  <div class="acc-hdr" onclick="tAcc(this)">
     <span class="grn fw7">🟢 전략</span>
-    <span style="font-size:14px;font-weight:600">자사 브랜드 공구 캘린더 수립 — 약사별 4개월 주기 사전 협의·편성</span>
+    <span style="font-size:14px;font-weight:600">자사 브랜드 공구 캘린더 수립 — 브랜드별 4개월 사전 기획</span>
     <span><span class="tag tag-pb">구조 개선</span></span>
     <span class="mu">Summer+팀</span>
     <span class="grn fw7">구조적 안정</span>
     <span class="acc-arrow">▼</span>
   </div>
   <div class="acc-body">
-    자사 브랜드 공구가 약사 의향에 따라 즉흥적으로 편성됨. 4개월 주기 사전 협의 캘린더로 예측 가능한 매출 확보.
+    자사 브랜드 공구 일정이 즉흥적으로 잡혀 매출 예측이 어려움. 4개월 단위 사전 기획 캘린더로 예측 가능한 운영 구조 확보.
     <div class="detail-grid">
       <div class="detail-box"><strong style="color:var(--tx)">캘린더 구조</strong><br>YDY뉴트리션: 매월 1회 × 3~4명 (6~7억/월)<br>유트리션: 4개월 × 유니+샤인+다식 교차 (연 15억)<br>파이토알엑스: 4개월 × 고약사+삐약+자신 교차 (연 10억)<br>박약다식: 4개월 × 다식+약사피셜 (연 3억)<br>→ 자사 합계 목표: 월 15억 이상</div>
-      <div class="detail-box"><strong style="color:var(--tx)">운영 방식</strong><br>• 분기별 약사-브랜드 매칭표 사전 작성<br>• 담당자별 자사 브랜드 월간 진행 현황 트래킹<br>• 공구 미진행 월 발생 시 즉시 대체 약사 편성<br>• KPI: 자사 점유율 현 10.8% → 20%</div>
+      <div class="detail-box"><strong style="color:var(--tx)">운영 방식</strong><br>• 분기별 브랜드 공구 일정표 사전 수립<br>• 담당자별 자사 브랜드 월간 진행 현황 트래킹<br>• 공구 미진행 월 발생 시 일정 재조율<br>• KPI: 자사 점유율 현 10.8% → 20%</div>
     </div>
   </div>
 <div class="acc-item">
@@ -1456,7 +1330,7 @@ function sw(id,btn){
   </div>
   <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;display:grid;grid-template-columns:200px 1fr 120px;gap:14px;align-items:start">
     <div><div style="font-size:13px;font-weight:700;margin-bottom:4px">약사 리텐션 구조 설계</div><div style="font-size:11px;color:var(--mu)">독점 혜택·수수료 구조</div></div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.75">자사 친화 약사에게 제공할 독점 선공개 혜택, 성과 연동 수수료 인하 등 인센티브 구조 설계. 약사와의 공식 파트너 계약 형태 및 조건 결정. 법무·재무 검토 후 확정 필요.</div>
+    <div style="font-size:12px;color:var(--mu);line-height:1.75">자사 친화 약사에게 제공할 독점 선공개 혜택, 신제품 정보 우선 공유 등 파트너 지원 방식 설계. 법무·재무 검토 후 확정 필요.</div>
     <div style="text-align:center"><span style="background:rgba(245,158,11,.15);color:var(--ylw);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px">단기 결정 필요</span></div>
   </div>
   <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;display:grid;grid-template-columns:200px 1fr 120px;gap:14px;align-items:start">
