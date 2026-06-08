@@ -439,7 +439,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
   </div>
 </div>
-<div class="card g1" style="border-color:rgba(245,158,11,.4);margin-top:12px">
+<div id="omega3-card" class="card g1" style="border-color:rgba(245,158,11,.4);margin-top:12px;display:none">
   <div style="font-size:16px;font-weight:700;color:var(--ylw);margin-bottom:12px">⚖️ 오메가3 전략적 딜레마 — 신제품 개발이 올바른 방향인가?</div>
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:15px">
     <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
@@ -1252,6 +1252,8 @@ function sw(id,btn){
   document.querySelectorAll('.topnav button').forEach(b=>b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   btn.classList.add('active');
+  var oc=document.getElementById('omega3-card');
+  if(oc) oc.style.display=id==='p3'?'':'none';
   window.scrollTo(0,0);
 }
 </script><div id="p8" class="page">
