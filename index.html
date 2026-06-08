@@ -9,49 +9,49 @@
 <style>
 :root{--bg:#0f1117;--sf:#1a1d27;--sf2:#22263a;--bd:#2e3248;--ac:#6366f1;--ac2:#22d3ee;--red:#ef4444;--grn:#10b981;--ylw:#f59e0b;--org:#fb923c;--tx:#e2e8f0;--mu:#8892a4;--pb:#f59e0b;--ext:#6366f1}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',-apple-system,sans-serif;font-size:15px;line-height:1.7}
+body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',-apple-system,sans-serif;font-size:17px;line-height:1.7}
 .topnav{display:flex;flex-wrap:wrap;background:rgba(15,17,23,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100}
-.topnav button{padding:11px 15px;background:none;border:none;border-bottom:2px solid transparent;color:var(--mu);cursor:pointer;font-size:14px;font-weight:600;white-space:nowrap;transition:all .15s}
+.topnav button{padding:11px 15px;background:none;border:none;border-bottom:2px solid transparent;color:var(--mu);cursor:pointer;font-size:16px;font-weight:600;white-space:nowrap;transition:all .15s}
 .topnav button.active,.topnav button:hover{color:var(--ac2);border-color:var(--ac2)}
 .page{display:none;padding:24px 32px 70px}.page.active{display:block}
 .hdr{background:linear-gradient(135deg,#1e1b4b,#0f172a 60%,#0c1a2e);padding:26px 32px 20px;border-bottom:1px solid var(--bd)}
-.hdr .badge{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px}
-.hdr h1{font-size:22px;font-weight:800;margin-bottom:3px}
-.hdr .sub{color:var(--mu);font-size:13px;margin-bottom:16px}
+.hdr .badge{display:inline-block;background:var(--red);color:#fff;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.hdr h1{font-size:25px;font-weight:800;margin-bottom:3px}
+.hdr .sub{color:var(--mu);font-size:15px;margin-bottom:16px}
 .meta{display:flex;gap:20px;flex-wrap:wrap}
-.mi .lbl{font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.06em}
-.mi .val{font-size:13px;font-weight:600;color:var(--ac2)}
-.sec{margin-top:22px}.sec-h{font-size:18px;font-weight:700;border-left:3px solid var(--ac);padding-left:10px;margin-bottom:3px}
-.sec-sub{color:var(--mu);font-size:14px;margin-bottom:10px;padding-left:13px}
+.mi .lbl{font-size:12px;color:var(--mu);text-transform:uppercase;letter-spacing:.06em}
+.mi .val{font-size:15px;font-weight:600;color:var(--ac2)}
+.sec{margin-top:22px}.sec-h{font-size:21px;font-weight:700;border-left:3px solid var(--ac);padding-left:10px;margin-bottom:3px}
+.sec-sub{color:var(--mu);font-size:16px;margin-bottom:10px;padding-left:13px}
 .kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:10px}
 .kpi{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:13px}
 .kpi.red{border-color:var(--red);background:rgba(239,68,68,.07)}.kpi.grn{border-color:var(--grn);background:rgba(16,185,129,.07)}
 .kpi.ylw{border-color:var(--ylw);background:rgba(245,158,11,.07)}.kpi.ac{border-color:var(--ac);background:linear-gradient(135deg,#1e1b4b,var(--sf))}
-.kpi .lbl{font-size:10px;color:var(--mu);text-transform:uppercase;margin-bottom:4px}
-.kpi .num{font-size:20px;font-weight:800;line-height:1}.kpi .note{font-size:11px;color:var(--mu);margin-top:3px}
+.kpi .lbl{font-size:12px;color:var(--mu);text-transform:uppercase;margin-bottom:4px}
+.kpi .num{font-size:23px;font-weight:800;line-height:1}.kpi .note{font-size:13px;color:var(--mu);margin-top:3px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
 .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px}
 .g4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-top:12px}
 .g1{margin-top:12px}
 .card{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:14px}
-.card h3{font-size:15px;font-weight:600;margin-bottom:2px}.card .cs{font-size:12px;color:var(--mu);margin-bottom:10px}
+.card h3{font-size:17px;font-weight:600;margin-bottom:2px}.card .cs{font-size:14px;color:var(--mu);margin-bottom:10px}
 .tw{overflow-x:auto;margin-top:10px}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th{background:var(--sf2);color:var(--mu);font-size:12px;text-transform:uppercase;padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
-td{padding:8px 10px;border-bottom:1px solid var(--bd);font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{background:var(--sf2);color:var(--mu);font-size:14px;text-transform:uppercase;padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
+td{padding:8px 10px;border-bottom:1px solid var(--bd);font-size:16px}
 tr:last-child td{border-bottom:none}
 tr:hover td{background:rgba(255,255,255,.025)}
 .r{text-align:right;font-variant-numeric:tabular-nums}.c{text-align:center}
 .hl{color:var(--ac2);font-weight:600}.red{color:var(--red);font-weight:600}.grn{color:var(--grn);font-weight:600}.ylw{color:var(--ylw);font-weight:600}.mu{color:var(--mu)}.fw7{font-weight:700}
-.tag{display:inline-flex;font-size:10px;font-weight:700;padding:2px 6px;border-radius:999px}
+.tag{display:inline-flex;font-size:12px;font-weight:700;padding:2px 6px;border-radius:999px}
 .tag-pb{background:rgba(245,158,11,.15);color:var(--pb)}.tag-ext{background:rgba(99,102,241,.15);color:var(--ext)}
 .tag-up{background:rgba(16,185,129,.15);color:var(--grn)}.tag-dn{background:rgba(239,68,68,.15);color:var(--red)}.tag-fl{background:rgba(148,163,184,.1);color:var(--mu)}
 .ins{display:flex;flex-direction:column;gap:8px;margin-top:12px}
 .ib{border-radius:8px;padding:12px 17px;border-left:4px solid;width:100%}
 .ib-red{background:rgba(239,68,68,.07);border-color:var(--red)}.ib-grn{background:rgba(16,185,129,.07);border-color:var(--grn)}
 .ib-ylw{background:rgba(245,158,11,.07);border-color:var(--ylw)}.ib-ac{background:rgba(99,102,241,.07);border-color:var(--ac)}
-.ib .it{font-weight:700;font-size:14px;margin-bottom:4px}
-.ib p{font-size:14px;color:var(--mu);line-height:1.7}.ib p strong{color:var(--tx)}
+.ib .it{font-weight:700;font-size:16px;margin-bottom:4px}
+.ib p{font-size:16px;color:var(--mu);line-height:1.7}.ib p strong{color:var(--tx)}
 .pb-bar{background:rgba(245,158,11,.75);border-radius:2px 0 0 2px}
 .ext-bar{background:rgba(99,102,241,.45);border-radius:0 2px 2px 0}
 hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
@@ -94,59 +94,59 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div class="card">
     <h3>🚨 핵심 — 자사 브랜드가 전체 합계 뒤에 숨겨져 있었다</h3>
     <div class="cs">■ 파마브로스 자사 | ■ 외부 파트너사 | 오른쪽 = 전체합계 | 바 길이 = 전체 대비 비율</div>
-    <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;font-size:11px;color:var(--mu);padding-bottom:6px;border-bottom:1px solid var(--bd)">
+    <div style="margin-bottom:8px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--mu);padding-bottom:6px;border-bottom:1px solid var(--bd)">
       <span style="width:52px;flex-shrink:0">월</span>
       <div style="flex:1;display:flex;gap:14px"><span style="color:var(--pb);font-weight:700">■ 자사</span><span style="color:var(--ext);font-weight:700">■ 외부</span></div>
       <span style="width:60px;text-align:right;flex-shrink:0">합계</span>
     </div>
     <div style="display:flex;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd);gap:8px">
-  <div style="font-size:14px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">25/12</div>
+  <div style="font-size:16px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">25/12</div>
   <div style="flex:1;display:flex;align-items:center;gap:2px;min-width:0">
-    <div class="pb-bar" style="width:8.7%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:#111;padding:0 4px">9.93억</span></div>
-    <div class="ext-bar" style="width:46.0%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:11px;color:rgba(255,255,255,.6);padding:0 4px">52.32억</span></div>
+    <div class="pb-bar" style="width:8.7%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#111;padding:0 4px">9.93억</span></div>
+    <div class="ext-bar" style="width:46.0%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:13px;color:rgba(255,255,255,.6);padding:0 4px">52.32억</span></div>
     
   </div>
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">62.2억</div>
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">62.2억</div>
 </div><div style="display:flex;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd);gap:8px">
-  <div style="font-size:14px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/01</div>
+  <div style="font-size:16px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/01</div>
   <div style="flex:1;display:flex;align-items:center;gap:2px;min-width:0">
-    <div class="pb-bar" style="width:10.5%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:#111;padding:0 4px">11.95억</span></div>
-    <div class="ext-bar" style="width:54.5%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:11px;color:rgba(255,255,255,.6);padding:0 4px">62.1억</span></div>
-    <span style="font-size:11px;color:#10b981;margin-left:8px;white-space:nowrap">+20%</span>
+    <div class="pb-bar" style="width:10.5%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#111;padding:0 4px">11.95억</span></div>
+    <div class="ext-bar" style="width:54.5%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:13px;color:rgba(255,255,255,.6);padding:0 4px">62.1억</span></div>
+    <span style="font-size:13px;color:#10b981;margin-left:8px;white-space:nowrap">+20%</span>
   </div>
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">74.0억</div>
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">74.0억</div>
 </div><div style="background:rgba(245,158,11,.04);display:flex;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd);gap:8px">
-  <div style="font-size:14px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/02</div>
+  <div style="font-size:16px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/02</div>
   <div style="flex:1;display:flex;align-items:center;gap:2px;min-width:0">
-    <div class="pb-bar" style="width:13.5%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:#111;padding:0 4px">15.4억</span></div>
-    <div class="ext-bar" style="width:46.7%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:11px;color:rgba(255,255,255,.6);padding:0 4px">53.23억</span></div>
-    <span style="font-size:11px;color:#10b981;margin-left:8px;white-space:nowrap">+29%</span><span style="font-size:12px;font-weight:700;color:var(--ylw);margin-left:10px;white-space:nowrap">← 자사 피크</span>
+    <div class="pb-bar" style="width:13.5%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#111;padding:0 4px">15.4억</span></div>
+    <div class="ext-bar" style="width:46.7%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:13px;color:rgba(255,255,255,.6);padding:0 4px">53.23억</span></div>
+    <span style="font-size:13px;color:#10b981;margin-left:8px;white-space:nowrap">+29%</span><span style="font-size:14px;font-weight:700;color:var(--ylw);margin-left:10px;white-space:nowrap">← 자사 피크</span>
   </div>
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">68.6억</div>
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">68.6억</div>
 </div><div style="background:rgba(239,68,68,.06);display:flex;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd);gap:8px">
-  <div style="font-size:14px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/03</div>
+  <div style="font-size:16px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/03</div>
   <div style="flex:1;display:flex;align-items:center;gap:2px;min-width:0">
-    <div class="pb-bar" style="width:6.4%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:#111;padding:0 4px">7.26억</span></div>
-    <div class="ext-bar" style="width:51.7%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:11px;color:rgba(255,255,255,.6);padding:0 4px">58.85억</span></div>
-    <span style="font-size:11px;color:#ef4444;margin-left:8px;white-space:nowrap">-53%</span><span style="font-size:12px;font-weight:700;color:var(--red);margin-left:10px;white-space:nowrap">← 자사 -52.8%</span>
+    <div class="pb-bar" style="width:6.4%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#111;padding:0 4px">7.26억</span></div>
+    <div class="ext-bar" style="width:51.7%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:13px;color:rgba(255,255,255,.6);padding:0 4px">58.85억</span></div>
+    <span style="font-size:13px;color:#ef4444;margin-left:8px;white-space:nowrap">-53%</span><span style="font-size:14px;font-weight:700;color:var(--red);margin-left:10px;white-space:nowrap">← 자사 -52.8%</span>
   </div>
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">66.1억</div>
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">66.1억</div>
 </div><div style="display:flex;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd);gap:8px">
-  <div style="font-size:14px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/04</div>
+  <div style="font-size:16px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/04</div>
   <div style="flex:1;display:flex;align-items:center;gap:2px;min-width:0">
-    <div class="pb-bar" style="width:7.3%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:#111;padding:0 4px">8.32억</span></div>
-    <div class="ext-bar" style="width:55.8%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:11px;color:rgba(255,255,255,.6);padding:0 4px">63.57억</span></div>
-    <span style="font-size:11px;color:#10b981;margin-left:8px;white-space:nowrap">+15%</span>
+    <div class="pb-bar" style="width:7.3%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#111;padding:0 4px">8.32억</span></div>
+    <div class="ext-bar" style="width:55.8%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:13px;color:rgba(255,255,255,.6);padding:0 4px">63.57억</span></div>
+    <span style="font-size:13px;color:#10b981;margin-left:8px;white-space:nowrap">+15%</span>
   </div>
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">71.9억</div>
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">71.9억</div>
 </div><div style="display:flex;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd);gap:8px">
-  <div style="font-size:14px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/05</div>
+  <div style="font-size:16px;font-weight:700;color:var(--mu);width:52px;flex-shrink:0">26/05</div>
   <div style="flex:1;display:flex;align-items:center;gap:2px;min-width:0">
-    <div class="pb-bar" style="width:6.8%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:#111;padding:0 4px">7.67억</span></div>
-    <div class="ext-bar" style="width:55.5%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:11px;color:rgba(255,255,255,.6);padding:0 4px">63.23억</span></div>
-    <span style="font-size:11px;color:var(--mu);margin-left:8px;white-space:nowrap">-8%</span>
+    <div class="pb-bar" style="width:6.8%;height:28px;display:flex;align-items:center;justify-content:flex-end;min-width:6px;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#111;padding:0 4px">7.67억</span></div>
+    <div class="ext-bar" style="width:55.5%;height:28px;display:flex;align-items:center;min-width:6px;flex-shrink:0"><span style="font-size:13px;color:rgba(255,255,255,.6);padding:0 4px">63.23억</span></div>
+    <span style="font-size:13px;color:var(--mu);margin-left:8px;white-space:nowrap">-8%</span>
   </div>
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">70.9억</div>
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);width:60px;text-align:right;flex-shrink:0">70.9억</div>
 </div>
   </div>
   <div class="card"><h3>자사 브랜드 점유율 추이</h3><div class="cs">전체 매출 대비 자사 비중 — 구조적 하락 확인</div><canvas id="cShare" height="200"></canvas></div>
@@ -162,11 +162,11 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 
 <!-- ▶ 핵심 인사이트 -->
 <div style="background:rgba(245,158,11,.09);border:1px solid var(--ylw);border-radius:10px;padding:16px;margin-top:12px">
-  <div style="font-size:14px;font-weight:700;color:var(--ylw);margin-bottom:12px">💡 핵심 인사이트 — "3월 급락"의 정체: 집계 오류가 감춘 진짜 위기</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
+  <div style="font-size:16px;font-weight:700;color:var(--ylw);margin-bottom:12px">💡 핵심 인사이트 — "3월 급락"의 정체: 집계 오류가 감춘 진짜 위기</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:15px">
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:12px">
-      <div style="font-size:12px;font-weight:700;color:var(--mu);margin-bottom:6px">❌ QuickSight 원본 (공구 시작일 기준)</div>
-      <div style="font-size:11px;color:var(--mu);line-height:1.8">
+      <div style="font-size:14px;font-weight:700;color:var(--mu);margin-bottom:6px">❌ QuickSight 원본 (공구 시작일 기준)</div>
+      <div style="font-size:13px;color:var(--mu);line-height:1.8">
         Jan: 74억 → Feb: 68억 → <span style="color:var(--red);font-weight:700">Mar: 40억대 (급락)</span><br>
         → 대시보드상 50% 이하 급락처럼 보임<br>
         → <strong style="color:var(--tx)">이유: 3~4월에 시작한 공구가 적게 잡힘</strong><br>
@@ -174,8 +174,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
       </div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:12px">
-      <div style="font-size:12px;font-weight:700;color:var(--grn);margin-bottom:6px">✅ 실제 현황 (주문일 기준)</div>
-      <div style="font-size:11px;color:var(--mu);line-height:1.8">
+      <div style="font-size:14px;font-weight:700;color:var(--grn);margin-bottom:6px">✅ 실제 현황 (주문일 기준)</div>
+      <div style="font-size:13px;color:var(--mu);line-height:1.8">
         Dec: 62.3억 / Jan: 74.1억 / Feb: 68.6억<br>
         <span style="color:var(--grn)">Mar: 66.1억 / Apr: 71.9억 / May: 70.9억</span><br>
         → <strong style="color:var(--grn)">전체 매출은 62~74억 밴드에서 안정적</strong><br>
@@ -183,7 +183,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
       </div>
     </div>
   </div>
-  <div style="margin-top:12px;padding:10px;background:rgba(239,68,68,.1);border-radius:6px;font-size:13px;line-height:1.7">
+  <div style="margin-top:12px;padding:10px;background:rgba(239,68,68,.1);border-radius:6px;font-size:15px;line-height:1.7">
     🎯 <strong style="color:var(--tx)">진짜 위기의 출발점</strong>: 전체 합계 뒤에 숨어있던 <strong style="color:var(--red)">자사 브랜드 -52.8% 급락</strong><br>
     &nbsp;&nbsp;&nbsp;&nbsp;Feb 자사 <strong>15.4억</strong> → Mar <strong style="color:var(--red)">7.3억</strong>. 같은 기간 외부 파트너는 안정·성장.
     → <strong style="color:var(--ylw)">구조 문제가 자사 브랜드에만 집중되어 있음을 의미</strong>
@@ -197,29 +197,29 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div class="card">
     <h3>드림약사 의존 구조</h3>
     <div class="cs">자사 최대 브랜드 유트리션: 드림약사 1명이 전체 매출의 95% 담당</div>
-    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px;font-size:13px">
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px;font-size:15px">
       <div style="background:rgba(239,68,68,.08);border-radius:6px;padding:10px">
         <div style="font-weight:700;color:var(--red);margin-bottom:4px">유트리션 브랜드</div>
         <div style="display:flex;align-items:center;gap:8px">
-          <div style="background:var(--red);height:16px;border-radius:3px;width:190px;display:flex;align-items:center;justify-content:flex-end;padding-right:4px"><span style="font-size:10px;color:#fff;font-weight:700">드림약사 95%</span></div>
-          <span style="font-size:11px;color:var(--mu)">기타 5%</span>
+          <div style="background:var(--red);height:16px;border-radius:3px;width:190px;display:flex;align-items:center;justify-content:flex-end;padding-right:4px"><span style="font-size:12px;color:#fff;font-weight:700">드림약사 95%</span></div>
+          <span style="font-size:13px;color:var(--mu)">기타 5%</span>
         </div>
-        <div style="font-size:11px;color:var(--mu);margin-top:6px">드림약사 이탈 시 유트리션 브랜드 사실상 소멸 → 자사 최대 매출원 붕괴</div>
+        <div style="font-size:13px;color:var(--mu);margin-top:6px">드림약사 이탈 시 유트리션 브랜드 사실상 소멸 → 자사 최대 매출원 붕괴</div>
       </div>
       <div style="background:rgba(245,158,11,.06);border-radius:6px;padding:10px">
         <div style="font-weight:700;color:var(--ylw);margin-bottom:4px">아워뉴트리 브랜드</div>
         <div style="display:flex;align-items:center;gap:8px">
-          <div style="background:var(--ylw);height:16px;border-radius:3px;width:148px;display:flex;align-items:center;justify-content:flex-end;padding-right:4px"><span style="font-size:10px;color:#111;font-weight:700">드림+위키 78%</span></div>
-          <span style="font-size:11px;color:var(--mu)">기타 22%</span>
+          <div style="background:var(--ylw);height:16px;border-radius:3px;width:148px;display:flex;align-items:center;justify-content:flex-end;padding-right:4px"><span style="font-size:12px;color:#111;font-weight:700">드림+위키 78%</span></div>
+          <span style="font-size:13px;color:var(--mu)">기타 22%</span>
         </div>
-        <div style="font-size:11px;color:var(--mu);margin-top:6px">2인 의존. 두 명 중 한 명이라도 이탈하면 타격 즉각</div>
+        <div style="font-size:13px;color:var(--mu);margin-top:6px">2인 의존. 두 명 중 한 명이라도 이탈하면 타격 즉각</div>
       </div>
     </div>
   </div>
   <div class="card">
     <h3>대형약사 독립화 트렌드 — 업계 전반 현상</h3>
     <div class="cs">파마브로스만의 문제가 아님. 플랫폼 경쟁이 심화되며 약사 협상력이 구조적으로 상승 중</div>
-    <div style="display:flex;flex-direction:column;gap:7px;margin-top:8px;font-size:12px;color:var(--mu)">
+    <div style="display:flex;flex-direction:column;gap:7px;margin-top:8px;font-size:14px;color:var(--mu)">
       
       <div style="background:rgba(0,0,0,.15);border-radius:6px;padding:9px;line-height:1.7">
         <strong style="color:var(--tx)">① 약사 자체 브랜드 런칭</strong><br>
@@ -246,7 +246,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div class="card">
     <h3>자사 브랜드 카테고리 집중도</h3>
     <div class="cs">오메가3 과집중 → 외부 파트너와 같은 고객군을 두고 경쟁하는 구조</div>
-    <div style="margin-top:10px;font-size:12px;color:var(--mu)">
+    <div style="margin-top:10px;font-size:14px;color:var(--mu)">
       <div style="display:grid;grid-template-columns:auto 1fr auto;gap:6px 10px;align-items:center">
         <span style="color:var(--red);font-weight:700">유트리션</span>
         <div style="background:rgba(239,68,68,.3);height:14px;border-radius:3px;width:90%"></div>
@@ -276,7 +276,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div class="card">
     <h3>시장이 이동한 성장 카테고리</h3>
     <div class="cs">오메가3 정체 동안 고성장 카테고리에서 자사 존재감 없음</div>
-    <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px;font-size:12px">
+    <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px;font-size:14px">
       <div style="background:rgba(16,185,129,.07);border-radius:6px;padding:9px">
         <strong style="color:var(--grn)">베르베린/혈당</strong> — 연간 20~30% 성장<br>
         <span style="color:var(--mu)">저스트글로우+마이랩스+YDY 합산 19억. YDY 베르베린 존재하나 투자·마케팅 부족.</span>
@@ -318,25 +318,25 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="sec" style="margin-top:8px"><div class="sec-h">🚨 이탈 위기 시뮬레이션 — 4가지 구조 문제의 결합 리스크</div>
 <div class="sec-sub">구조 문제 1·2·3이 동시에 작동할 때 최악 시나리오</div></div>
 <div style="background:rgba(239,68,68,.08);border:1px solid var(--red);border-radius:10px;padding:16px">
-  <div style="font-size:14px;font-weight:700;color:var(--red);margin-bottom:12px">드림·위키·유이약사 동시 이탈 시 → -123억(-29.7%)</div>
+  <div style="font-size:16px;font-weight:700;color:var(--red);margin-bottom:12px">드림·위키·유이약사 동시 이탈 시 → -123억(-29.7%)</div>
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:12px">
-      <div style="font-size:13px;font-weight:700;color:var(--ylw)">드림약사 이탈 시</div>
-      <div style="font-size:22px;font-weight:800;color:var(--red)">-54억</div>
-      <div style="font-size:12px;color:var(--mu);margin-top:4px">전체 -13.1%<br>유트리션 브랜드 <strong style="color:var(--red)">사실상 소멸</strong><br>(드림의존도 95%)</div>
+      <div style="font-size:15px;font-weight:700;color:var(--ylw)">드림약사 이탈 시</div>
+      <div style="font-size:25px;font-weight:800;color:var(--red)">-54억</div>
+      <div style="font-size:14px;color:var(--mu);margin-top:4px">전체 -13.1%<br>유트리션 브랜드 <strong style="color:var(--red)">사실상 소멸</strong><br>(드림의존도 95%)</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:12px">
-      <div style="font-size:13px;font-weight:700;color:var(--ylw)">위키약사 이탈 시</div>
-      <div style="font-size:22px;font-weight:800;color:var(--red)">-49억</div>
-      <div style="font-size:12px;color:var(--mu);margin-top:4px">전체 -11.9%<br>담백하루·뉴트리션스탠다드<br>각 상위 약사 손실</div>
+      <div style="font-size:15px;font-weight:700;color:var(--ylw)">위키약사 이탈 시</div>
+      <div style="font-size:25px;font-weight:800;color:var(--red)">-49억</div>
+      <div style="font-size:14px;color:var(--mu);margin-top:4px">전체 -11.9%<br>담백하루·뉴트리션스탠다드<br>각 상위 약사 손실</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:12px">
-      <div style="font-size:13px;font-weight:700;color:var(--ylw)">3명 동시 이탈 시</div>
-      <div style="font-size:22px;font-weight:800;color:var(--red)">-123억</div>
-      <div style="font-size:12px;color:var(--mu);margin-top:4px">전체 <strong style="color:var(--red)">-29.7%</strong><br>413억 → 290억<br>회복 불가능 수준</div>
+      <div style="font-size:15px;font-weight:700;color:var(--ylw)">3명 동시 이탈 시</div>
+      <div style="font-size:25px;font-weight:800;color:var(--red)">-123억</div>
+      <div style="font-size:14px;color:var(--mu);margin-top:4px">전체 <strong style="color:var(--red)">-29.7%</strong><br>413억 → 290억<br>회복 불가능 수준</div>
     </div>
   </div>
-  <div style="font-size:12px;color:var(--mu);margin-top:10px;line-height:1.7">
+  <div style="font-size:14px;color:var(--mu);margin-top:10px;line-height:1.7">
     ⚠️ <strong style="color:var(--tx)">구조적 불가피성</strong>: 파마브로스는 약사 공구 참여를 <strong style="color:var(--ylw)">강제할 수단이 없음</strong>.<br>
     약사가 자사 브랜드를 <strong style="color:var(--ylw)">자발적으로 선택하도록 환경을 만드는 것</strong>이 유일한 장기 해법. 단기 인센티브는 지연책.
   </div>
@@ -351,27 +351,27 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="g4"><div class="card" style="border-top:3px solid var(--pb)">
   <h3>YDY뉴트리션</h3>
   <div class="cs">취소율 5.0% | 건수 25 20 25 20 19 23</div>
-  <div style="font-size:18px;font-weight:800;color:var(--ac2);margin:4px 0">29.5억</div>
-  <div style="font-size:12px;color:var(--red)">Feb→Mar -50.6%</div>
-  <div style="display:flex;align-items:flex-end;gap:2px;height:70px;margin-top:10px"><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:62px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">25/12</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:43px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/01</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(245,158,11,.75);height:46px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/02</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(239,68,68,.7);height:23px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/03</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:54px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/04</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:49px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/05</div></div></div>
+  <div style="font-size:21px;font-weight:800;color:var(--ac2);margin:4px 0">29.5억</div>
+  <div style="font-size:14px;color:var(--red)">Feb→Mar -50.6%</div>
+  <div style="display:flex;align-items:flex-end;gap:2px;height:70px;margin-top:10px"><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:62px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">25/12</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:43px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/01</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(245,158,11,.75);height:46px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/02</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(239,68,68,.7);height:23px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/03</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:54px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/04</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:49px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/05</div></div></div>
 </div><div class="card" style="border-top:3px solid var(--pb)">
   <h3>유트리션</h3>
   <div class="cs">취소율 5.1% | 건수 6 8 5 6 5 5</div>
-  <div style="font-size:18px;font-weight:800;color:var(--ac2);margin:4px 0">18.0억</div>
-  <div style="font-size:12px;color:var(--red)">Feb→Mar -45.1%</div>
-  <div style="display:flex;align-items:flex-end;gap:2px;height:70px;margin-top:10px"><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:33px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">25/12</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:62px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/01</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(245,158,11,.75);height:52px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/02</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(239,68,68,.7);height:29px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/03</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:7px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/04</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:17px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/05</div></div></div>
+  <div style="font-size:21px;font-weight:800;color:var(--ac2);margin:4px 0">18.0억</div>
+  <div style="font-size:14px;color:var(--red)">Feb→Mar -45.1%</div>
+  <div style="display:flex;align-items:flex-end;gap:2px;height:70px;margin-top:10px"><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:33px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">25/12</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:62px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/01</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(245,158,11,.75);height:52px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/02</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(239,68,68,.7);height:29px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/03</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:7px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/04</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:17px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/05</div></div></div>
 </div><div class="card" style="border-top:3px solid var(--pb)">
   <h3>파이토알엑스</h3>
   <div class="cs">취소율 6.3% | 건수 3 5 3 3 3 3</div>
-  <div style="font-size:18px;font-weight:800;color:var(--ac2);margin:4px 0">10.7억</div>
-  <div style="font-size:12px;color:var(--red)">Feb→Mar -60.9%</div>
-  <div style="display:flex;align-items:flex-end;gap:2px;height:70px;margin-top:10px"><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:5px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">25/12</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:10px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/01</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(245,158,11,.75);height:62px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/02</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(239,68,68,.7);height:25px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/03</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:14px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/04</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:5px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/05</div></div></div>
+  <div style="font-size:21px;font-weight:800;color:var(--ac2);margin:4px 0">10.7억</div>
+  <div style="font-size:14px;color:var(--red)">Feb→Mar -60.9%</div>
+  <div style="display:flex;align-items:flex-end;gap:2px;height:70px;margin-top:10px"><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:5px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">25/12</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:10px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/01</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(245,158,11,.75);height:62px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/02</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(239,68,68,.7);height:25px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/03</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:14px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/04</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:5px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/05</div></div></div>
 </div><div class="card" style="border-top:3px solid var(--pb)">
   <h3>박약다식</h3>
   <div class="cs">취소율 4.5% | 건수 0 1 0 0 2 2</div>
-  <div style="font-size:18px;font-weight:800;color:var(--ac2);margin:4px 0">2.3억</div>
-  <div style="font-size:12px;color:var(--grn)">Feb→Mar +0.0%</div>
-  <div style="display:flex;align-items:flex-end;gap:2px;height:70px;margin-top:10px"><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:3px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">25/12</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:62px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/01</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(245,158,11,.75);height:3px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/02</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(239,68,68,.7);height:3px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/03</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:60px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/04</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:42px;border-radius:2px 2px 0 0"></div><div style="font-size:9px;color:var(--mu);writing-mode:horizontal-tb">26/05</div></div></div>
+  <div style="font-size:21px;font-weight:800;color:var(--ac2);margin:4px 0">2.3억</div>
+  <div style="font-size:14px;color:var(--grn)">Feb→Mar +0.0%</div>
+  <div style="display:flex;align-items:flex-end;gap:2px;height:70px;margin-top:10px"><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:3px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">25/12</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:62px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/01</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(245,158,11,.75);height:3px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/02</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(239,68,68,.7);height:3px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/03</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:60px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/04</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;gap:2px"><div style="width:100%;background:rgba(99,102,241,.5);height:42px;border-radius:2px 2px 0 0"></div><div style="font-size:11px;color:var(--mu);writing-mode:horizontal-tb">26/05</div></div></div>
 </div></div>
 <div class="g2" style="margin-top:12px">
   <div class="card"><h3>자사 4개 브랜드 월별 스택</h3><div class="cs">브랜드별 기여도 추이 | 색상: 노랑=YDY, 청록=유트리션, 빨강=파이토알엑스, 초록=박약다식</div><canvas id="cPbStack" height="180"></canvas></div>
@@ -383,16 +383,16 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="g2" style="margin-top:12px">
   <div style="display:flex;flex-direction:column;gap:10px">
     <div class="card" style="border-color:rgba(239,68,68,.4)">
-      <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:8px">🔴 문제 1 — 약사 단일 의존 구조 (이탈 위기와 직결)</div>
-      <div style="font-size:12px;color:var(--mu);line-height:1.8">
+      <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px">🔴 문제 1 — 약사 단일 의존 구조 (이탈 위기와 직결)</div>
+      <div style="font-size:14px;color:var(--mu);line-height:1.8">
         <strong style="color:var(--tx)">유트리션</strong>: 드림약사 혼자 15.65억(86.7%). 드림약사 이탈 시 브랜드 소멸 수준.<br>
         <strong style="color:var(--tx)">파이토알엑스</strong>: 고약사+릴리약사 = 93%. 릴리약사는 현재 매출 하락세.<br>
         <strong style="color:var(--red)">→ 이탈 위기 약사에게 자사 브랜드를 맡긴 구조 = 시한폭탄</strong>
       </div>
     </div>
     <div class="card" style="border-color:rgba(239,68,68,.4)">
-      <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:8px">🔴 문제 2 — 카테고리 진화 실패</div>
-      <div style="font-size:12px;color:var(--mu);line-height:1.8">
+      <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px">🔴 문제 2 — 카테고리 진화 실패</div>
+      <div style="font-size:14px;color:var(--mu);line-height:1.8">
         <strong style="color:var(--tx)">현재</strong>: 4개 브랜드 모두 오메가3 중심. 외부 파트너도 동일 카테고리 운영 → 내부 경쟁.<br>
         <strong style="color:var(--tx)">시장</strong>: 베르베린(+60~1741%), NMN, 직구 프리미엄 → 자사 없음.<br>
         <strong style="color:var(--red)">→ 성장하는 시장에 자사 제품 없이 외부 파트너 수익만 증가</strong>
@@ -401,15 +401,15 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
   <div style="display:flex;flex-direction:column;gap:10px">
     <div class="card" style="border-color:rgba(245,158,11,.4)">
-      <div style="font-size:13px;font-weight:700;color:var(--ylw);margin-bottom:8px">⚠️ 문제 3 — 강제성 없는 약사 의존</div>
-      <div style="font-size:12px;color:var(--mu);line-height:1.8">
+      <div style="font-size:15px;font-weight:700;color:var(--ylw);margin-bottom:8px">⚠️ 문제 3 — 강제성 없는 약사 의존</div>
+      <div style="font-size:14px;color:var(--mu);line-height:1.8">
         파마브로스는 약사에게 공구를 강요할 수단 없음. 인기 약사일수록 거절 시 대안 없음.<br>
         <strong style="color:var(--ylw)">→ 파트너십 강화(인센티브)로 지연 가능하나 근본 해결 불가. 분산이 유일한 해법.</strong>
       </div>
     </div>
     <div class="card" style="border-color:rgba(34,211,238,.4)">
-      <div style="font-size:13px;font-weight:700;color:var(--ac2);margin-bottom:8px">⚠️ 문제 4 — 친스 채널 자사 공구 아이러니</div>
-      <div style="font-size:12px;color:var(--mu);line-height:1.8">
+      <div style="font-size:15px;font-weight:700;color:var(--ac2);margin-bottom:8px">⚠️ 문제 4 — 친스 채널 자사 공구 아이러니</div>
+      <div style="font-size:14px;color:var(--mu);line-height:1.8">
         자사 플랫폼(친스)에서 자사 브랜드 공구가 Feb 11억→Mar 4.7억(-57%) 급감.<br>
         <strong style="color:var(--ac2)">→ 가장 마진 좋은 채널(수수료 없음)에서 가장 적게 운영. 즉시 개선 가능한 영역.</strong>
       </div>
@@ -418,8 +418,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 </div>
 
 <div class="card g1" style="border-color:rgba(239,68,68,.4);margin-top:12px">
-  <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:14px">🔬 종합 진단 — 4가지 구조적 문제의 복합 작용</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
+  <div style="font-size:17px;font-weight:700;color:var(--red);margin-bottom:14px">🔬 종합 진단 — 4가지 구조적 문제의 복합 작용</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:15px">
     <div style="border-left:3px solid var(--red);padding-left:12px">
       <strong style="color:var(--tx)">① 약사 단일 의존 (이탈 위기와 직결)</strong>
       <div style="color:var(--mu);margin-top:5px;line-height:1.75">유트리션 95%가 드림약사 1인 의존. 드림약사 이탈 시 유트리션 브랜드 자체가 소멸. 파이토알엑스도 고+릴리 93% 의존. <strong style="color:var(--red)">이 약사들이 이탈 조짐을 보이고 있어 자사 브랜드 위기는 현재진행형.</strong></div>
@@ -440,8 +440,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
 </div>
 <div class="card g1" style="border-color:rgba(245,158,11,.4);margin-top:12px">
-  <div style="font-size:14px;font-weight:700;color:var(--ylw);margin-bottom:12px">⚖️ 오메가3 전략적 딜레마 — 신제품 개발이 올바른 방향인가?</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:13px">
+  <div style="font-size:16px;font-weight:700;color:var(--ylw);margin-bottom:12px">⚖️ 오메가3 전략적 딜레마 — 신제품 개발이 올바른 방향인가?</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:15px">
     <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
       <div style="font-weight:700;color:var(--red);margin-bottom:6px">시장 현실</div>
       <div style="color:var(--mu);line-height:1.75">오메가3는 가장 인기 있는 카테고리이나, 시장에 제품이 너무 많음. 담백하루·트루엔·뉴트리션스탠다드·아워뉴트리·저스트글로우·유트리션·파이토알엑스 — <strong style="color:var(--tx)">자사 외부 파트너들도 이미 오메가3로 경쟁 중.</strong> 신제품을 내면 자사 파트너와 경쟁하는 역설 발생.</div>
@@ -469,48 +469,48 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="sec-sub">파마브로스 매출 85.4%를 외부 파트너가 담당 — 의존 구조와 리스크 + 성장 기회 진단</div></div>
 <div class="sec"><div class="sec-h">주목할 TOP4 파트너 성장 추이</div><div class="sec-sub">성장 파트너 집중 육성 기회 확인</div></div>
 <div class="g4" style="margin-top:10px"><div class="card" style="border-color:#6366f133">
-  <div style="font-size:13px;font-weight:700;color:#6366f1;margin-bottom:4px">담백하루</div>
-  <div style="font-size:18px;font-weight:800;color:var(--tx)">56.61억</div>
-  <div style="display:flex;gap:12px;font-size:11px;margin:4px 0">
+  <div style="font-size:15px;font-weight:700;color:#6366f1;margin-bottom:4px">담백하루</div>
+  <div style="font-size:21px;font-weight:800;color:var(--tx)">56.61억</div>
+  <div style="display:flex;gap:12px;font-size:13px;margin:4px 0">
     <span style="color:var(--red)">Dec→May -18%</span>
     <span style="color:var(--mu)">Feb→Mar 8.11→8.05억</span>
   </div>
-  <div style="display:flex;align-items:flex-end;gap:2px;height:75px;margin-top:8px"><div style="flex:1;background:#6366f1;opacity:0.78;height:50px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">8.91</span></div><div style="flex:1;background:#6366f1;opacity:0.89;height:64px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">11.39</span></div><div style="flex:1;background:#6366f1;opacity:0.75;height:46px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">8.11</span></div><div style="flex:1;background:#6366f1;opacity:0.75;height:45px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">8.05</span></div><div style="flex:1;background:#6366f1;opacity:0.95;height:72px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">12.81</span></div><div style="flex:1;background:#6366f1;opacity:0.72;height:42px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">7.34</span></div></div>
-  <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--mu);margin-top:2px"><span>25/12</span><span>26/01</span><span>26/02</span><span>26/03</span><span>26/04</span><span>26/05</span></div>
+  <div style="display:flex;align-items:flex-end;gap:2px;height:75px;margin-top:8px"><div style="flex:1;background:#6366f1;opacity:0.78;height:50px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">8.91</span></div><div style="flex:1;background:#6366f1;opacity:0.89;height:64px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">11.39</span></div><div style="flex:1;background:#6366f1;opacity:0.75;height:46px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">8.11</span></div><div style="flex:1;background:#6366f1;opacity:0.75;height:45px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">8.05</span></div><div style="flex:1;background:#6366f1;opacity:0.95;height:72px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">12.81</span></div><div style="flex:1;background:#6366f1;opacity:0.72;height:42px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">7.34</span></div></div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mu);margin-top:2px"><span>25/12</span><span>26/01</span><span>26/02</span><span>26/03</span><span>26/04</span><span>26/05</span></div>
 </div><div class="card" style="border-color:#22d3ee33">
-  <div style="font-size:13px;font-weight:700;color:#22d3ee;margin-bottom:4px">트루엔뉴트리션</div>
-  <div style="font-size:18px;font-weight:800;color:var(--tx)">44.05억</div>
-  <div style="display:flex;gap:12px;font-size:11px;margin:4px 0">
+  <div style="font-size:15px;font-weight:700;color:#22d3ee;margin-bottom:4px">트루엔뉴트리션</div>
+  <div style="font-size:21px;font-weight:800;color:var(--tx)">44.05억</div>
+  <div style="display:flex;gap:12px;font-size:13px;margin:4px 0">
     <span style="color:var(--grn)">Dec→May +59%</span>
     <span style="color:var(--grn)">Feb→Mar 5.18→8.63억</span>
   </div>
-  <div style="display:flex;align-items:flex-end;gap:2px;height:75px;margin-top:8px"><div style="flex:1;background:#22d3ee;opacity:0.74;height:45px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">6.16</span></div><div style="flex:1;background:#22d3ee;opacity:0.90;height:66px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">9.0</span></div><div style="flex:1;background:#22d3ee;opacity:0.69;height:38px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">5.18</span></div><div style="flex:1;background:#22d3ee;opacity:0.88;height:63px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">8.63</span></div><div style="flex:1;background:#22d3ee;opacity:0.69;height:39px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">5.26</span></div><div style="flex:1;background:#22d3ee;opacity:0.95;height:72px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">9.83</span></div></div>
-  <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--mu);margin-top:2px"><span>25/12</span><span>26/01</span><span>26/02</span><span>26/03</span><span>26/04</span><span>26/05</span></div>
+  <div style="display:flex;align-items:flex-end;gap:2px;height:75px;margin-top:8px"><div style="flex:1;background:#22d3ee;opacity:0.74;height:45px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">6.16</span></div><div style="flex:1;background:#22d3ee;opacity:0.90;height:66px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">9.0</span></div><div style="flex:1;background:#22d3ee;opacity:0.69;height:38px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">5.18</span></div><div style="flex:1;background:#22d3ee;opacity:0.88;height:63px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">8.63</span></div><div style="flex:1;background:#22d3ee;opacity:0.69;height:39px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">5.26</span></div><div style="flex:1;background:#22d3ee;opacity:0.95;height:72px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">9.83</span></div></div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mu);margin-top:2px"><span>25/12</span><span>26/01</span><span>26/02</span><span>26/03</span><span>26/04</span><span>26/05</span></div>
 </div><div class="card" style="border-color:#10b98133">
-  <div style="font-size:13px;font-weight:700;color:#10b981;margin-bottom:4px">저스트글로우</div>
-  <div style="font-size:18px;font-weight:800;color:var(--tx)">31.55억</div>
-  <div style="display:flex;gap:12px;font-size:11px;margin:4px 0">
+  <div style="font-size:15px;font-weight:700;color:#10b981;margin-bottom:4px">저스트글로우</div>
+  <div style="font-size:21px;font-weight:800;color:var(--tx)">31.55억</div>
+  <div style="display:flex;gap:12px;font-size:13px;margin:4px 0">
     <span style="color:var(--grn)">Dec→May +60%</span>
     <span style="color:var(--grn)">Feb→Mar 3.84→4.64억</span>
   </div>
-  <div style="display:flex;align-items:flex-end;gap:2px;height:75px;margin-top:8px"><div style="flex:1;background:#10b981;opacity:0.74;height:45px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">4.72</span></div><div style="flex:1;background:#10b981;opacity:0.76;height:47px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">4.91</span></div><div style="flex:1;background:#10b981;opacity:0.68;height:37px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">3.84</span></div><div style="flex:1;background:#10b981;opacity:0.74;height:45px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">4.64</span></div><div style="flex:1;background:#10b981;opacity:0.83;height:56px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">5.89</span></div><div style="flex:1;background:#10b981;opacity:0.95;height:72px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">7.54</span></div></div>
-  <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--mu);margin-top:2px"><span>25/12</span><span>26/01</span><span>26/02</span><span>26/03</span><span>26/04</span><span>26/05</span></div>
+  <div style="display:flex;align-items:flex-end;gap:2px;height:75px;margin-top:8px"><div style="flex:1;background:#10b981;opacity:0.74;height:45px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">4.72</span></div><div style="flex:1;background:#10b981;opacity:0.76;height:47px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">4.91</span></div><div style="flex:1;background:#10b981;opacity:0.68;height:37px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">3.84</span></div><div style="flex:1;background:#10b981;opacity:0.74;height:45px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">4.64</span></div><div style="flex:1;background:#10b981;opacity:0.83;height:56px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">5.89</span></div><div style="flex:1;background:#10b981;opacity:0.95;height:72px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">7.54</span></div></div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mu);margin-top:2px"><span>25/12</span><span>26/01</span><span>26/02</span><span>26/03</span><span>26/04</span><span>26/05</span></div>
 </div><div class="card" style="border-color:#f59e0b33">
-  <div style="font-size:13px;font-weight:700;color:#f59e0b;margin-bottom:4px">뉴트리션스탠다드</div>
-  <div style="font-size:18px;font-weight:800;color:var(--tx)">28.01억</div>
-  <div style="display:flex;gap:12px;font-size:11px;margin:4px 0">
+  <div style="font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:4px">뉴트리션스탠다드</div>
+  <div style="font-size:21px;font-weight:800;color:var(--tx)">28.01억</div>
+  <div style="display:flex;gap:12px;font-size:13px;margin:4px 0">
     <span style="color:var(--grn)">Dec→May +43%</span>
     <span style="color:var(--mu)">Feb→Mar 5.03→4.74억</span>
   </div>
-  <div style="display:flex;align-items:flex-end;gap:2px;height:75px;margin-top:8px"><div style="flex:1;background:#f59e0b;opacity:0.76;height:48px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">3.5</span></div><div style="flex:1;background:#f59e0b;opacity:0.86;height:60px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">4.43</span></div><div style="flex:1;background:#f59e0b;opacity:0.92;height:68px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">5.03</span></div><div style="flex:1;background:#f59e0b;opacity:0.89;height:64px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">4.74</span></div><div style="flex:1;background:#f59e0b;opacity:0.95;height:72px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">5.3</span></div><div style="flex:1;background:#f59e0b;opacity:0.92;height:68px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:9px;color:rgba(255,255,255,.7);padding-bottom:1px">5.01</span></div></div>
-  <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--mu);margin-top:2px"><span>25/12</span><span>26/01</span><span>26/02</span><span>26/03</span><span>26/04</span><span>26/05</span></div>
+  <div style="display:flex;align-items:flex-end;gap:2px;height:75px;margin-top:8px"><div style="flex:1;background:#f59e0b;opacity:0.76;height:48px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">3.5</span></div><div style="flex:1;background:#f59e0b;opacity:0.86;height:60px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">4.43</span></div><div style="flex:1;background:#f59e0b;opacity:0.92;height:68px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">5.03</span></div><div style="flex:1;background:#f59e0b;opacity:0.89;height:64px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">4.74</span></div><div style="flex:1;background:#f59e0b;opacity:0.95;height:72px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">5.3</span></div><div style="flex:1;background:#f59e0b;opacity:0.92;height:68px;border-radius:2px 2px 0 0;display:flex;align-items:flex-end;justify-content:center"><span style="font-size:11px;color:rgba(255,255,255,.7);padding-bottom:1px">5.01</span></div></div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mu);margin-top:2px"><span>25/12</span><span>26/01</span><span>26/02</span><span>26/03</span><span>26/04</span><span>26/05</span></div>
 </div></div>
 <div class="sec"><div class="sec-h">외부 파트너 TOP20 현황</div></div>
 <div class="card g1" style="max-height:480px;overflow-y:auto">
-<table><thead><tr><th>#</th><th>파트너사/브랜드</th><th class="r">합계</th><th>월별 추이 (12~5월, 억)</th><th class="c">추세</th><th class="c">성장률</th><th class="c">취소율</th></tr></thead><tbody><tr><td>1</td><td class="hl">담백하루</td><td class="r fw7">56.61억</td><td class="mu" style="font-size:11px">8.91 11.39 8.11 8.05 12.81 7.34</td><td class="c mu">→</td><td class="c red" style="font-size:11px">-18%</td><td class="c mu" style="font-size:11px">0.0%</td></tr><tr><td>2</td><td class="hl">트루엔뉴트리션</td><td class="r fw7">44.05억</td><td class="mu" style="font-size:11px">6.16 9.0 5.18 8.63 5.26 9.83</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+59%</td><td class="c mu" style="font-size:11px">3.8%</td></tr><tr><td>3</td><td class="hl">저스트글로우</td><td class="r fw7">31.55억</td><td class="mu" style="font-size:11px">4.72 4.91 3.84 4.64 5.89 7.54</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+60%</td><td class="c mu" style="font-size:11px">5.2%</td></tr><tr><td>4</td><td>뉴트리션스탠다드</td><td class="r fw7">28.01억</td><td class="mu" style="font-size:11px">3.5 4.43 5.03 4.74 5.3 5.01</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+43%</td><td class="c mu" style="font-size:11px">0.0%</td></tr><tr><td>5</td><td>탑헬스</td><td class="r fw7">26.13억</td><td class="mu" style="font-size:11px">5.69 2.95 3.79 5.87 3.62 4.21</td><td class="c grn">↑</td><td class="c red" style="font-size:11px">-26%</td><td class="c mu" style="font-size:11px">4.8%</td></tr><tr><td>6</td><td>닥터체크</td><td class="r fw7">21.71억</td><td class="mu" style="font-size:11px">2.42 4.06 4.02 3.02 4.58 3.61</td><td class="c mu">→</td><td class="c grn" style="font-size:11px">+49%</td><td class="c mu" style="font-size:11px">0.0%</td></tr><tr><td>7</td><td>스타팜</td><td class="r fw7">18.51억</td><td class="mu" style="font-size:11px">1.47 2.9 3.43 4.26 3.29 3.17</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+116%</td><td class="c mu" style="font-size:11px">0.3%</td></tr><tr><td>8</td><td>한독헬스케어</td><td class="r fw7">17.75억</td><td class="mu" style="font-size:11px">1.63 2.81 5.32 1.68 2.22 4.09</td><td class="c red">↓</td><td class="c grn" style="font-size:11px">+151%</td><td class="c mu" style="font-size:11px">5.9%</td></tr><tr><td>9</td><td>더리틀스</td><td class="r fw7">17.74억</td><td class="mu" style="font-size:11px">3.44 2.69 3.06 2.96 3.72 1.86</td><td class="c mu">→</td><td class="c red" style="font-size:11px">-46%</td><td class="c mu" style="font-size:11px">4.9%</td></tr><tr><td>10</td><td>파마셀렉션/더좋은</td><td class="r fw7">12.14억</td><td class="mu" style="font-size:11px">3.23 2.35 1.22 2.48 1.59 1.27</td><td class="c red">↓</td><td class="c red" style="font-size:11px">-61%</td><td class="c mu" style="font-size:11px">7.3%</td></tr><tr><td>11</td><td>아워뉴트리</td><td class="r fw7">11.64억</td><td class="mu" style="font-size:11px">0.83 3.02 0.79 2.86 3.04 1.1</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+32%</td><td class="c mu" style="font-size:11px">0.0%</td></tr><tr><td>12</td><td>기타</td><td class="r fw7">9.18억</td><td class="mu" style="font-size:11px">1.32 1.42 1.53 1.06 1.57 2.29</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+73%</td><td class="c mu" style="font-size:11px">4.1%</td></tr><tr><td>13</td><td>나프라우드</td><td class="r fw7">8.65억</td><td class="mu" style="font-size:11px">1.24 1.65 1.19 1.66 1.65 1.26</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+2%</td><td class="c mu" style="font-size:11px">4.7%</td></tr><tr><td>14</td><td>위타민</td><td class="r fw7">8.37억</td><td class="mu" style="font-size:11px">1.79 1.48 1.23 0.34 2.42 1.12</td><td class="c red">↓</td><td class="c red" style="font-size:11px">-37%</td><td class="c mu" style="font-size:11px">25.5%</td></tr><tr><td>15</td><td>퓨어젠</td><td class="r fw7">6.74억</td><td class="mu" style="font-size:11px">0.66 1.08 1.2 2.04 0.71 1.04</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+58%</td><td class="c mu" style="font-size:11px">7.2%</td></tr><tr><td>16</td><td>일동헬스케어</td><td class="r fw7">6.24억</td><td class="mu" style="font-size:11px">1.53 1.23 0.39 0.61 1.32 1.16</td><td class="c mu">→</td><td class="c red" style="font-size:11px">-24%</td><td class="c mu" style="font-size:11px">0.0%</td></tr><tr><td>17</td><td>마이랩스 <span style="font-size:10px;background:rgba(16,185,129,.15);color:var(--grn);padding:1px 5px;border-radius:999px">H2 자사편입</span></td><td class="r fw7">5.89억</td><td class="mu" style="font-size:11px">0.17 1.06 0.0 0.41 1.12 3.13</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+1772%</td><td class="c mu" style="font-size:11px">1.0%</td></tr><tr><td>18</td><td>닥터제안</td><td class="r fw7">5.36억</td><td class="mu" style="font-size:11px">0.58 1.76 0.21 0.54 0.93 1.32</td><td class="c mu">→</td><td class="c grn" style="font-size:11px">+128%</td><td class="c mu" style="font-size:11px">5.4%</td></tr><tr><td>19</td><td>바른웰빙</td><td class="r fw7">5.12억</td><td class="mu" style="font-size:11px">0.84 0.34 1.12 1.0 0.33 1.5</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+77%</td><td class="c mu" style="font-size:11px">6.5%</td></tr><tr><td>20</td><td>미성뉴트리션</td><td class="r fw7">3.05억</td><td class="mu" style="font-size:11px">0.18 0.14 0.76 0.35 0.86 0.76</td><td class="c grn">↑</td><td class="c grn" style="font-size:11px">+327%</td><td class="c mu" style="font-size:11px">0.0%</td></tr></tbody></table></div>
+<table><thead><tr><th>#</th><th>파트너사/브랜드</th><th class="r">합계</th><th>월별 추이 (12~5월, 억)</th><th class="c">추세</th><th class="c">성장률</th><th class="c">취소율</th></tr></thead><tbody><tr><td>1</td><td class="hl">담백하루</td><td class="r fw7">56.61억</td><td class="mu" style="font-size:13px">8.91 11.39 8.11 8.05 12.81 7.34</td><td class="c mu">→</td><td class="c red" style="font-size:13px">-18%</td><td class="c mu" style="font-size:13px">0.0%</td></tr><tr><td>2</td><td class="hl">트루엔뉴트리션</td><td class="r fw7">44.05억</td><td class="mu" style="font-size:13px">6.16 9.0 5.18 8.63 5.26 9.83</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+59%</td><td class="c mu" style="font-size:13px">3.8%</td></tr><tr><td>3</td><td class="hl">저스트글로우</td><td class="r fw7">31.55억</td><td class="mu" style="font-size:13px">4.72 4.91 3.84 4.64 5.89 7.54</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+60%</td><td class="c mu" style="font-size:13px">5.2%</td></tr><tr><td>4</td><td>뉴트리션스탠다드</td><td class="r fw7">28.01억</td><td class="mu" style="font-size:13px">3.5 4.43 5.03 4.74 5.3 5.01</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+43%</td><td class="c mu" style="font-size:13px">0.0%</td></tr><tr><td>5</td><td>탑헬스</td><td class="r fw7">26.13억</td><td class="mu" style="font-size:13px">5.69 2.95 3.79 5.87 3.62 4.21</td><td class="c grn">↑</td><td class="c red" style="font-size:13px">-26%</td><td class="c mu" style="font-size:13px">4.8%</td></tr><tr><td>6</td><td>닥터체크</td><td class="r fw7">21.71억</td><td class="mu" style="font-size:13px">2.42 4.06 4.02 3.02 4.58 3.61</td><td class="c mu">→</td><td class="c grn" style="font-size:13px">+49%</td><td class="c mu" style="font-size:13px">0.0%</td></tr><tr><td>7</td><td>스타팜</td><td class="r fw7">18.51억</td><td class="mu" style="font-size:13px">1.47 2.9 3.43 4.26 3.29 3.17</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+116%</td><td class="c mu" style="font-size:13px">0.3%</td></tr><tr><td>8</td><td>한독헬스케어</td><td class="r fw7">17.75억</td><td class="mu" style="font-size:13px">1.63 2.81 5.32 1.68 2.22 4.09</td><td class="c red">↓</td><td class="c grn" style="font-size:13px">+151%</td><td class="c mu" style="font-size:13px">5.9%</td></tr><tr><td>9</td><td>더리틀스</td><td class="r fw7">17.74억</td><td class="mu" style="font-size:13px">3.44 2.69 3.06 2.96 3.72 1.86</td><td class="c mu">→</td><td class="c red" style="font-size:13px">-46%</td><td class="c mu" style="font-size:13px">4.9%</td></tr><tr><td>10</td><td>파마셀렉션/더좋은</td><td class="r fw7">12.14억</td><td class="mu" style="font-size:13px">3.23 2.35 1.22 2.48 1.59 1.27</td><td class="c red">↓</td><td class="c red" style="font-size:13px">-61%</td><td class="c mu" style="font-size:13px">7.3%</td></tr><tr><td>11</td><td>아워뉴트리</td><td class="r fw7">11.64억</td><td class="mu" style="font-size:13px">0.83 3.02 0.79 2.86 3.04 1.1</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+32%</td><td class="c mu" style="font-size:13px">0.0%</td></tr><tr><td>12</td><td>기타</td><td class="r fw7">9.18억</td><td class="mu" style="font-size:13px">1.32 1.42 1.53 1.06 1.57 2.29</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+73%</td><td class="c mu" style="font-size:13px">4.1%</td></tr><tr><td>13</td><td>나프라우드</td><td class="r fw7">8.65억</td><td class="mu" style="font-size:13px">1.24 1.65 1.19 1.66 1.65 1.26</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+2%</td><td class="c mu" style="font-size:13px">4.7%</td></tr><tr><td>14</td><td>위타민</td><td class="r fw7">8.37억</td><td class="mu" style="font-size:13px">1.79 1.48 1.23 0.34 2.42 1.12</td><td class="c red">↓</td><td class="c red" style="font-size:13px">-37%</td><td class="c mu" style="font-size:13px">25.5%</td></tr><tr><td>15</td><td>퓨어젠</td><td class="r fw7">6.74억</td><td class="mu" style="font-size:13px">0.66 1.08 1.2 2.04 0.71 1.04</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+58%</td><td class="c mu" style="font-size:13px">7.2%</td></tr><tr><td>16</td><td>일동헬스케어</td><td class="r fw7">6.24억</td><td class="mu" style="font-size:13px">1.53 1.23 0.39 0.61 1.32 1.16</td><td class="c mu">→</td><td class="c red" style="font-size:13px">-24%</td><td class="c mu" style="font-size:13px">0.0%</td></tr><tr><td>17</td><td>마이랩스 <span style="font-size:12px;background:rgba(16,185,129,.15);color:var(--grn);padding:1px 5px;border-radius:999px">H2 자사편입</span></td><td class="r fw7">5.89억</td><td class="mu" style="font-size:13px">0.17 1.06 0.0 0.41 1.12 3.13</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+1772%</td><td class="c mu" style="font-size:13px">1.0%</td></tr><tr><td>18</td><td>닥터제안</td><td class="r fw7">5.36억</td><td class="mu" style="font-size:13px">0.58 1.76 0.21 0.54 0.93 1.32</td><td class="c mu">→</td><td class="c grn" style="font-size:13px">+128%</td><td class="c mu" style="font-size:13px">5.4%</td></tr><tr><td>19</td><td>바른웰빙</td><td class="r fw7">5.12억</td><td class="mu" style="font-size:13px">0.84 0.34 1.12 1.0 0.33 1.5</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+77%</td><td class="c mu" style="font-size:13px">6.5%</td></tr><tr><td>20</td><td>미성뉴트리션</td><td class="r fw7">3.05억</td><td class="mu" style="font-size:13px">0.18 0.14 0.76 0.35 0.86 0.76</td><td class="c grn">↑</td><td class="c grn" style="font-size:13px">+327%</td><td class="c mu" style="font-size:13px">0.0%</td></tr></tbody></table></div>
 <div class="sec"><div class="sec-h">리스크 시뮬레이션 — TOP3 파트너 동시 하락 시</div>
 <div class="sec-sub">담백하루·트루엔뉴트리션·저스트글로우 = 전체 132.2억(31.9%) | 자사 브랜드 방어 능력 없음</div></div>
-<div class="g3" style="margin-top:10px"><div style="background:rgba(99,102,241,.08);border-radius:8px;padding:14px;text-align:center"><div style="font-size:11px;color:var(--mu);margin-bottom:6px">TOP3 파트너 -10%</div><div style="font-size:22px;font-weight:800;color:var(--red)">-13.2억</div><div style="font-size:14px;font-weight:700;margin-top:4px">400.6억</div><div style="font-size:11px;color:var(--mu)">-3.2%</div></div><div style="background:rgba(245,158,11,.08);border-radius:8px;padding:14px;text-align:center"><div style="font-size:11px;color:var(--mu);margin-bottom:6px">TOP3 파트너 -20%</div><div style="font-size:22px;font-weight:800;color:var(--red)">-26.4억</div><div style="font-size:14px;font-weight:700;margin-top:4px">387.4억</div><div style="font-size:11px;color:var(--mu)">-6.4%</div></div><div style="background:rgba(239,68,68,.1);border-radius:8px;padding:14px;text-align:center"><div style="font-size:11px;color:var(--mu);margin-bottom:6px">TOP3 파트너 -30%</div><div style="font-size:22px;font-weight:800;color:var(--red)">-39.7억</div><div style="font-size:14px;font-weight:700;margin-top:4px">374.2억</div><div style="font-size:11px;color:var(--mu)">-9.6%</div></div></div>
+<div class="g3" style="margin-top:10px"><div style="background:rgba(99,102,241,.08);border-radius:8px;padding:14px;text-align:center"><div style="font-size:13px;color:var(--mu);margin-bottom:6px">TOP3 파트너 -10%</div><div style="font-size:25px;font-weight:800;color:var(--red)">-13.2억</div><div style="font-size:16px;font-weight:700;margin-top:4px">400.6억</div><div style="font-size:13px;color:var(--mu)">-3.2%</div></div><div style="background:rgba(245,158,11,.08);border-radius:8px;padding:14px;text-align:center"><div style="font-size:13px;color:var(--mu);margin-bottom:6px">TOP3 파트너 -20%</div><div style="font-size:25px;font-weight:800;color:var(--red)">-26.4억</div><div style="font-size:16px;font-weight:700;margin-top:4px">387.4억</div><div style="font-size:13px;color:var(--mu)">-6.4%</div></div><div style="background:rgba(239,68,68,.1);border-radius:8px;padding:14px;text-align:center"><div style="font-size:13px;color:var(--mu);margin-bottom:6px">TOP3 파트너 -30%</div><div style="font-size:25px;font-weight:800;color:var(--red)">-39.7억</div><div style="font-size:16px;font-weight:700;margin-top:4px">374.2억</div><div style="font-size:13px;color:var(--mu)">-9.6%</div></div></div>
 <div class="ins">
   <div class="ib ib-grn"><div class="it">✅ 성장 집중 대상: 트루엔(+59%), 저스트글로우(+60%), 스타팜(+116%), 한독헬스케어(+151%)</div><p>이 4개 파트너가 6개월 동안 지속 성장 중. <strong>상위 약사 독점 라인업 확보 + 신규 약사 추가 편성</strong>이 외부 포트폴리오 다변화 핵심 전략.</p></div>
   <div class="ib ib-red"><div class="it">⚠️ 담백하루 -17.7% 하락 중 — TOP1 파트너 약세 주시 필요</div><p>담백하루(56.6억)는 최대 외부 파트너이나 Dec→May -17.7% 감소세. 5월 7.34억은 1월(11.39억) 대비 -35.5%. <strong>두 번째 파트너(트루엔)와의 격차 좁혀지는 중.</strong></p></div>
@@ -522,13 +522,13 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div class="card" style="border-left:4px solid var(--red)">
     <h3>더리틀스</h3>
     <div class="cs">외부 파트너 브랜드 | 6개월 연속 하락</div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;font-size:13px;text-align:center">
-      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">Dec</div><div style="font-weight:700;color:var(--tx)">3.44억</div></div>
-      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">Mar</div><div style="font-weight:700;color:var(--ylw)">2.41억</div></div>
-      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">May</div><div style="font-weight:700;color:var(--red)">1.86억</div></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;font-size:15px;text-align:center">
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:13px">Dec</div><div style="font-weight:700;color:var(--tx)">3.44억</div></div>
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:13px">Mar</div><div style="font-weight:700;color:var(--ylw)">2.41억</div></div>
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:13px">May</div><div style="font-weight:700;color:var(--red)">1.86억</div></div>
     </div>
-    <div style="font-size:13px;color:var(--red);font-weight:700;margin-bottom:10px">▼ -46% (6개월)</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+    <div style="font-size:15px;color:var(--red);font-weight:700;margin-bottom:10px">▼ -46% (6개월)</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">
       <strong style="color:var(--tx)">추정 원인</strong><br>
       • 단일 카테고리 집중 — 반복 구매 유도 한계<br>
       • 신규 고객 유입 둔화, 라이브커머스 포화<br>
@@ -540,13 +540,13 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   <div class="card" style="border-left:4px solid var(--red)">
     <h3>파마셀렉션 / 더좋은</h3>
     <div class="cs">외부 파트너 브랜드 | 급격한 매출 하락</div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;font-size:13px;text-align:center">
-      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">Dec</div><div style="font-weight:700;color:var(--tx)">3.23억</div></div>
-      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">Mar</div><div style="font-weight:700;color:var(--ylw)">2.10억</div></div>
-      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:11px">May</div><div style="font-weight:700;color:var(--red)">1.27억</div></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;font-size:15px;text-align:center">
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:13px">Dec</div><div style="font-weight:700;color:var(--tx)">3.23억</div></div>
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:13px">Mar</div><div style="font-weight:700;color:var(--ylw)">2.10억</div></div>
+      <div style="background:var(--sf2);border-radius:6px;padding:8px"><div style="color:var(--mu);font-size:13px">May</div><div style="font-weight:700;color:var(--red)">1.27억</div></div>
     </div>
-    <div style="font-size:13px;color:var(--red);font-weight:700;margin-bottom:10px">▼ -61% (6개월)</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+    <div style="font-size:15px;color:var(--red);font-weight:700;margin-bottom:10px">▼ -61% (6개월)</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">
       <strong style="color:var(--tx)">추정 원인</strong><br>
       • 약국/타채널 가격 충돌 — 소비자 대기 심리 형성<br>
       • 브랜드 인지도 상승 전 공동구매 의존 → 구매 반복율 저하<br>
@@ -559,22 +559,22 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="sec"><div class="sec-h">외부 파트너 성장 협력 — 에이전시 차원 솔루션 탐색</div>
 <div class="sec-sub">위기 파악 이후 — 파트너사와 함께 성장할 수 있는 구조 제안</div></div>
 <div style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.3);border-radius:10px;padding:16px;margin-top:12px">
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:12px">🤝 파트너사 협력 구조 — 검토 과제</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);margin-bottom:12px">🤝 파트너사 협력 구조 — 검토 과제</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:15px">
     <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">📦 공동 기획 행사</div><div style="color:var(--mu);line-height:1.75">시즌별 공동 프로모션(설·추석·건강의 날). 파트너사 신제품을 파마브로스 약사 그룹에 우선 론칭하는 "신제품 론칭 패키지" 제안. 파마브로스 채널을 경유할 인센티브 구조 설계.</div></div>
     <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">📊 데이터 기반 파트너 지원</div><div style="color:var(--mu);line-height:1.75">약사별 팔로워 특성·구매 데이터를 파트너사에 제공. "이 제품은 이런 약사 팔로워층에 맞는다"는 매칭 분석으로 파트너사가 더 효과적인 공구 기획 가능. 데이터를 플랫폼 경쟁력으로 활용.</div></div>
     <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🤝 장기 파트너 우선 지원 구조</div><div style="color:var(--mu);line-height:1.75">파마브로스 채널을 통해 장기 파트너와 협업. 신제품 정보 우선 공유 및 프로모션 참여 기회 제공으로 관계 강화.</div></div>
     <div style="background:rgba(0,0,0,.15);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ac2);margin-bottom:6px">🎓 약사 교육 콘텐츠 공동 제작</div><div style="color:var(--mu);line-height:1.75">파트너사 제품 성분·효능 교육 콘텐츠를 파마브로스가 제작 지원. 약사 추천 자신감 향상 → 공구 전환율 증가. 파트너사는 콘텐츠 비용 절감, 파마브로스는 약사 플랫폼 가치 상승.</div></div>
   </div>
-  <div style="margin-top:12px;font-size:12px;color:var(--mu);background:rgba(245,158,11,.07);border-radius:6px;padding:10px;border-left:3px solid var(--ylw)">⚠️ <strong style="color:var(--ylw)">탐색 과제</strong>: 위 방안들은 파트너사 계약 구조·수익 배분에 따라 실행 가능성이 달라짐. 담백하루·트루엔·저스트글로우 TOP3 파트너사부터 파일럿 협의 권장.</div>
+  <div style="margin-top:12px;font-size:14px;color:var(--mu);background:rgba(245,158,11,.07);border-radius:6px;padding:10px;border-left:3px solid var(--ylw)">⚠️ <strong style="color:var(--ylw)">탐색 과제</strong>: 위 방안들은 파트너사 계약 구조·수익 배분에 따라 실행 가능성이 달라짐. 담백하루·트루엔·저스트글로우 TOP3 파트너사부터 파일럿 협의 권장.</div>
 </div></div><div id="p5" class="page">
 <div class="sec"><div class="sec-h">💊 약사별 분석</div>
 <div class="sec-sub">48명 전체 | 이탈 위기 × 릴리 집중케어 × 자사친화 파트너십 재편</div></div>
 <div class="g2">
   <div class="card"><h3>약사별 총매출 Top 15</h3><div class="cs">단위: 억원</div><canvas id="cPhBar" height="240"></canvas></div>
   <div class="card"><h3>전체 48명 월별 히트맵</h3><div class="cs">🟢=최고점 🔴=최저점</div>
-    <div style="font-size:11px;overflow-x:auto">
-      <table><thead><tr><th>#</th><th>약사</th><th class="r">합계</th><th class="c" style="min-width:46px">25/12</th><th class="c" style="min-width:46px">26/01</th><th class="c" style="min-width:46px">26/02</th><th class="c" style="min-width:46px">26/03</th><th class="c" style="min-width:46px">26/04</th><th class="c" style="min-width:46px">26/05</th></tr></thead><tbody><tr><td style="font-size:12px">1</td><td style="color:var(--ac2);font-weight:600" style="font-size:12px;white-space:nowrap">드림약사</td><td class="r fw7" style="font-size:12px">54.07억</td><td style="background:rgba(99,102,241,0.57);text-align:center;font-size:11px">8.37</td><td style="background:rgba(99,102,241,0.69);text-align:center;font-size:11px">10.38</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:11px">9.9</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">12.32</td><td style="background:rgba(99,102,241,0.40);border:2px solid var(--red);text-align:center;font-size:11px">5.56</td><td style="background:rgba(99,102,241,0.52);text-align:center;font-size:11px">7.54</td></tr><tr><td style="font-size:12px">2</td><td style="color:var(--ac2);font-weight:600" style="font-size:12px;white-space:nowrap">위키약사</td><td class="r fw7" style="font-size:12px">49.2억</td><td style="background:rgba(99,102,241,0.73);text-align:center;font-size:11px">8.34</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">9.22</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:11px">7.45</td><td style="background:rgba(99,102,241,0.74);text-align:center;font-size:11px">8.46</td><td style="background:rgba(99,102,241,0.75);text-align:center;font-size:11px">8.58</td><td style="background:rgba(99,102,241,0.64);border:2px solid var(--red);text-align:center;font-size:11px">7.16</td></tr><tr><td style="font-size:12px">3</td><td style="color:var(--ac2);font-weight:600" style="font-size:12px;white-space:nowrap">릴리약사</td><td class="r fw7" style="font-size:12px">36.8억</td><td style="background:rgba(99,102,241,0.67);text-align:center;font-size:11px">6.51</td><td style="background:rgba(99,102,241,0.71);text-align:center;font-size:11px">6.93</td><td style="background:rgba(99,102,241,0.64);text-align:center;font-size:11px">6.22</td><td style="background:rgba(99,102,241,0.58);text-align:center;font-size:11px">5.59</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">7.97</td><td style="background:rgba(99,102,241,0.40);border:2px solid var(--red);text-align:center;font-size:11px">3.58</td></tr><tr><td style="font-size:12px">4</td><td style="color:var(--ac2);font-weight:600" style="font-size:12px;white-space:nowrap">고약사</td><td class="r fw7" style="font-size:12px">32.8억</td><td style="background:rgba(99,102,241,0.39);text-align:center;font-size:11px">4.36</td><td style="background:rgba(99,102,241,0.40);text-align:center;font-size:11px">4.46</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">10.15</td><td style="background:rgba(99,102,241,0.15);border:2px solid var(--red);text-align:center;font-size:11px">1.01</td><td style="background:rgba(99,102,241,0.36);text-align:center;font-size:11px">3.92</td><td style="background:rgba(99,102,241,0.71);text-align:center;font-size:11px">8.88</td></tr><tr><td style="font-size:12px">5</td><td style="color:var(--ac2);font-weight:600" style="font-size:12px;white-space:nowrap">약사비책</td><td class="r fw7" style="font-size:12px">26.0억</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:11px">3.63</td><td style="background:rgba(99,102,241,0.71);text-align:center;font-size:11px">4.74</td><td style="background:rgba(99,102,241,0.49);border:2px solid var(--red);text-align:center;font-size:11px">3.06</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">5.39</td><td style="background:rgba(99,102,241,0.62);text-align:center;font-size:11px">4.07</td><td style="background:rgba(99,102,241,0.76);text-align:center;font-size:11px">5.1</td></tr><tr><td style="font-size:12px">6</td><td style="font-size:12px;white-space:nowrap">다식약사</td><td class="r fw7" style="font-size:12px">16.92억</td><td style="background:rgba(99,102,241,0.34);border:2px solid var(--red);text-align:center;font-size:11px">1.45</td><td style="background:rgba(99,102,241,0.78);text-align:center;font-size:11px">3.93</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:11px">2.68</td><td style="background:rgba(99,102,241,0.48);text-align:center;font-size:11px">2.27</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">4.06</td><td style="background:rgba(99,102,241,0.53);text-align:center;font-size:11px">2.54</td></tr><tr><td style="font-size:12px">7</td><td style="font-size:12px;white-space:nowrap">뵤리약사</td><td class="r fw7" style="font-size:12px">12.95억</td><td style="background:rgba(99,102,241,0.64);text-align:center;font-size:11px">2.35</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:11px">2.43</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">3.02</td><td style="background:rgba(99,102,241,0.26);border:2px solid var(--red);text-align:center;font-size:11px">0.75</td><td style="background:rgba(99,102,241,0.61);text-align:center;font-size:11px">2.24</td><td style="background:rgba(99,102,241,0.59);text-align:center;font-size:11px">2.16</td></tr><tr><td style="font-size:12px">8</td><td style="font-size:12px;white-space:nowrap">약사임당</td><td class="r fw7" style="font-size:12px">12.08억</td><td style="background:rgba(99,102,241,0.52);text-align:center;font-size:11px">1.68</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">2.73</td><td style="background:rgba(99,102,241,0.58);text-align:center;font-size:11px">1.91</td><td style="background:rgba(99,102,241,0.57);text-align:center;font-size:11px">1.85</td><td style="background:rgba(99,102,241,0.73);text-align:center;font-size:11px">2.47</td><td style="background:rgba(99,102,241,0.46);border:2px solid var(--red);text-align:center;font-size:11px">1.43</td></tr><tr><td style="font-size:12px">9</td><td style="font-size:12px;white-space:nowrap">김미성약사</td><td class="r fw7" style="font-size:12px">12.01억</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">3.31</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:11px">1.67</td><td style="background:rgba(99,102,241,0.37);border:2px solid var(--red);text-align:center;font-size:11px">1.34</td><td style="background:rgba(99,102,241,0.48);text-align:center;font-size:11px">1.83</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:11px">1.67</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:11px">2.2</td></tr><tr><td style="font-size:12px">10</td><td style="font-size:12px;white-space:nowrap">쏘핏약사</td><td class="r fw7" style="font-size:12px">10.34억</td><td style="background:rgba(99,102,241,0.68);text-align:center;font-size:11px">1.66</td><td style="background:rgba(99,102,241,0.68);text-align:center;font-size:11px">1.65</td><td style="background:rgba(99,102,241,0.72);text-align:center;font-size:11px">1.75</td><td style="background:rgba(99,102,241,0.62);border:2px solid var(--red);text-align:center;font-size:11px">1.49</td><td style="background:rgba(99,102,241,0.74);text-align:center;font-size:11px">1.82</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">1.98</td></tr><tr><td style="font-size:12px">11</td><td style="font-size:12px;white-space:nowrap">도비약사</td><td class="r fw7" style="font-size:12px">9.46억</td><td style="background:rgba(99,102,241,0.49);text-align:center;font-size:11px">1.32</td><td style="background:rgba(99,102,241,0.59);text-align:center;font-size:11px">1.64</td><td style="background:rgba(99,102,241,0.40);border:2px solid var(--red);text-align:center;font-size:11px">1.03</td><td style="background:rgba(99,102,241,0.50);text-align:center;font-size:11px">1.35</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">2.3</td><td style="background:rgba(99,102,241,0.65);text-align:center;font-size:11px">1.82</td></tr><tr><td style="font-size:12px">12</td><td style="font-size:12px;white-space:nowrap">은하약사</td><td class="r fw7" style="font-size:12px">8.17억</td><td style="background:rgba(99,102,241,0.35);text-align:center;font-size:11px">0.79</td><td style="background:rgba(99,102,241,0.41);text-align:center;font-size:11px">0.96</td><td style="background:rgba(99,102,241,0.76);text-align:center;font-size:11px">1.98</td><td style="background:rgba(99,102,241,0.30);border:2px solid var(--red);text-align:center;font-size:11px">0.65</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">2.11</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:11px">1.69</td></tr><tr><td style="font-size:12px">13</td><td style="font-size:12px;white-space:nowrap">남기헌약사</td><td class="r fw7" style="font-size:12px">7.64억</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">2.38</td><td style="background:rgba(99,102,241,0.77);text-align:center;font-size:11px">2.29</td><td style="background:rgba(99,102,241,0.61);text-align:center;font-size:11px">1.76</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:11px">1.2</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:11px">0.0</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:11px">0.0</td></tr><tr><td style="font-size:12px">14</td><td style="font-size:12px;white-space:nowrap">남약사</td><td class="r fw7" style="font-size:12px">7.27억</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:11px">0.0</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:11px">0.0</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:11px">0.0</td><td style="background:rgba(99,102,241,0.50);text-align:center;font-size:11px">1.74</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">2.99</td><td style="background:rgba(99,102,241,0.69);text-align:center;font-size:11px">2.54</td></tr><tr><td style="font-size:12px">15</td><td style="font-size:12px;white-space:nowrap">삐약약사</td><td class="r fw7" style="font-size:12px">6.76억</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:11px">0.82</td><td style="background:rgba(99,102,241,0.52);text-align:center;font-size:11px">1.0</td><td style="background:rgba(99,102,241,0.37);border:2px solid var(--red);text-align:center;font-size:11px">0.66</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:11px">1.33</td><td style="background:rgba(99,102,241,0.65);text-align:center;font-size:11px">1.3</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">1.65</td></tr><tr><td style="font-size:12px">16</td><td style="font-size:12px;white-space:nowrap">유니약사</td><td class="r fw7" style="font-size:12px">6.53억</td><td style="background:rgba(99,102,241,0.28);border:2px solid var(--red);text-align:center;font-size:11px">0.58</td><td style="background:rgba(99,102,241,0.37);text-align:center;font-size:11px">0.83</td><td style="background:rgba(99,102,241,0.41);text-align:center;font-size:11px">0.97</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:11px">1.04</td><td style="background:rgba(99,102,241,0.43);text-align:center;font-size:11px">1.02</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">2.09</td></tr><tr><td style="font-size:12px">17</td><td style="font-size:12px;white-space:nowrap">형제약사</td><td class="r fw7" style="font-size:12px">6.51억</td><td style="background:rgba(99,102,241,0.44);border:2px solid var(--red);text-align:center;font-size:11px">0.76</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">1.54</td><td style="background:rgba(99,102,241,0.63);text-align:center;font-size:11px">1.17</td><td style="background:rgba(99,102,241,0.70);text-align:center;font-size:11px">1.33</td><td style="background:rgba(99,102,241,0.44);border:2px solid var(--red);text-align:center;font-size:11px">0.76</td><td style="background:rgba(99,102,241,0.53);text-align:center;font-size:11px">0.96</td></tr><tr><td style="font-size:12px">18</td><td style="font-size:12px;white-space:nowrap">베이지약사</td><td class="r fw7" style="font-size:12px">6.34억</td><td style="background:rgba(99,102,241,0.62);text-align:center;font-size:11px">1.26</td><td style="background:rgba(99,102,241,0.23);border:2px solid var(--red);text-align:center;font-size:11px">0.35</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:11px">1.13</td><td style="background:rgba(99,102,241,0.35);text-align:center;font-size:11px">0.64</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">1.68</td><td style="background:rgba(99,102,241,0.63);text-align:center;font-size:11px">1.29</td></tr><tr><td style="font-size:12px">19</td><td style="font-size:12px;white-space:nowrap">샤인약사</td><td class="r fw7" style="font-size:12px">5.76억</td><td style="background:rgba(99,102,241,0.33);border:2px solid var(--red);text-align:center;font-size:11px">0.53</td><td style="background:rgba(99,102,241,0.51);text-align:center;font-size:11px">0.93</td><td style="background:rgba(99,102,241,0.40);text-align:center;font-size:11px">0.69</td><td style="background:rgba(99,102,241,0.50);text-align:center;font-size:11px">0.91</td><td style="background:rgba(99,102,241,0.61);text-align:center;font-size:11px">1.14</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">1.55</td></tr><tr><td style="font-size:12px">20</td><td style="font-size:12px;white-space:nowrap">우리약사</td><td class="r fw7" style="font-size:12px">5.6억</td><td style="background:rgba(99,102,241,0.40);text-align:center;font-size:11px">0.67</td><td style="background:rgba(99,102,241,0.65);text-align:center;font-size:11px">1.17</td><td style="background:rgba(99,102,241,0.36);border:2px solid var(--red);text-align:center;font-size:11px">0.58</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:11px">1.49</td><td style="background:rgba(99,102,241,0.42);text-align:center;font-size:11px">0.71</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:11px">0.99</td></tr></tbody></table>
+    <div style="font-size:13px;overflow-x:auto">
+      <table><thead><tr><th>#</th><th>약사</th><th class="r">합계</th><th class="c" style="min-width:46px">25/12</th><th class="c" style="min-width:46px">26/01</th><th class="c" style="min-width:46px">26/02</th><th class="c" style="min-width:46px">26/03</th><th class="c" style="min-width:46px">26/04</th><th class="c" style="min-width:46px">26/05</th></tr></thead><tbody><tr><td style="font-size:14px">1</td><td style="color:var(--ac2);font-weight:600" style="font-size:14px;white-space:nowrap">드림약사</td><td class="r fw7" style="font-size:14px">54.07억</td><td style="background:rgba(99,102,241,0.57);text-align:center;font-size:13px">8.37</td><td style="background:rgba(99,102,241,0.69);text-align:center;font-size:13px">10.38</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:13px">9.9</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">12.32</td><td style="background:rgba(99,102,241,0.40);border:2px solid var(--red);text-align:center;font-size:13px">5.56</td><td style="background:rgba(99,102,241,0.52);text-align:center;font-size:13px">7.54</td></tr><tr><td style="font-size:14px">2</td><td style="color:var(--ac2);font-weight:600" style="font-size:14px;white-space:nowrap">위키약사</td><td class="r fw7" style="font-size:14px">49.2억</td><td style="background:rgba(99,102,241,0.73);text-align:center;font-size:13px">8.34</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">9.22</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:13px">7.45</td><td style="background:rgba(99,102,241,0.74);text-align:center;font-size:13px">8.46</td><td style="background:rgba(99,102,241,0.75);text-align:center;font-size:13px">8.58</td><td style="background:rgba(99,102,241,0.64);border:2px solid var(--red);text-align:center;font-size:13px">7.16</td></tr><tr><td style="font-size:14px">3</td><td style="color:var(--ac2);font-weight:600" style="font-size:14px;white-space:nowrap">릴리약사</td><td class="r fw7" style="font-size:14px">36.8억</td><td style="background:rgba(99,102,241,0.67);text-align:center;font-size:13px">6.51</td><td style="background:rgba(99,102,241,0.71);text-align:center;font-size:13px">6.93</td><td style="background:rgba(99,102,241,0.64);text-align:center;font-size:13px">6.22</td><td style="background:rgba(99,102,241,0.58);text-align:center;font-size:13px">5.59</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">7.97</td><td style="background:rgba(99,102,241,0.40);border:2px solid var(--red);text-align:center;font-size:13px">3.58</td></tr><tr><td style="font-size:14px">4</td><td style="color:var(--ac2);font-weight:600" style="font-size:14px;white-space:nowrap">고약사</td><td class="r fw7" style="font-size:14px">32.8억</td><td style="background:rgba(99,102,241,0.39);text-align:center;font-size:13px">4.36</td><td style="background:rgba(99,102,241,0.40);text-align:center;font-size:13px">4.46</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">10.15</td><td style="background:rgba(99,102,241,0.15);border:2px solid var(--red);text-align:center;font-size:13px">1.01</td><td style="background:rgba(99,102,241,0.36);text-align:center;font-size:13px">3.92</td><td style="background:rgba(99,102,241,0.71);text-align:center;font-size:13px">8.88</td></tr><tr><td style="font-size:14px">5</td><td style="color:var(--ac2);font-weight:600" style="font-size:14px;white-space:nowrap">약사비책</td><td class="r fw7" style="font-size:14px">26.0억</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:13px">3.63</td><td style="background:rgba(99,102,241,0.71);text-align:center;font-size:13px">4.74</td><td style="background:rgba(99,102,241,0.49);border:2px solid var(--red);text-align:center;font-size:13px">3.06</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">5.39</td><td style="background:rgba(99,102,241,0.62);text-align:center;font-size:13px">4.07</td><td style="background:rgba(99,102,241,0.76);text-align:center;font-size:13px">5.1</td></tr><tr><td style="font-size:14px">6</td><td style="font-size:14px;white-space:nowrap">다식약사</td><td class="r fw7" style="font-size:14px">16.92억</td><td style="background:rgba(99,102,241,0.34);border:2px solid var(--red);text-align:center;font-size:13px">1.45</td><td style="background:rgba(99,102,241,0.78);text-align:center;font-size:13px">3.93</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:13px">2.68</td><td style="background:rgba(99,102,241,0.48);text-align:center;font-size:13px">2.27</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">4.06</td><td style="background:rgba(99,102,241,0.53);text-align:center;font-size:13px">2.54</td></tr><tr><td style="font-size:14px">7</td><td style="font-size:14px;white-space:nowrap">뵤리약사</td><td class="r fw7" style="font-size:14px">12.95억</td><td style="background:rgba(99,102,241,0.64);text-align:center;font-size:13px">2.35</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:13px">2.43</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">3.02</td><td style="background:rgba(99,102,241,0.26);border:2px solid var(--red);text-align:center;font-size:13px">0.75</td><td style="background:rgba(99,102,241,0.61);text-align:center;font-size:13px">2.24</td><td style="background:rgba(99,102,241,0.59);text-align:center;font-size:13px">2.16</td></tr><tr><td style="font-size:14px">8</td><td style="font-size:14px;white-space:nowrap">약사임당</td><td class="r fw7" style="font-size:14px">12.08억</td><td style="background:rgba(99,102,241,0.52);text-align:center;font-size:13px">1.68</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">2.73</td><td style="background:rgba(99,102,241,0.58);text-align:center;font-size:13px">1.91</td><td style="background:rgba(99,102,241,0.57);text-align:center;font-size:13px">1.85</td><td style="background:rgba(99,102,241,0.73);text-align:center;font-size:13px">2.47</td><td style="background:rgba(99,102,241,0.46);border:2px solid var(--red);text-align:center;font-size:13px">1.43</td></tr><tr><td style="font-size:14px">9</td><td style="font-size:14px;white-space:nowrap">김미성약사</td><td class="r fw7" style="font-size:14px">12.01억</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">3.31</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:13px">1.67</td><td style="background:rgba(99,102,241,0.37);border:2px solid var(--red);text-align:center;font-size:13px">1.34</td><td style="background:rgba(99,102,241,0.48);text-align:center;font-size:13px">1.83</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:13px">1.67</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:13px">2.2</td></tr><tr><td style="font-size:14px">10</td><td style="font-size:14px;white-space:nowrap">쏘핏약사</td><td class="r fw7" style="font-size:14px">10.34억</td><td style="background:rgba(99,102,241,0.68);text-align:center;font-size:13px">1.66</td><td style="background:rgba(99,102,241,0.68);text-align:center;font-size:13px">1.65</td><td style="background:rgba(99,102,241,0.72);text-align:center;font-size:13px">1.75</td><td style="background:rgba(99,102,241,0.62);border:2px solid var(--red);text-align:center;font-size:13px">1.49</td><td style="background:rgba(99,102,241,0.74);text-align:center;font-size:13px">1.82</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">1.98</td></tr><tr><td style="font-size:14px">11</td><td style="font-size:14px;white-space:nowrap">도비약사</td><td class="r fw7" style="font-size:14px">9.46억</td><td style="background:rgba(99,102,241,0.49);text-align:center;font-size:13px">1.32</td><td style="background:rgba(99,102,241,0.59);text-align:center;font-size:13px">1.64</td><td style="background:rgba(99,102,241,0.40);border:2px solid var(--red);text-align:center;font-size:13px">1.03</td><td style="background:rgba(99,102,241,0.50);text-align:center;font-size:13px">1.35</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">2.3</td><td style="background:rgba(99,102,241,0.65);text-align:center;font-size:13px">1.82</td></tr><tr><td style="font-size:14px">12</td><td style="font-size:14px;white-space:nowrap">은하약사</td><td class="r fw7" style="font-size:14px">8.17억</td><td style="background:rgba(99,102,241,0.35);text-align:center;font-size:13px">0.79</td><td style="background:rgba(99,102,241,0.41);text-align:center;font-size:13px">0.96</td><td style="background:rgba(99,102,241,0.76);text-align:center;font-size:13px">1.98</td><td style="background:rgba(99,102,241,0.30);border:2px solid var(--red);text-align:center;font-size:13px">0.65</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">2.11</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:13px">1.69</td></tr><tr><td style="font-size:14px">13</td><td style="font-size:14px;white-space:nowrap">남기헌약사</td><td class="r fw7" style="font-size:14px">7.64억</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">2.38</td><td style="background:rgba(99,102,241,0.77);text-align:center;font-size:13px">2.29</td><td style="background:rgba(99,102,241,0.61);text-align:center;font-size:13px">1.76</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:13px">1.2</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:13px">0.0</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:13px">0.0</td></tr><tr><td style="font-size:14px">14</td><td style="font-size:14px;white-space:nowrap">남약사</td><td class="r fw7" style="font-size:14px">7.27억</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:13px">0.0</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:13px">0.0</td><td style="background:rgba(99,102,241,0.08);border:2px solid var(--red);text-align:center;font-size:13px">0.0</td><td style="background:rgba(99,102,241,0.50);text-align:center;font-size:13px">1.74</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">2.99</td><td style="background:rgba(99,102,241,0.69);text-align:center;font-size:13px">2.54</td></tr><tr><td style="font-size:14px">15</td><td style="font-size:14px;white-space:nowrap">삐약약사</td><td class="r fw7" style="font-size:14px">6.76억</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:13px">0.82</td><td style="background:rgba(99,102,241,0.52);text-align:center;font-size:13px">1.0</td><td style="background:rgba(99,102,241,0.37);border:2px solid var(--red);text-align:center;font-size:13px">0.66</td><td style="background:rgba(99,102,241,0.66);text-align:center;font-size:13px">1.33</td><td style="background:rgba(99,102,241,0.65);text-align:center;font-size:13px">1.3</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">1.65</td></tr><tr><td style="font-size:14px">16</td><td style="font-size:14px;white-space:nowrap">유니약사</td><td class="r fw7" style="font-size:14px">6.53억</td><td style="background:rgba(99,102,241,0.28);border:2px solid var(--red);text-align:center;font-size:13px">0.58</td><td style="background:rgba(99,102,241,0.37);text-align:center;font-size:13px">0.83</td><td style="background:rgba(99,102,241,0.41);text-align:center;font-size:13px">0.97</td><td style="background:rgba(99,102,241,0.44);text-align:center;font-size:13px">1.04</td><td style="background:rgba(99,102,241,0.43);text-align:center;font-size:13px">1.02</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">2.09</td></tr><tr><td style="font-size:14px">17</td><td style="font-size:14px;white-space:nowrap">형제약사</td><td class="r fw7" style="font-size:14px">6.51억</td><td style="background:rgba(99,102,241,0.44);border:2px solid var(--red);text-align:center;font-size:13px">0.76</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">1.54</td><td style="background:rgba(99,102,241,0.63);text-align:center;font-size:13px">1.17</td><td style="background:rgba(99,102,241,0.70);text-align:center;font-size:13px">1.33</td><td style="background:rgba(99,102,241,0.44);border:2px solid var(--red);text-align:center;font-size:13px">0.76</td><td style="background:rgba(99,102,241,0.53);text-align:center;font-size:13px">0.96</td></tr><tr><td style="font-size:14px">18</td><td style="font-size:14px;white-space:nowrap">베이지약사</td><td class="r fw7" style="font-size:14px">6.34억</td><td style="background:rgba(99,102,241,0.62);text-align:center;font-size:13px">1.26</td><td style="background:rgba(99,102,241,0.23);border:2px solid var(--red);text-align:center;font-size:13px">0.35</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:13px">1.13</td><td style="background:rgba(99,102,241,0.35);text-align:center;font-size:13px">0.64</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">1.68</td><td style="background:rgba(99,102,241,0.63);text-align:center;font-size:13px">1.29</td></tr><tr><td style="font-size:14px">19</td><td style="font-size:14px;white-space:nowrap">샤인약사</td><td class="r fw7" style="font-size:14px">5.76억</td><td style="background:rgba(99,102,241,0.33);border:2px solid var(--red);text-align:center;font-size:13px">0.53</td><td style="background:rgba(99,102,241,0.51);text-align:center;font-size:13px">0.93</td><td style="background:rgba(99,102,241,0.40);text-align:center;font-size:13px">0.69</td><td style="background:rgba(99,102,241,0.50);text-align:center;font-size:13px">0.91</td><td style="background:rgba(99,102,241,0.61);text-align:center;font-size:13px">1.14</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">1.55</td></tr><tr><td style="font-size:14px">20</td><td style="font-size:14px;white-space:nowrap">우리약사</td><td class="r fw7" style="font-size:14px">5.6억</td><td style="background:rgba(99,102,241,0.40);text-align:center;font-size:13px">0.67</td><td style="background:rgba(99,102,241,0.65);text-align:center;font-size:13px">1.17</td><td style="background:rgba(99,102,241,0.36);border:2px solid var(--red);text-align:center;font-size:13px">0.58</td><td style="background:rgba(99,102,241,0.80);border:2px solid var(--grn);text-align:center;font-size:13px">1.49</td><td style="background:rgba(99,102,241,0.42);text-align:center;font-size:13px">0.71</td><td style="background:rgba(99,102,241,0.56);text-align:center;font-size:13px">0.99</td></tr></tbody></table>
     </div>
   </div>
 </div>
@@ -583,30 +583,30 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="sec-sub">드림·위키·유이약사 이탈 시 매출 시뮬레이션 | 현재 이탈 조짐 감지</div></div>
 
 <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.4);border-radius:10px;padding:16px;margin-top:12px">
-  <div style="font-size:14px;font-weight:700;color:var(--red);margin-bottom:12px">💀 이탈 시나리오 — 파마브로스에게 가장 위험한 사건</div>
+  <div style="font-size:16px;font-weight:700;color:var(--red);margin-bottom:12px">💀 이탈 시나리오 — 파마브로스에게 가장 위험한 사건</div>
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px">
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:12px;text-align:center">
-      <div style="font-size:12px;color:var(--ylw);font-weight:700;margin-bottom:4px">드림약사만 이탈</div>
-      <div style="font-size:24px;font-weight:800;color:var(--red)">-54억</div>
-      <div style="font-size:11px;color:var(--mu);margin-top:4px">전체 -13.1%<br>유트리션 <span style="color:var(--red)">사실상 소멸</span><br>413→359억</div>
+      <div style="font-size:14px;color:var(--ylw);font-weight:700;margin-bottom:4px">드림약사만 이탈</div>
+      <div style="font-size:27px;font-weight:800;color:var(--red)">-54억</div>
+      <div style="font-size:13px;color:var(--mu);margin-top:4px">전체 -13.1%<br>유트리션 <span style="color:var(--red)">사실상 소멸</span><br>413→359억</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:12px;text-align:center">
-      <div style="font-size:12px;color:var(--ylw);font-weight:700;margin-bottom:4px">위키약사만 이탈</div>
-      <div style="font-size:24px;font-weight:800;color:var(--red)">-49억</div>
-      <div style="font-size:11px;color:var(--mu);margin-top:4px">전체 -11.9%<br>담백하루 상위약사<br>413→364억</div>
+      <div style="font-size:14px;color:var(--ylw);font-weight:700;margin-bottom:4px">위키약사만 이탈</div>
+      <div style="font-size:27px;font-weight:800;color:var(--red)">-49억</div>
+      <div style="font-size:13px;color:var(--mu);margin-top:4px">전체 -11.9%<br>담백하루 상위약사<br>413→364억</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:12px;text-align:center">
-      <div style="font-size:12px;color:var(--ylw);font-weight:700;margin-bottom:4px">유이약사만 이탈</div>
-      <div style="font-size:24px;font-weight:800;color:var(--red)">-20억</div>
-      <div style="font-size:11px;color:var(--mu);margin-top:4px">전체 -4.8%<br>뉴트리션스탠다드<br>413→394억</div>
+      <div style="font-size:14px;color:var(--ylw);font-weight:700;margin-bottom:4px">유이약사만 이탈</div>
+      <div style="font-size:27px;font-weight:800;color:var(--red)">-20억</div>
+      <div style="font-size:13px;color:var(--mu);margin-top:4px">전체 -4.8%<br>뉴트리션스탠다드<br>413→394억</div>
     </div>
     <div style="background:rgba(239,68,68,.2);border-radius:8px;padding:12px;text-align:center;border:1px solid var(--red)">
-      <div style="font-size:12px;color:var(--red);font-weight:700;margin-bottom:4px">3명 동시 이탈</div>
-      <div style="font-size:24px;font-weight:800;color:var(--red)">-123억</div>
-      <div style="font-size:11px;color:var(--mu);margin-top:4px">전체 <span style="color:var(--red)">-29.7%</span><br><span style="color:var(--red)">회복 불가능</span><br>413→290억</div>
+      <div style="font-size:14px;color:var(--red);font-weight:700;margin-bottom:4px">3명 동시 이탈</div>
+      <div style="font-size:27px;font-weight:800;color:var(--red)">-123억</div>
+      <div style="font-size:13px;color:var(--mu);margin-top:4px">전체 <span style="color:var(--red)">-29.7%</span><br><span style="color:var(--red)">회복 불가능</span><br>413→290억</div>
     </div>
   </div>
-  <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:12px;color:var(--mu)">
+  <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:14px;color:var(--mu)">
     <div style="background:rgba(0,0,0,.15);border-radius:6px;padding:10px">
       <strong style="color:var(--red)">파트너십 강화가 해결책이 아닌 이유</strong><br>
       드림·위키·유이약사에게 더 좋은 조건을 제시해도 이들이 원하는 것은 "더 좋은 플랫폼/제품/처우". 경쟁 플랫폼이 더 좋은 조건을 제시하면 막을 수 없음. <strong style="color:var(--tx)">인센티브는 이탈 지연일 뿐, 근본 해결책은 의존도 분산.</strong>
@@ -622,9 +622,9 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="sec-sub">1월 6.93억 → 5월 3.58억 (-48.3%) | 6개월 연속 하락세</div></div>
 
 <div class="card g1" style="border-color:rgba(239,68,68,.4)">
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;font-size:13px">
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;font-size:15px">
     <div>
-      <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:8px">📉 하락 추이</div>
+      <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px">📉 하락 추이</div>
       <div style="display:flex;flex-direction:column;gap:4px">
         <div style="display:flex;justify-content:space-between"><span>25/12</span><span>6.51억</span></div>
         <div style="display:flex;justify-content:space-between"><span>26/01</span><span class="grn">6.93억 ← 최고점</span></div>
@@ -633,11 +633,11 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
         <div style="display:flex;justify-content:space-between"><span>26/04</span><span class="ylw">7.97억 ← 반짝 반등</span></div>
         <div style="display:flex;justify-content:space-between"><span>26/05</span><span class="red">3.58억 ← 최저점</span></div>
       </div>
-      <div style="font-size:11px;color:var(--mu);margin-top:8px">Jan→May: <strong style="color:var(--red)">-48.3%</strong></div>
+      <div style="font-size:13px;color:var(--mu);margin-top:8px">Jan→May: <strong style="color:var(--red)">-48.3%</strong></div>
     </div>
     <div>
-      <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:8px">📋 하락 원인 분석</div>
-      <div style="font-size:12px;color:var(--mu);line-height:1.8">
+      <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px">📋 하락 원인 분석</div>
+      <div style="font-size:14px;color:var(--mu);line-height:1.8">
         <strong style="color:var(--tx)">주력 브랜드</strong>: 담백하루(12.29억)·파이토알엑스(3.67억)·한독(2.95억)·YDY(2.70억)<br><br>
         <strong style="color:var(--tx)">담백하루 하락</strong>: 릴리약사 주력인 담백하루 브랜드 자체가 하락세(-17.7%). 주력 파트너의 약화가 릴리약사 매출 하락 주원인.<br><br>
         <strong style="color:var(--tx)">파이토알엑스 단발</strong>: 4월 반짝 반등은 파이토알엑스 일시 공구. 5월 다시 급락 = 지속성 없음.<br><br>
@@ -645,8 +645,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
       </div>
     </div>
     <div>
-      <div style="font-size:13px;font-weight:700;color:var(--grn);margin-bottom:8px">💬 케어 방안</div>
-      <div style="font-size:12px;color:var(--mu);line-height:1.8">
+      <div style="font-size:15px;font-weight:700;color:var(--grn);margin-bottom:8px">💬 케어 방안</div>
+      <div style="font-size:14px;color:var(--mu);line-height:1.8">
         <strong style="color:var(--tx)">모니터링</strong>: 담백하루 브랜드 하락세가 릴리약사 매출과 직결. 월별 추이 주시.<br><br>
         <strong style="color:var(--tx)">소통</strong>: 릴리약사 팔로워 특성에 맞는 브랜드 정보 자료 정기 공유.<br><br>
         <strong style="color:var(--tx)">지원</strong>: 한독헬스케어 성과 데이터 리뷰 지속. 신규 브랜드 관심 표현 시 선택지 안내.
@@ -655,63 +655,63 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
 </div>
 <div class="sec"><div class="sec-h">주요 약사별 상세 분석</div></div>
-<div style="display:flex;flex-direction:column;gap:10px;margin-top:10px"><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">드림약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">54.07억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기+급락</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">3월 12.3억→4월 5.6억 급락. 유트리션 95% 담당자. 이탈 조짐 감지. 파트너십 강화보다 유트리션 분산(유니·샤인 섭외·협의)이 우선.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-54억</span> (-13.1%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">-15.65억</span> (유트리션 86.7%)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">위키약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">49.20억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">8~9억대 안정 유지 중이나 이탈 조짐. 담백하루·뉴트리션스탠다드 주력. 이탈 시 49억 즉시 손실.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-49억</span> (-11.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--mu)">영향 미미</span> (외부 브랜드 주력)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">릴리약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">36.80억</div><div style="font-size:12px;font-weight:700;color:var(--red)">🔴 즉시 개입</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">Jan 6.93억→May 3.58억(-48.3%). 담백하루 하락과 동반 하락. 4월 반짝 후 5월 최저점.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-36.8억</span> (-8.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">-6.4억</span> (YDY 2.7억 + 파이토알엑스 3.7억)</div></div></div></div><div class="card" style="border-left:4px solid var(--ylw)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">고약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">32.80억</div><div style="font-size:12px;font-weight:700;color:var(--ylw)">⚠️ 극단 변동</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">2월 9.4억→3월 0.7억→5월 7.4억. 파이토알엑스 단발 대형 공구 패턴 반복.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-32.8억</span> (-7.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">파이토알엑스 기여분</span> (대형 단발 공구 주도)</div></div></div></div><div class="card" style="border-left:4px solid var(--grn)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">약사비책</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">26.00억</div><div style="font-size:12px;font-weight:700;color:var(--grn)">✅ 안정 성장</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">5월 5억 최고점. YDY+일동 교차 안정적. 취소율 6.4% 다소 높음.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-26억</span> (-6.3%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">YDY 기여분</span> (YDY·일동 교차 운영)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:14px;font-weight:700">유이약사</div><div style="font-size:17px;font-weight:800;color:var(--ac2);margin:3px 0">19.83억</div><div style="font-size:12px;font-weight:700;color:var(--red)">⚠️ 이탈위기</div></div><div><div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7">안정적이나 이탈 조짐. 자사브랜드 비중 0% — 외부 파트너만 운영.</div></div><div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:12px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-19.8억</span> (-4.8%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--mu)">영향 없음</span> (자사 비중 0%)</div></div></div></div></div>
+<div style="display:flex;flex-direction:column;gap:10px;margin-top:10px"><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:16px;font-weight:700">드림약사</div><div style="font-size:20px;font-weight:800;color:var(--ac2);margin:3px 0">54.07억</div><div style="font-size:14px;font-weight:700;color:var(--red)">⚠️ 이탈위기+급락</div></div><div><div style="font-size:13px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7">3월 12.3억→4월 5.6억 급락. 유트리션 95% 담당자. 이탈 조짐 감지. 파트너십 강화보다 유트리션 분산(유니·샤인 섭외·협의)이 우선.</div></div><div><div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-54억</span> (-13.1%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">-15.65억</span> (유트리션 86.7%)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:16px;font-weight:700">위키약사</div><div style="font-size:20px;font-weight:800;color:var(--ac2);margin:3px 0">49.20억</div><div style="font-size:14px;font-weight:700;color:var(--red)">⚠️ 이탈위기</div></div><div><div style="font-size:13px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7">8~9억대 안정 유지 중이나 이탈 조짐. 담백하루·뉴트리션스탠다드 주력. 이탈 시 49억 즉시 손실.</div></div><div><div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-49억</span> (-11.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--mu)">영향 미미</span> (외부 브랜드 주력)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:16px;font-weight:700">릴리약사</div><div style="font-size:20px;font-weight:800;color:var(--ac2);margin:3px 0">36.80억</div><div style="font-size:14px;font-weight:700;color:var(--red)">🔴 즉시 개입</div></div><div><div style="font-size:13px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7">Jan 6.93억→May 3.58억(-48.3%). 담백하루 하락과 동반 하락. 4월 반짝 후 5월 최저점.</div></div><div><div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-36.8억</span> (-8.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">-6.4억</span> (YDY 2.7억 + 파이토알엑스 3.7억)</div></div></div></div><div class="card" style="border-left:4px solid var(--ylw)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:16px;font-weight:700">고약사</div><div style="font-size:20px;font-weight:800;color:var(--ac2);margin:3px 0">32.80억</div><div style="font-size:14px;font-weight:700;color:var(--ylw)">⚠️ 극단 변동</div></div><div><div style="font-size:13px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7">2월 9.4억→3월 0.7억→5월 7.4억. 파이토알엑스 단발 대형 공구 패턴 반복.</div></div><div><div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-32.8억</span> (-7.9%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">파이토알엑스 기여분</span> (대형 단발 공구 주도)</div></div></div></div><div class="card" style="border-left:4px solid var(--grn)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:16px;font-weight:700">약사비책</div><div style="font-size:20px;font-weight:800;color:var(--ac2);margin:3px 0">26.00억</div><div style="font-size:14px;font-weight:700;color:var(--grn)">✅ 안정 성장</div></div><div><div style="font-size:13px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7">5월 5억 최고점. YDY+일동 교차 안정적. 취소율 6.4% 다소 높음.</div></div><div><div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-26억</span> (-6.3%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--ylw)">YDY 기여분</span> (YDY·일동 교차 운영)</div></div></div></div><div class="card" style="border-left:4px solid var(--red)"><div style="display:grid;grid-template-columns:160px 1fr 1fr;gap:14px"><div><div style="font-size:16px;font-weight:700">유이약사</div><div style="font-size:20px;font-weight:800;color:var(--ac2);margin:3px 0">19.83억</div><div style="font-size:14px;font-weight:700;color:var(--red)">⚠️ 이탈위기</div></div><div><div style="font-size:13px;font-weight:700;color:var(--mu);margin-bottom:4px">현황 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7">안정적이나 이탈 조짐. 자사브랜드 비중 0% — 외부 파트너만 운영.</div></div><div><div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:4px">이탈 영향 분석</div><div style="font-size:14px;color:var(--mu);line-height:1.7"><strong style="color:var(--tx)">전체 이탈</strong>: <span style="color:var(--red)">-19.8억</span> (-4.8%)<br><strong style="color:var(--tx)">자사만 이탈</strong>: <span style="color:var(--mu)">영향 없음</span> (자사 비중 0%)</div></div></div></div></div>
 
 <div class="sec"><div class="sec-h">✅ 자사 친화 약사 — 파트너십 재편의 핵심</div>
 <div class="sec-sub">소규모지만 자사 브랜드 친화도 높고 성장세 | 이들이 파트너십 개편의 핵심</div></div>
 
 <div style="background:rgba(16,185,129,.07);border:1px solid rgba(16,185,129,.3);border-radius:10px;padding:16px;margin-top:12px">
-  <div style="font-size:14px;font-weight:700;color:var(--grn);margin-bottom:12px">💚 자사 친화 약사 7명 — 집중 육성 대상</div>
+  <div style="font-size:16px;font-weight:700;color:var(--grn);margin-bottom:12px">💚 자사 친화 약사 7명 — 집중 육성 대상</div>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
-      <div style="font-size:12px;font-weight:700;color:var(--grn)">삐약약사 ↑</div>
-      <div style="font-size:18px;font-weight:800">6.76억</div>
-      <div style="font-size:11px;color:var(--mu)">자사비중 18.8%<br>파이토알엑스·더리틀스</div>
+      <div style="font-size:14px;font-weight:700;color:var(--grn)">삐약약사 ↑</div>
+      <div style="font-size:21px;font-weight:800">6.76억</div>
+      <div style="font-size:13px;color:var(--mu)">자사비중 18.8%<br>파이토알엑스·더리틀스</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
-      <div style="font-size:12px;font-weight:700;color:var(--grn)">유니약사 ↑</div>
-      <div style="font-size:18px;font-weight:800">6.53억</div>
-      <div style="font-size:11px;color:var(--mu)">자사비중 17.9%<br>트루엔·퓨어젠·YDY</div>
+      <div style="font-size:14px;font-weight:700;color:var(--grn)">유니약사 ↑</div>
+      <div style="font-size:21px;font-weight:800">6.53억</div>
+      <div style="font-size:13px;color:var(--mu)">자사비중 17.9%<br>트루엔·퓨어젠·YDY</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
-      <div style="font-size:12px;font-weight:700;color:var(--grn)">샤인약사 ↑</div>
-      <div style="font-size:18px;font-weight:800">5.76억</div>
-      <div style="font-size:11px;color:var(--mu)">자사비중 16.2%<br>YDY·한독·저스트글로우</div>
+      <div style="font-size:14px;font-weight:700;color:var(--grn)">샤인약사 ↑</div>
+      <div style="font-size:21px;font-weight:800">5.76억</div>
+      <div style="font-size:13px;color:var(--mu)">자사비중 16.2%<br>YDY·한독·저스트글로우</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
-      <div style="font-size:12px;font-weight:700;color:var(--grn)">다식약사 ↑</div>
-      <div style="font-size:18px;font-weight:800">16.92억</div>
-      <div style="font-size:11px;color:var(--mu)">자사비중 15.7%<br>박약다식·닥터체크</div>
+      <div style="font-size:14px;font-weight:700;color:var(--grn)">다식약사 ↑</div>
+      <div style="font-size:21px;font-weight:800">16.92억</div>
+      <div style="font-size:13px;color:var(--mu)">자사비중 15.7%<br>박약다식·닥터체크</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
-      <div style="font-size:12px;font-weight:700;color:var(--grn)">도비약사 ↑</div>
-      <div style="font-size:18px;font-weight:800">9.46억</div>
-      <div style="font-size:11px;color:var(--mu)">자사비중 14.0%<br>아워뉴트리·닥터체크</div>
+      <div style="font-size:14px;font-weight:700;color:var(--grn)">도비약사 ↑</div>
+      <div style="font-size:21px;font-weight:800">9.46억</div>
+      <div style="font-size:13px;color:var(--mu)">자사비중 14.0%<br>아워뉴트리·닥터체크</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
-      <div style="font-size:12px;font-weight:700;color:var(--grn)">약사피셜 ↑</div>
-      <div style="font-size:18px;font-weight:800">3.17억</div>
-      <div style="font-size:11px;color:var(--mu)">자사비중 28.4%<br>YDY·박약다식</div>
+      <div style="font-size:14px;font-weight:700;color:var(--grn)">약사피셜 ↑</div>
+      <div style="font-size:21px;font-weight:800">3.17억</div>
+      <div style="font-size:13px;color:var(--mu)">자사비중 28.4%<br>YDY·박약다식</div>
     </div>
     <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:10px">
-      <div style="font-size:12px;font-weight:700;color:var(--mu)">자신약사 →</div>
-      <div style="font-size:18px;font-weight:800">4.39억</div>
-      <div style="font-size:11px;color:var(--mu)">자사비중 19.1%<br>파이토알엑스·YDY</div>
+      <div style="font-size:14px;font-weight:700;color:var(--mu)">자신약사 →</div>
+      <div style="font-size:21px;font-weight:800">4.39억</div>
+      <div style="font-size:13px;color:var(--mu)">자사비중 19.1%<br>파이토알엑스·YDY</div>
     </div>
     <div style="background:rgba(16,185,129,.15);border-radius:8px;padding:10px;border:1px solid var(--grn)">
-      <div style="font-size:12px;font-weight:700;color:var(--grn)">7명 합산 잠재력</div>
-      <div style="font-size:18px;font-weight:800;color:var(--grn)">+30억</div>
-      <div style="font-size:11px;color:var(--mu)">집중 지원 시<br>연간 추가 추정</div>
+      <div style="font-size:14px;font-weight:700;color:var(--grn)">7명 합산 잠재력</div>
+      <div style="font-size:21px;font-weight:800;color:var(--grn)">+30억</div>
+      <div style="font-size:13px;color:var(--mu)">집중 지원 시<br>연간 추가 추정</div>
     </div>
   </div>
-  <div style="margin-top:12px;font-size:12px;color:var(--mu);line-height:1.75">
+  <div style="margin-top:12px;font-size:14px;color:var(--mu);line-height:1.75">
     <strong style="color:var(--tx)">왜 이들인가</strong>: ① 이미 자사 브랜드를 자발적으로 진행 중 (강요 불필요) ② 성장세 ③ 매출 규모 확장 여지 충분 ④ 파트너십 계약화 시 수용 가능성 높음.<br>
     <strong style="color:var(--grn)">전략</strong>: 이 7명에게 자사 브랜드 독점 우선 제안 + 전담 지원 + 공구 캘린더 사전 협의 → Top3 이탈 시 완충재 역할.
   </div>
 </div>
 <div class="card g1" style="border-color:rgba(99,102,241,.3)">
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:12px">🔍 약사 포트폴리오 4가지 유형</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;font-size:12px">
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);margin-bottom:12px">🔍 약사 포트폴리오 4가지 유형</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;font-size:14px">
     <div style="background:rgba(16,185,129,.07);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--grn);margin-bottom:6px">✅ 안정형 (위키·약사비책·유이)</div><div style="color:var(--mu)">다파트너 균형. 변동 최소. 롤모델이나 이탈 위기.</div></div>
     <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 대형공구형 (드림·고약사)</div><div style="color:var(--mu)">단일 대형 공구 종료 후 급락. 정기화 필요.</div></div>
     <div style="background:rgba(245,158,11,.07);border-radius:8px;padding:12px"><div style="font-weight:700;color:var(--ylw);margin-bottom:6px">🔴 하락형 (릴리·뵤리)</div><div style="color:var(--mu)">동일 파트너 반복→피로. 신규 파트너 섭외 제안.</div></div>
@@ -723,8 +723,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="sec-sub">이탈 위기 Top3 의존 탈피 → 자사친화 약사 그룹화, 집중 육성</div></div>
 
 <div style="background:rgba(99,102,241,.08);border:1px solid var(--ac);border-radius:10px;padding:16px;margin-top:12px">
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:12px">🔑 전략 전환의 핵심 논리</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);margin-bottom:12px">🔑 전략 전환의 핵심 논리</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;font-size:15px;color:var(--mu)">
     <div><strong style="color:var(--red)">기존 전략의 문제</strong><br>드림·위키 의존 강화 → 이들이 이탈하면 더 큰 충격. 파트너십 강화(인센티브)는 이탈 지연일 뿐.</div>
     <div><strong style="color:var(--grn)">새 전략의 방향</strong><br>자사 친화 7명(삐약·유니·샤인·다식·도비·약사피셜·자신)을 공식 파트너로 계약화. 이들과 자사 브랜드 집중 협의.</div>
     <div><strong style="color:var(--ac2)">카테고리 전략 병행</strong><br>오메가3 편중에서 벗어나 베르베린·NMN·키즈·직구 프리미엄 4개 성장 카테고리 진입.</div>
@@ -736,31 +736,31 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 
 <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
   <div class="card" style="border-left:4px solid #10b981">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">📌 핵심 전제 — 배정보다 환경 조성</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+    <div style="font-size:16px;font-weight:700;margin-bottom:10px">📌 핵심 전제 — 배정보다 환경 조성</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">
       자사 친화적인 약사들은 이미 자발적으로 자사 브랜드를 진행 중. 특정 약사에게 특정 브랜드를 강제할 수 없으며, 해선 안 됨. 대신 <strong style="color:var(--tx)">"자사와 함께하면 더 유리하다"는 구조</strong>를 만드는 것이 핵심.
     </div>
   </div>
 
   <div class="card" style="border-left:4px solid #22d3ee">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🔒 약사 리텐션 방안 1 — 독점 선공개 권한</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+    <div style="font-size:16px;font-weight:700;margin-bottom:10px">🔒 약사 리텐션 방안 1 — 독점 선공개 권한</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:15px;color:var(--mu)">
       <div><strong style="color:var(--tx)">내용</strong><br>신제품 출시 전 자사 친화적인 약사 그룹에게 독점 선공개 기회 제공. "파마브로스 파트너라서 남들보다 먼저 좋은 제품을 알게 된다"는 가치 경험 형성.</div>
       <div><strong style="color:var(--tx)">기대 효과</strong><br>• 자사 플랫폼 이탈 시 이 혜택을 잃는다는 구조<br>• 신제품 초기 흥행 = 약사 팔로워 만족도 상승<br>• 자사 친화 약사들의 자발적 충성도 유지</div>
     </div>
   </div>
 
   <div class="card" style="border-left:4px solid #6366f1">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🔒 약사 리텐션 방안 2 — 약사 어드바이저리 그룹 구성</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+    <div style="font-size:16px;font-weight:700;margin-bottom:10px">🔒 약사 리텐션 방안 2 — 약사 어드바이저리 그룹 구성</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:15px;color:var(--mu)">
       <div><strong style="color:var(--tx)">내용</strong><br>자사 친화적인 약사 그룹을 "제품 개발 어드바이저"로 공식화. 신제품 기획 단계부터 약사의 의견 반영. 약사 입장에서 "내가 이 제품 개발에 기여했다"는 오너십 부여.</div>
       <div><strong style="color:var(--tx)">기대 효과</strong><br>• 약사가 자신이 기여한 제품을 자발적으로 홍보<br>• 팔로워에게 "내가 추천하는 이유"가 생김<br>• 독립 브랜드보다 협업 구조를 선택할 인센티브</div>
     </div>
   </div>
 
   <div class="card" style="border-left:4px solid #10b981">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🎁 약사 리텐션 방안 3 — 장기 파트너 이벤트·프로모션 우선 제공</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px;color:var(--mu)">
+    <div style="font-size:16px;font-weight:700;margin-bottom:10px">🎁 약사 리텐션 방안 3 — 장기 파트너 이벤트·프로모션 우선 제공</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:15px;color:var(--mu)">
       <div><strong style="color:var(--tx)">내용</strong><br>파마브로스와 오래 함께한 약사에게 신제품 출시 정보·프로모션 기회를 우선 안내. 정보 공유와 자사제품 공동구매시 프로모션 지원으로 자연스러운 관계 강화.</div>
       <div><strong style="color:var(--tx)">기대 효과</strong><br>• 장기 파트너의 체감 가치 증가<br>• 단발이 아닌 지속 소통 채널 형성<br>• 구조 변경 없이 파트너 관계 유지</div>
     </div>
@@ -771,8 +771,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="sec-sub">마이랩스 = 해외 제품 → 국내 유통 파이프라인 | 오메가3 포화 시장 탈피 + 기출시 신제품 약사 채널 연결</div></div>
 
 <div style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.3);border-radius:8px;padding:14px;margin-top:12px">
-  <div style="font-size:13px;font-weight:700;color:var(--grn);margin-bottom:8px">마이랩스 = 파마브로스의 해외 제품 개발·국내 유통 파이프라인</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:12px;color:var(--mu)">
+  <div style="font-size:15px;font-weight:700;color:var(--grn);margin-bottom:8px">마이랩스 = 파마브로스의 해외 제품 개발·국내 유통 파이프라인</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:14px;color:var(--mu)">
     <div><strong style="color:var(--tx)">기존 인식 (틀림)</strong>: 마이랩스 = 외부 파트너사. +1741% 성장 = 외부 파트너 성장.<br><br><strong style="color:var(--tx)">실제 구조</strong>: 파마브로스가 마이랩스를 인수. YDY해외+마이랩스 = 동일 유통 채널. +1741% 성장은 사실상 <strong style="color:var(--grn)">자사 해외 브랜드 라인의 성장.</strong></div>
     <div><strong style="color:var(--tx)">전략적 의미</strong>: 마이랩스를 통해 해외에서 제품을 개발하면, 국내 약사 채널로 독점 유통 가능. 오메가3 포화 시장을 피해 베르베린·NMN 등 기출시 신제품을 <strong style="color:var(--grn)">자사 브랜드로 약사 채널에 연결</strong>할 수 있는 구조.<br><br>단, 어떤 약사 그룹에 어떤 제품을 우선 소개할지 <strong style="color:var(--ylw)">배정 전략이 선행되어야 함.</strong></div>
   </div>
@@ -780,8 +780,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 
 <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
   <div class="card" style="border-color:rgba(239,68,68,.3)">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🔥 베르베린/혈당 — 지금 당장 공략해야 할 카테고리</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:13px;color:var(--mu)">
+    <div style="font-size:16px;font-weight:700;margin-bottom:10px">🔥 베르베린/혈당 — 지금 당장 공략해야 할 카테고리</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:15px;color:var(--mu)">
       <div>
         <strong style="color:var(--tx)">시장 근거</strong>: YDY 베르베린(6.1억)+저스트글로우 베르베린(7.81억)+마이랩스 베르베린(4.84억) = 이미 18.7억 검증 완료. 2030 혈당 관리 관심 급증. 메트포르민 대안으로 서구권에서 이미 폭발적 성장.<br><br>
         <strong style="color:var(--tx)">자사 현황</strong>: YDY 베르베린 파이토좀이 이미 있으나 투자·운영 부족. 외부 파트너(저스트글로우·마이랩스)가 같은 카테고리에서 성장 독식 중.
@@ -797,8 +797,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
 
   <div class="card" style="border-color:rgba(34,211,238,.3)">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">💎 프리미엄 해외 직구 — 검증된 성장 모델 복제</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:13px;color:var(--mu)">
+    <div style="font-size:16px;font-weight:700;margin-bottom:10px">💎 프리미엄 해외 직구 — 검증된 성장 모델 복제</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:15px;color:var(--mu)">
       <div>
         <strong style="color:var(--tx)">성공 사례</strong>: 저스트글로우(캐나다, +60%)·마이랩스(미국, +1741%)의 공통점은 "약사가 추천해주는 해외 검증 제품". 일반 온라인보다 신뢰도 높음 + 개인 직구 번거로움 해소.<br><br>
         <strong style="color:var(--tx)">시장 기회</strong>: 성공 공식이 검증됨. 신규 직구 브랜드 발굴 기준: ① 트렌드 성분 ② 국내 대체재 없음 ③ 약사 설명 용이 ④ 고단가·고마진.
@@ -814,8 +814,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
 
   <div class="card" style="border-color:rgba(16,185,129,.3)">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">👶 키즈/소아 영양제 — 미개척 성장 영역</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:13px;color:var(--mu)">
+    <div style="font-size:16px;font-weight:700;margin-bottom:10px">👶 키즈/소아 영양제 — 미개척 성장 영역</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:15px;color:var(--mu)">
       <div>
         <strong style="color:var(--tx)">시장 근거</strong>: 스타팜 AWESOME 키즈오메가3+CM+ 복합 세트 11억으로 전체 TOP5 제품 진입. 소아청소년 부모 구매 결정 → 약사 추천 신뢰도 특히 높음. 현재 자사 키즈 라인 없어 스타팜·더리틀스 등이 독식.
       </div>
@@ -830,8 +830,8 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
   </div>
 
   <div class="card" style="border-color:rgba(245,158,11,.3)">
-    <div style="font-size:14px;font-weight:700;margin-bottom:10px">🧬 NMN/항노화 — 고마진 프리미엄 진입 기회</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:13px;color:var(--mu)">
+    <div style="font-size:16px;font-weight:700;margin-bottom:10px">🧬 NMN/항노화 — 고마진 프리미엄 진입 기회</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:15px;color:var(--mu)">
       <div>
         <strong style="color:var(--tx)">시장 근거</strong>: 저스트글로우 NMN 500mg·마이니NMN 모두 고성장. 단가 10만원+ → 약사 설명 필수 카테고리. 전 세계 연간 성장률 12%+. 약사 전문성이 일반 쇼핑몰 대비 압도적 강점.<br><br>
         <strong style="color:var(--tx)">차별화</strong>: 항노화 패키지(NMN+글루타치온+알파리포산) 세트 공구 → 건당 단가 상승.
@@ -867,22 +867,22 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 .acc-hdr{display:grid;grid-template-columns:80px 1fr 110px 140px 20px;gap:10px;align-items:center;padding:14px 16px;cursor:pointer;transition:background .15s}
 .acc-hdr:hover{background:var(--sf2)}
 .acc-hdr.open{background:var(--sf2);border-bottom:1px solid var(--bd)}
-.acc-body{display:none;padding:16px;font-size:13px;color:var(--mu);line-height:1.75}
+.acc-body{display:none;padding:16px;font-size:15px;color:var(--mu);line-height:1.75}
 .acc-body.open{display:block}
 .acc-body .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
 .acc-body .detail-box{background:var(--sf2);border-radius:6px;padding:12px}
-.acc-arrow{color:var(--mu);transition:transform .2s;text-align:center;font-size:12px}
+.acc-arrow{color:var(--mu);transition:transform .2s;text-align:center;font-size:14px}
 .acc-hdr.open .acc-arrow{transform:rotate(180deg)}
 </style>
 
-<div style="display:grid;grid-template-columns:80px 1fr 110px 140px 20px;gap:10px;padding:8px 16px;font-size:10px;color:var(--mu);text-transform:uppercase;font-weight:700;margin-bottom:4px">
+<div style="display:grid;grid-template-columns:80px 1fr 110px 140px 20px;gap:10px;padding:8px 16px;font-size:12px;color:var(--mu);text-transform:uppercase;font-weight:700;margin-bottom:4px">
   <span>시점</span><span>과제</span><span>전략유형</span><span>기대효과</span><span></span>
 </div>
 
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="red fw7">&#x1F534; 즉시</span>
-    <span style="font-size:14px;font-weight:600">이탈위기 약사 파트너십 유지 &#8212; 외부 파트너 공구 관계 지속 확보</span>
+    <span style="font-size:16px;font-weight:600">이탈위기 약사 파트너십 유지 &#8212; 외부 파트너 공구 관계 지속 확보</span>
     <span><span class="tag tag-pb">리스크 대응</span></span>
     <span class="red fw7">연 -123억 리스크 관리</span>
     <span class="acc-arrow">&#9660;</span>
@@ -913,7 +913,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="red fw7">&#x1F534; 즉시</span>
-    <span style="font-size:14px;font-weight:600">외부 파트너 전체 매출 성장 &#8212; 기존 파트너 유지 + 신규 파트너 육성</span>
+    <span style="font-size:16px;font-weight:600">외부 파트너 전체 매출 성장 &#8212; 기존 파트너 유지 + 신규 파트너 육성</span>
     <span><span style="background:rgba(99,102,241,.15);color:var(--ac)" class="tag">파트너 관리</span></span>
     <span class="ylw fw7">총매출 성장</span>
     <span class="acc-arrow">&#9660;</span>
@@ -944,7 +944,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="ylw fw7">&#x1F7E1; 단기</span>
-    <span style="font-size:14px;font-weight:600">친한스토어 Admin &#8212; 자사 브랜드 전용 캘린더 분리 운영</span>
+    <span style="font-size:16px;font-weight:600">친한스토어 Admin &#8212; 자사 브랜드 전용 캘린더 분리 운영</span>
     <span><span class="tag tag-pb">구조 개선</span></span>
     <span class="grn fw7">예측 가능 운영</span>
     <span class="acc-arrow">&#9660;</span>
@@ -973,7 +973,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="ylw fw7">&#x1F7E1; 단기</span>
-    <span style="font-size:14px;font-weight:600">자사 친화 약사 그룹 리텐션 인프라 구축 &#8212; 독점 선공개 &#183; 어드바이저 그룹 &#183; 장기 이벤트</span>
+    <span style="font-size:16px;font-weight:600">자사 친화 약사 그룹 리텐션 인프라 구축 &#8212; 독점 선공개 &#183; 어드바이저 그룹 &#183; 장기 이벤트</span>
     <span><span class="tag tag-pb">관계 유지</span></span>
     <span class="grn fw7">이탈 방지 +5억/월</span>
     <span class="acc-arrow">&#9660;</span>
@@ -1004,7 +1004,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="grn fw7">&#x1F7E2; 중기</span>
-    <span style="font-size:14px;font-weight:600">신카테고리 제품 정보 지원 체계 구축 &#8212; 베르베린 &#183; NMN &#183; 항노화</span>
+    <span style="font-size:16px;font-weight:600">신카테고리 제품 정보 지원 체계 구축 &#8212; 베르베린 &#183; NMN &#183; 항노화</span>
     <span><span style="background:rgba(34,211,238,.15);color:var(--ac2)" class="tag">카테고리 확대</span></span>
     <span class="grn fw7">자사 브랜드 다각화</span>
     <span class="acc-arrow">&#9660;</span>
@@ -1036,7 +1036,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="grn fw7">&#x1F7E2; 중기</span>
-    <span style="font-size:14px;font-weight:600">기출시 신제품 전략적 약사 배정 및 프로모션 방안 수립</span>
+    <span style="font-size:16px;font-weight:600">기출시 신제품 전략적 약사 배정 및 프로모션 방안 수립</span>
     <span><span style="background:rgba(34,211,238,.15);color:var(--ac2)" class="tag">카테고리 확대</span></span>
     <span class="grn fw7">신제품 실판매 전환</span>
     <span class="acc-arrow">&#9660;</span>
@@ -1068,7 +1068,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="ylw fw7">&#x1F7E1; 단기</span>
-    <span style="font-size:14px;font-weight:600">구좌 확대 &#8212; 현재 공구 중인 제품군 판매 슬롯 극대화</span>
+    <span style="font-size:16px;font-weight:600">구좌 확대 &#8212; 현재 공구 중인 제품군 판매 슬롯 극대화</span>
     <span><span class="tag tag-pb">매출 확대</span></span>
     <span class="grn fw7">기존 매출 극대화</span>
     <span class="acc-arrow">&#9660;</span>
@@ -1097,7 +1097,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="ylw fw7">&#x1F7E1; 단기</span>
-    <span style="font-size:14px;font-weight:600">신제품 지속 푸시 &#8212; 공지&#183;콘텐츠 주기적 리프레시</span>
+    <span style="font-size:16px;font-weight:600">신제품 지속 푸시 &#8212; 공지&#183;콘텐츠 주기적 리프레시</span>
     <span><span class="tag tag-pb">운영 최적화</span></span>
     <span class="grn fw7">실판매 전환율 향상</span>
     <span class="acc-arrow">&#9660;</span>
@@ -1126,7 +1126,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:18px 0}
 <div class="acc-item">
   <div class="acc-hdr" onclick="tAcc(this)">
     <span class="grn fw7">&#x1F7E2; 중기</span>
-    <span style="font-size:14px;font-weight:600">경쟁력 있는 제품 소싱 &#8212; 약사 수요 기반 신규 포트폴리오 발굴</span>
+    <span style="font-size:16px;font-weight:600">경쟁력 있는 제품 소싱 &#8212; 약사 수요 기반 신규 포트폴리오 발굴</span>
     <span><span style="background:rgba(34,211,238,.15);color:var(--ac2)" class="tag">제품 확장</span></span>
     <span class="grn fw7">포트폴리오 강화</span>
     <span class="acc-arrow">&#9660;</span>
@@ -1259,15 +1259,15 @@ function sw(id,btn){
 <div class="sec-sub">각 전략의 가정이 틀렸을 때 무엇이 일어나는가 | 대안 계획</div></div>
 
 <div style="background:rgba(99,102,241,.07);border:1px solid var(--ac);border-radius:10px;padding:14px;margin-top:12px">
-  <div style="font-size:13px;color:var(--mu)">이 탭은 제시된 전략들이 <strong style="color:var(--tx)">"틀렸거나 실행 불가능할 때"</strong>를 전제로 작성됨. 전략 자체가 틀렸다는 의미가 아니라, <strong style="color:var(--tx)">가정이 무너질 경우의 대비</strong>임.</div>
+  <div style="font-size:15px;color:var(--mu)">이 탭은 제시된 전략들이 <strong style="color:var(--tx)">"틀렸거나 실행 불가능할 때"</strong>를 전제로 작성됨. 전략 자체가 틀렸다는 의미가 아니라, <strong style="color:var(--tx)">가정이 무너질 경우의 대비</strong>임.</div>
 </div>
 
 <div style="display:flex;flex-direction:column;gap:14px;margin-top:14px">
 
 <!-- 전략 1: 자사 친화 약사 리텐션 -->
 <div class="card" style="border-top:3px solid #10b981">
-  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 1 — 자사 친화 약사 그룹 리텐션</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+  <div style="font-size:16px;font-weight:700;margin-bottom:12px">전략 1 — 자사 친화 약사 그룹 리텐션</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:14px">
     <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
       <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
       <div style="color:var(--mu);line-height:1.8">
@@ -1294,8 +1294,8 @@ function sw(id,btn){
 
 <!-- 전략 2: 기출시 신제품 약사 배정 -->
 <div class="card" style="border-top:3px solid #22d3ee">
-  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 2 — 기출시 신제품 전략적 약사 배정 및 프로모션</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+  <div style="font-size:16px;font-weight:700;margin-bottom:12px">전략 2 — 기출시 신제품 전략적 약사 배정 및 프로모션</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:14px">
     <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
       <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
       <div style="color:var(--mu);line-height:1.8">
@@ -1322,8 +1322,8 @@ function sw(id,btn){
 
 <!-- 전략 3: 오메가3 신제품 개발 중단 -->
 <div class="card" style="border-top:3px solid #f59e0b">
-  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 3 — 오메가3 신제품 개발 중단 + 비오메가3 집중</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+  <div style="font-size:16px;font-weight:700;margin-bottom:12px">전략 3 — 오메가3 신제품 개발 중단 + 비오메가3 집중</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:14px">
     <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
       <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
       <div style="color:var(--mu);line-height:1.8">
@@ -1350,8 +1350,8 @@ function sw(id,btn){
 
 <!-- 전략 4: 외부 파트너 협력 구조 -->
 <div class="card" style="border-top:3px solid #6366f1">
-  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 4 — 외부 파트너 에이전시 협력 구조 (데이터 공유·공동 기획)</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+  <div style="font-size:16px;font-weight:700;margin-bottom:12px">전략 4 — 외부 파트너 에이전시 협력 구조 (데이터 공유·공동 기획)</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:14px">
     <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
       <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
       <div style="color:var(--mu);line-height:1.8">
@@ -1378,8 +1378,8 @@ function sw(id,btn){
 
 <!-- 전략 5: 릴리약사 즉시 개입 -->
 <div class="card" style="border-top:3px solid #ef4444">
-  <div style="font-size:14px;font-weight:700;margin-bottom:12px">전략 5 — 릴리약사 즉시 신규 파트너 개입</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:12px">
+  <div style="font-size:16px;font-weight:700;margin-bottom:12px">전략 5 — 릴리약사 즉시 신규 파트너 개입</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:14px">
     <div style="background:rgba(239,68,68,.07);border-radius:8px;padding:12px">
       <div style="font-weight:700;color:var(--red);margin-bottom:6px">⚠️ 리스크</div>
       <div style="color:var(--mu);line-height:1.8">
@@ -1407,8 +1407,8 @@ function sw(id,btn){
 </div>
 
 <div class="card g1" style="border-color:rgba(99,102,241,.3)">
-  <div style="font-size:14px;font-weight:700;color:var(--ac2);margin-bottom:12px">🧭 리스크 점검 종합 — 가장 불확실한 가정들</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
+  <div style="font-size:16px;font-weight:700;color:var(--ac2);margin-bottom:12px">🧭 리스크 점검 종합 — 가장 불확실한 가정들</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:15px">
     <div>
       <div style="font-weight:700;color:var(--red);margin-bottom:8px">반드시 검증해야 할 가정들</div>
       <div style="color:var(--mu);line-height:1.9">
@@ -1432,9 +1432,9 @@ function sw(id,btn){
 </div>
 </div><div id="p9" class="page">
 <div style="background:linear-gradient(135deg,#1e0a0a,#1a0f0f);border:1px solid rgba(239,68,68,.3);border-radius:12px;padding:20px 24px;margin-bottom:20px">
-  <div style="font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px">공동구매팀 — 하반기 전략 보고</div>
-  <div style="font-size:20px;font-weight:800;margin-bottom:6px">2026 하반기 공동구매팀 과제 및 실행계획</div>
-  <div style="font-size:13px;color:var(--mu)">매출 하락 구조적 원인 분석 | 하반기 개선 방향 | 팀 실행계획 | 회사 차원 의사결정 요청</div>
+  <div style="font-size:13px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px">공동구매팀 — 하반기 전략 보고</div>
+  <div style="font-size:23px;font-weight:800;margin-bottom:6px">2026 하반기 공동구매팀 과제 및 실행계획</div>
+  <div style="font-size:15px;color:var(--mu)">매출 하락 구조적 원인 분석 | 하반기 개선 방향 | 팀 실행계획 | 회사 차원 의사결정 요청</div>
 </div>
 
 <!-- PART 1: 원인 분석 결론 -->
@@ -1442,20 +1442,20 @@ function sw(id,btn){
 
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px">
   <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3);border-radius:10px;padding:14px">
-    <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:8px">① 약사 단일 의존 구조</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.8">유트리션 브랜드 매출의 <strong style="color:var(--tx)">86.7%가 드림약사 1인</strong> 담당. 해당 약사의 공구 중단이 브랜드 전체 매출 소멸로 직결되는 구조. 파이토알엑스도 상위 2명 의존도 93%.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px">① 약사 단일 의존 구조</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.8">유트리션 브랜드 매출의 <strong style="color:var(--tx)">86.7%가 드림약사 1인</strong> 담당. 해당 약사의 공구 중단이 브랜드 전체 매출 소멸로 직결되는 구조. 파이토알엑스도 상위 2명 의존도 93%.</div>
   </div>
   <div style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.3);border-radius:10px;padding:14px">
-    <div style="font-size:13px;font-weight:700;color:var(--ylw);margin-bottom:8px">② 대형약사 독립화 추세</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.8">매출 상위 약사일수록 자체 브랜드 구축 또는 플랫폼 이탈 시도. 드림·위키·유이약사 이탈 조짐 감지. <strong style="color:var(--tx)">이는 업계 전반의 구조적 트렌드</strong>로, 개별 대응보다 의존도 분산이 근본 해법.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--ylw);margin-bottom:8px">② 대형약사 독립화 추세</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.8">매출 상위 약사일수록 자체 브랜드 구축 또는 플랫폼 이탈 시도. 드림·위키·유이약사 이탈 조짐 감지. <strong style="color:var(--tx)">이는 업계 전반의 구조적 트렌드</strong>로, 개별 대응보다 의존도 분산이 근본 해법.</div>
   </div>
   <div style="background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.3);border-radius:10px;padding:14px">
-    <div style="font-size:13px;font-weight:700;color:var(--ac2);margin-bottom:8px">③ 카테고리 진화 지연</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.8">자사 4개 브랜드 모두 오메가3 중심. 베르베린·NMN 등 기출시 신제품이 있으나 <strong style="color:var(--tx)">약사 배정이 이루어지지 않아 실판매로 연결되지 않은 상황.</strong> 포트폴리오보다 배정·프로모션이 과제.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--ac2);margin-bottom:8px">③ 카테고리 진화 지연</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.8">자사 4개 브랜드 모두 오메가3 중심. 베르베린·NMN 등 기출시 신제품이 있으나 <strong style="color:var(--tx)">약사 배정이 이루어지지 않아 실판매로 연결되지 않은 상황.</strong> 포트폴리오보다 배정·프로모션이 과제.</div>
   </div>
 </div>
 
-<div style="background:var(--sf2);border-radius:10px;padding:14px;margin-top:12px;font-size:13px;color:var(--mu)">
+<div style="background:var(--sf2);border-radius:10px;padding:14px;margin-top:12px;font-size:15px;color:var(--mu)">
   <strong style="color:var(--tx)">분석 결론</strong>: 자사 매출 하락은 특정 약사의 공구 중단(드림약사 유트리션, 고약사 파이토알엑스)에 의한 구조적 결과입니다. 같은 기간 외부 파트너 매출이 53.2억→58.9억(+10.7%) 성장했다는 점은 <strong style="color:var(--ac2)">플랫폼 운영 자체의 문제가 아님</strong>을 보여줍니다. 핵심 과제는 약사 단일 의존 구조 개선, 이탈위기 약사 파트너십 유지, 그리고 기출시 신제품의 실판매 전환입니다.
 </div>
 
@@ -1464,16 +1464,16 @@ function sw(id,btn){
 
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px">
   <div style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.4);border-radius:10px;padding:14px;text-align:center">
-    <div style="font-size:28px;font-weight:800;color:var(--red)">-123억</div>
-    <div style="font-size:12px;color:var(--mu);margin-top:6px">이탈위기 상위 3명 동시 이탈 시<br>전체 매출의 29.7% 즉시 손실<br><strong style="color:var(--red)">413억 → 290억</strong> 예상</div>
+    <div style="font-size:32px;font-weight:800;color:var(--red)">-123억</div>
+    <div style="font-size:14px;color:var(--mu);margin-top:6px">이탈위기 상위 3명 동시 이탈 시<br>전체 매출의 29.7% 즉시 손실<br><strong style="color:var(--red)">413억 → 290억</strong> 예상</div>
   </div>
   <div style="background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.4);border-radius:10px;padding:14px;text-align:center">
-    <div style="font-size:28px;font-weight:800;color:var(--ylw)">47M→18M</div>
-    <div style="font-size:12px;color:var(--mu);margin-top:6px">공구 1건당 평균 매출 급락<br>대형 공구 소멸, 소형만 잔존<br><strong style="color:var(--ylw)">규모 회복이 최우선 과제</strong></div>
+    <div style="font-size:32px;font-weight:800;color:var(--ylw)">47M→18M</div>
+    <div style="font-size:14px;color:var(--mu);margin-top:6px">공구 1건당 평균 매출 급락<br>대형 공구 소멸, 소형만 잔존<br><strong style="color:var(--ylw)">규모 회복이 최우선 과제</strong></div>
   </div>
   <div style="background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.4);border-radius:10px;padding:14px;text-align:center">
-    <div style="font-size:28px;font-weight:800;color:var(--ac2)">10.8%</div>
-    <div style="font-size:12px;color:var(--mu);margin-top:6px">자사 브랜드 점유율 (Feb 22.4% 대비)<br>외부 파트너 의존도 85.4%<br><strong style="color:var(--ac2)">구조적 리스크 최고조</strong></div>
+    <div style="font-size:32px;font-weight:800;color:var(--ac2)">10.8%</div>
+    <div style="font-size:14px;color:var(--mu);margin-top:6px">자사 브랜드 점유율 (Feb 22.4% 대비)<br>외부 파트너 의존도 85.4%<br><strong style="color:var(--ac2)">구조적 리스크 최고조</strong></div>
   </div>
 </div>
 
@@ -1483,8 +1483,8 @@ function sw(id,btn){
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
   <div class="card" style="border-top:3px solid var(--red)">
-    <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:10px">즉시 과제 (7월 내)</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.9">
+    <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:10px">즉시 과제 (7월 내)</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.9">
       • 유트리션 브랜드 약사 다변화 — 자사 친화 약사 그룹 내 분산 편성 착수<br>
       • 릴리약사 매출 하락(-48%) 케어 방안 실행 — 신규 파트너사 연결 제안<br>
       • 자사 친화 약사 그룹 파트너십 구조 설계 착수 (법무·재무 검토 병행)<br>
@@ -1492,8 +1492,8 @@ function sw(id,btn){
     </div>
   </div>
   <div class="card" style="border-top:3px solid var(--ylw)">
-    <div style="font-size:13px;font-weight:700;color:var(--ylw);margin-bottom:10px">단기 과제 (8월)</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.9">
+    <div style="font-size:15px;font-weight:700;color:var(--ylw);margin-bottom:10px">단기 과제 (8월)</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.9">
       • 베르베린 카테고리 제품 정보·콘텐츠 지원 체계 구축<br>
       • 담백하루 하락(-17.7%) 구조 분석 + TOP3 파트너사 협의<br>
       • 친한스토어 Admin 내 자사 브랜드 전용 캘린더 분리 운영 착수<br>
@@ -1501,8 +1501,8 @@ function sw(id,btn){
     </div>
   </div>
   <div class="card" style="border-top:3px solid var(--grn)">
-    <div style="font-size:13px;font-weight:700;color:var(--grn);margin-bottom:10px">중기 과제 (9~10월)</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.9">
+    <div style="font-size:15px;font-weight:700;color:var(--grn);margin-bottom:10px">중기 과제 (9~10월)</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.9">
       • NMN/항노화 카테고리 약사 정보 자료 완비 (저스트글로우 활용)<br>
       • 기출시 신제품(베르베린·NMN) 약사 배정 전략 실행 + 첫 프로모션 성과 점검<br>
       • 자사 브랜드 점유율 10.8% → 15% 달성 점검<br>
@@ -1510,8 +1510,8 @@ function sw(id,btn){
     </div>
   </div>
   <div class="card" style="border-top:3px solid var(--ac2)">
-    <div style="font-size:13px;font-weight:700;color:var(--ac2);margin-bottom:10px">연말 목표 KPI</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.9">
+    <div style="font-size:15px;font-weight:700;color:var(--ac2);margin-bottom:10px">연말 목표 KPI</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.9">
       • 자사 브랜드 월 매출: 7.3억 → 12억<br>
       • 자사 브랜드 점유율: 10.8% → 15%<br>
       • 상위 3명 약사 매출 의존도: 29.7% → 20% 이하<br>
@@ -1525,20 +1525,20 @@ function sw(id,btn){
 
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;margin-top:12px">
   <div style="background:rgba(34,211,238,.07);border-radius:8px;padding:12px">
-    <div style="font-size:13px;font-weight:700;color:var(--rua);margin-bottom:8px">Rua (윤효정)</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.8">YDY·한독·닥터제안 공구 안정화. 자사 친화 약사 그룹 자발적 참여 지원.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--rua);margin-bottom:8px">Rua (윤효정)</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.8">YDY·한독·닥터제안 공구 안정화. 자사 친화 약사 그룹 자발적 참여 지원.</div>
   </div>
   <div style="background:rgba(99,102,241,.07);border-radius:8px;padding:12px">
-    <div style="font-size:13px;font-weight:700;color:var(--joy);margin-bottom:8px">Joy (최선화)</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.8">저스트글로우 제품 정보 지원 지속. 트루엔 성장세 유지. 담백하루 원인 분석.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--joy);margin-bottom:8px">Joy (최선화)</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.8">저스트글로우 제품 정보 지원 지속. 트루엔 성장세 유지. 담백하루 원인 분석.</div>
   </div>
   <div style="background:rgba(16,185,129,.07);border-radius:8px;padding:12px">
-    <div style="font-size:13px;font-weight:700;color:var(--bom);margin-bottom:8px">Bom (김보미)</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.8">마이랩스 기출시 신제품 정보 공유 및 관심 약사 발굴. 스타팜·탑헬스 안정화. 신제품 첫 공구 기회 조율.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--bom);margin-bottom:8px">Bom (김보미)</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.8">마이랩스 기출시 신제품 정보 공유 및 관심 약사 발굴. 스타팜·탑헬스 안정화. 신제품 첫 공구 기회 조율.</div>
   </div>
   <div style="background:rgba(245,158,11,.07);border-radius:8px;padding:12px">
-    <div style="font-size:13px;font-weight:700;color:var(--summer);margin-bottom:8px">Summer (이도경)</div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.8">유트리션·파이토알엑스 다수 약사 분산 섭외·협의. 드림약사 재공구 협의. 자사 브랜드 공구 캘린더 수립 주도.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--summer);margin-bottom:8px">Summer (이도경)</div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.8">유트리션·파이토알엑스 다수 약사 분산 섭외·협의. 드림약사 재공구 협의. 자사 브랜드 공구 캘린더 수립 주도.</div>
   </div>
 </div>
 
@@ -1548,24 +1548,24 @@ function sw(id,btn){
 
 <div style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
   <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;display:grid;grid-template-columns:200px 1fr 120px;gap:14px;align-items:start">
-    <div><div style="font-size:13px;font-weight:700;margin-bottom:4px">기출시 신제품 배정 전략 방향성</div><div style="font-size:11px;color:var(--mu)">기개발 제품 실판매 전환 전략</div></div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.75">이미 출시된 베르베린·NMN 등 신제품의 약사 배정 전략 방향 결정 필요. 어떤 약사 그룹에 어떤 제품을 우선 소개할지, 초기 프로모션 예산은 어느 수준인지 회사 차원 결정이 선행되어야 함. 이후 추가 신제품 개발 여부는 성과 데이터 확보 후 검토.</div>
-    <div style="text-align:center"><span style="background:rgba(239,68,68,.15);color:var(--red);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px">즉시 결정 필요</span></div>
+    <div><div style="font-size:15px;font-weight:700;margin-bottom:4px">기출시 신제품 배정 전략 방향성</div><div style="font-size:13px;color:var(--mu)">기개발 제품 실판매 전환 전략</div></div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.75">이미 출시된 베르베린·NMN 등 신제품의 약사 배정 전략 방향 결정 필요. 어떤 약사 그룹에 어떤 제품을 우선 소개할지, 초기 프로모션 예산은 어느 수준인지 회사 차원 결정이 선행되어야 함. 이후 추가 신제품 개발 여부는 성과 데이터 확보 후 검토.</div>
+    <div style="text-align:center"><span style="background:rgba(239,68,68,.15);color:var(--red);font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px">즉시 결정 필요</span></div>
   </div>
   <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;display:grid;grid-template-columns:200px 1fr 120px;gap:14px;align-items:start">
-    <div><div style="font-size:13px;font-weight:700;margin-bottom:4px">약사 파트너십 유지 방식 결정</div><div style="font-size:11px;color:var(--mu)">독점 혜택 범위·어드바이저 그룹 운영 기준</div></div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.75">자사 친화 약사에게 제공할 혜택의 구체적 범위 결정 필요: ①독점 선공개 대상 약사 선정 기준 ②어드바이저 그룹 참여 규모·보상 방식 ③장기 파트너 이벤트 예산 한도. 팀 단독으로 확정하기 어려운 비용·기준 항목이므로 회사 방향 결정 후 실행.</div>
-    <div style="text-align:center"><span style="background:rgba(245,158,11,.15);color:var(--ylw);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px">단기 결정 필요</span></div>
+    <div><div style="font-size:15px;font-weight:700;margin-bottom:4px">약사 파트너십 유지 방식 결정</div><div style="font-size:13px;color:var(--mu)">독점 혜택 범위·어드바이저 그룹 운영 기준</div></div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.75">자사 친화 약사에게 제공할 혜택의 구체적 범위 결정 필요: ①독점 선공개 대상 약사 선정 기준 ②어드바이저 그룹 참여 규모·보상 방식 ③장기 파트너 이벤트 예산 한도. 팀 단독으로 확정하기 어려운 비용·기준 항목이므로 회사 방향 결정 후 실행.</div>
+    <div style="text-align:center"><span style="background:rgba(245,158,11,.15);color:var(--ylw);font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px">단기 결정 필요</span></div>
   </div>
   <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;display:grid;grid-template-columns:200px 1fr 120px;gap:14px;align-items:start">
-    <div><div style="font-size:13px;font-weight:700;margin-bottom:4px">오메가3 신제품 전략</div><div style="font-size:11px;color:var(--mu)">시장 포화 대응 방향</div></div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.75">오메가3는 인기 카테고리이나 시장 포화. 자사 신제품 추가 개발이 필요한지, 아니면 기존 제품 유지 + 비오메가3 카테고리로 R&D 투자 전환이 맞는지 전략 방향 결정 필요.</div>
-    <div style="text-align:center"><span style="background:rgba(99,102,241,.15);color:var(--ac2);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px">분기 내 결정</span></div>
+    <div><div style="font-size:15px;font-weight:700;margin-bottom:4px">오메가3 신제품 전략</div><div style="font-size:13px;color:var(--mu)">시장 포화 대응 방향</div></div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.75">오메가3는 인기 카테고리이나 시장 포화. 자사 신제품 추가 개발이 필요한지, 아니면 기존 제품 유지 + 비오메가3 카테고리로 R&D 투자 전환이 맞는지 전략 방향 결정 필요.</div>
+    <div style="text-align:center"><span style="background:rgba(99,102,241,.15);color:var(--ac2);font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px">분기 내 결정</span></div>
   </div>
   <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;display:grid;grid-template-columns:200px 1fr 120px;gap:14px;align-items:start">
-    <div><div style="font-size:13px;font-weight:700;margin-bottom:4px">외부 파트너 협력 구조</div><div style="font-size:11px;color:var(--mu)">에이전시 차원 지원 방안</div></div>
-    <div style="font-size:12px;color:var(--mu);line-height:1.75">파트너사와의 데이터 공유, 공동 마케팅 등은 팀 단독으로 진행하기 어려운 사안. 회사 차원에서 파트너사와 어떤 관계를 맺을 것인지 정책 방향 결정 후 팀이 실행.</div>
-    <div style="text-align:center"><span style="background:rgba(99,102,241,.15);color:var(--ac2);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px">분기 내 결정</span></div>
+    <div><div style="font-size:15px;font-weight:700;margin-bottom:4px">외부 파트너 협력 구조</div><div style="font-size:13px;color:var(--mu)">에이전시 차원 지원 방안</div></div>
+    <div style="font-size:14px;color:var(--mu);line-height:1.75">파트너사와의 데이터 공유, 공동 마케팅 등은 팀 단독으로 진행하기 어려운 사안. 회사 차원에서 파트너사와 어떤 관계를 맺을 것인지 정책 방향 결정 후 팀이 실행.</div>
+    <div style="text-align:center"><span style="background:rgba(99,102,241,.15);color:var(--ac2);font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px">분기 내 결정</span></div>
   </div>
 </div>
 
@@ -1585,15 +1585,15 @@ function sw(id,btn){
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px">
   <div class="card" style="border-left:4px solid var(--grn)">
-    <div style="font-size:13px;font-weight:700;color:var(--tx);margin-bottom:8px">자사 매출 하락은 사실</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+    <div style="font-size:15px;font-weight:700;color:var(--tx);margin-bottom:8px">자사 매출 하락은 사실</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">
       3&#8211;4월 자사 브랜드 매출이 급감한 것은 수치로 확인되며, 점검이 필요한 시점이라는 인식에는 동의합니다.<br><br>
       특히 자사 채널(친한스토어) 내 자사 브랜드 공구 비중이 줄어든 점은 즉시 개선 가능한 영역입니다.
     </div>
   </div>
   <div class="card" style="border-left:4px solid var(--grn)">
-    <div style="font-size:13px;font-weight:700;color:var(--tx);margin-bottom:8px">담당자 케어 밀도 개선 여지</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+    <div style="font-size:15px;font-weight:700;color:var(--tx);margin-bottom:8px">담당자 케어 밀도 개선 여지</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">
       담당자별 약사 케어 밀도, 공구 캘린더 관리, 신제품 정보 제공 주기 등은 충분히 더 잘할 수 있는 부분이 있습니다.<br><br>
       이 부분은 하반기 담당자별 과제(p9)로 이미 구체화되어 있습니다.
     </div>
@@ -1607,12 +1607,12 @@ function sw(id,btn){
 </div>
 <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
   <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;display:grid;grid-template-columns:200px 1fr;gap:14px">
-    <div style="font-size:13px;font-weight:700;color:var(--ylw)">&#x1F4C9; 대형 약사 독립화 트렌드</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">매출 상위 약사일수록 플랫폼 의존을 줄이고 자체 브랜드&#183;독립 채널을 구축하는 흐름은 업계 전반의 구조적 변화입니다. 담당자 교체로 이 트렌드를 막을 수 없습니다.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--ylw)">&#x1F4C9; 대형 약사 독립화 트렌드</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">매출 상위 약사일수록 플랫폼 의존을 줄이고 자체 브랜드&#183;독립 채널을 구축하는 흐름은 업계 전반의 구조적 변화입니다. 담당자 교체로 이 트렌드를 막을 수 없습니다.</div>
   </div>
   <div style="background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px;display:grid;grid-template-columns:200px 1fr;gap:14px">
-    <div style="font-size:13px;font-weight:700;color:var(--ylw)">&#x1F6AB; 강제 배정 불가 구조</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">공동구매 특성상 특정 약사에게 특정 제품 공구를 강제할 수 없습니다. 담당자가 바뀌어도 이 구조적 한계는 동일합니다. 약사가 자발적으로 선택하도록 환경을 만드는 것이 유일한 접근법입니다.</div>
+    <div style="font-size:15px;font-weight:700;color:var(--ylw)">&#x1F6AB; 강제 배정 불가 구조</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">공동구매 특성상 특정 약사에게 특정 제품 공구를 강제할 수 없습니다. 담당자가 바뀌어도 이 구조적 한계는 동일합니다. 약사가 자발적으로 선택하도록 환경을 만드는 것이 유일한 접근법입니다.</div>
   </div>
 </div>
 
@@ -1624,15 +1624,15 @@ function sw(id,btn){
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px">
   <div class="card" style="border-left:4px solid var(--red)">
-    <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:8px">&#x1F6A7; 내부 리스크 &#8212; 업무 병목 발생</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+    <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px">&#x1F6A7; 내부 리스크 &#8212; 업무 병목 발생</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">
       현재 자사 브랜드(YDY뉴트리션&#183;유트리션&#183;파이토알엑스&#183;박약다식&#183;마이랩스&#183;YDY해외&#183;데이타민)는 <strong style="color:var(--tx)">3명의 담당자가 분산하여</strong> 각 브랜드&#183;약사 관계를 관리 중입니다.<br><br>
       이를 1명의 담당자에게 이관할 경우, <strong style="color:var(--red)">업무량이 2배 이상 집중</strong>되어 오히려 케어 품질이 하락할 수 있습니다. 인원 추가 없는 이관은 병목을 심화시킵니다.
     </div>
   </div>
   <div class="card" style="border-left:4px solid var(--red)">
-    <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:8px">&#x1F91D; 외부 리스크 &#8212; 파트너 약사 혼란</div>
-    <div style="font-size:13px;color:var(--mu);line-height:1.75">
+    <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px">&#x1F91D; 외부 리스크 &#8212; 파트너 약사 혼란</div>
+    <div style="font-size:15px;color:var(--mu);line-height:1.75">
       파트너 약사들은 현재 담당자와 오랜 관계를 유지하며 신뢰를 쌓아왔습니다.<br><br>
       담당 주체가 갑자기 변경될 경우, <strong style="color:var(--red)">관계 단절&#183;이탈 가속화</strong>가 발생할 수 있습니다. 이탈 위기 상황에서의 담당자 교체는 이탈 위험을 더 높입니다.
     </div>
@@ -1640,8 +1640,8 @@ function sw(id,btn){
 </div>
 
 <div class="card" style="border-left:4px solid var(--red);margin-top:12px">
-  <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:8px">&#x1F500; 가장 심각한 리스크 &#8212; 운영 프로세스 이중화</div>
-  <div style="font-size:13px;color:var(--mu);line-height:1.75">
+  <div style="font-size:15px;font-weight:700;color:var(--red);margin-bottom:8px">&#x1F500; 가장 심각한 리스크 &#8212; 운영 프로세스 이중화</div>
+  <div style="font-size:15px;color:var(--mu);line-height:1.75">
     업무가 분리될 경우, 동일한 파트너 약사가 <strong style="color:var(--ylw)">어떤 업무는 공동구매팀에, 어떤 업무는 다른 팀에 문의해야 하는 구조</strong>가 됩니다.<br><br>
     예를 들어, 같은 약사의 <span style="color:var(--tx)">외부 파트너사 공구는 공동구매팀</span>에, <span style="color:var(--ac2)">자사 브랜드 공구는 신규 담당팀</span>에 연락해야 한다면 &#8212; 약사 입장에서는 창구가 이원화되어 혼란이 발생하고, 내부적으로도 동일 약사 이슈를 두 팀이 분리 처리해야 하는 <strong style="color:var(--red)">비효율적인 프로세스</strong>가 고착됩니다.
   </div>
@@ -1652,23 +1652,23 @@ function sw(id,btn){
   <div class="sec-h" style="border-color:#a78bfa">&#x1F4A1; 의견</div>
 </div>
 <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.3);border-radius:12px;padding:20px;margin-top:10px">
-  <div style="font-size:15px;font-weight:700;color:#a78bfa;margin-bottom:14px">공동구매 운영은 단일 조직에서 유지되어야 합니다</div>
+  <div style="font-size:17px;font-weight:700;color:#a78bfa;margin-bottom:14px">공동구매 운영은 단일 조직에서 유지되어야 합니다</div>
   <div style="display:flex;flex-direction:column;gap:10px">
     <div style="display:flex;gap:12px;align-items:flex-start">
-      <span style="color:#a78bfa;font-weight:700;font-size:16px;flex-shrink:0">01</span>
-      <div style="font-size:13px;color:var(--mu);line-height:1.75">팀 내 개선 포인트는 존재하며, 하반기 담당자별 과제로 이미 반영되어 있습니다. 조직 변경 없이 실행 가능합니다.</div>
+      <span style="color:#a78bfa;font-weight:700;font-size:18px;flex-shrink:0">01</span>
+      <div style="font-size:15px;color:var(--mu);line-height:1.75">팀 내 개선 포인트는 존재하며, 하반기 담당자별 과제로 이미 반영되어 있습니다. 조직 변경 없이 실행 가능합니다.</div>
     </div>
     <div style="display:flex;gap:12px;align-items:flex-start">
-      <span style="color:#a78bfa;font-weight:700;font-size:16px;flex-shrink:0">02</span>
-      <div style="font-size:13px;color:var(--mu);line-height:1.75">매출 하락의 근본 원인(약사 이탈 트렌드, 시장 포화)은 어떤 팀이 운영해도 동일하게 직면하는 구조적 문제입니다. 팀 변경으로 해결되지 않습니다.</div>
+      <span style="color:#a78bfa;font-weight:700;font-size:18px;flex-shrink:0">02</span>
+      <div style="font-size:15px;color:var(--mu);line-height:1.75">매출 하락의 근본 원인(약사 이탈 트렌드, 시장 포화)은 어떤 팀이 운영해도 동일하게 직면하는 구조적 문제입니다. 팀 변경으로 해결되지 않습니다.</div>
     </div>
     <div style="display:flex;gap:12px;align-items:flex-start">
-      <span style="color:#a78bfa;font-weight:700;font-size:16px;flex-shrink:0">03</span>
-      <div style="font-size:13px;color:var(--mu);line-height:1.75">조직 변경은 업무 병목&#183;파트너 혼란&#183;프로세스 이중화라는 단기 리스크를 즉각 발생시킵니다. 매출이 회복되기 전에 추가 하락 요인이 될 수 있습니다.</div>
+      <span style="color:#a78bfa;font-weight:700;font-size:18px;flex-shrink:0">03</span>
+      <div style="font-size:15px;color:var(--mu);line-height:1.75">조직 변경은 업무 병목&#183;파트너 혼란&#183;프로세스 이중화라는 단기 리스크를 즉각 발생시킵니다. 매출이 회복되기 전에 추가 하락 요인이 될 수 있습니다.</div>
     </div>
     <div style="display:flex;gap:12px;align-items:flex-start">
-      <span style="color:#a78bfa;font-weight:700;font-size:16px;flex-shrink:0">04</span>
-      <div style="font-size:13px;color:var(--mu);line-height:1.75">현 팀 구조를 유지하면서 하반기 실행 계획을 실행하고, 연말 성과 지표를 기반으로 재평가하는 것이 합리적인 순서입니다.</div>
+      <span style="color:#a78bfa;font-weight:700;font-size:18px;flex-shrink:0">04</span>
+      <div style="font-size:15px;color:var(--mu);line-height:1.75">현 팀 구조를 유지하면서 하반기 실행 계획을 실행하고, 연말 성과 지표를 기반으로 재평가하는 것이 합리적인 순서입니다.</div>
     </div>
   </div>
 </div>
